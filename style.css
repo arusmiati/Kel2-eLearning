@@ -1,0 +1,251 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
+/* NAVBAR */
+.navbar1{
+    padding-left: 4vh;
+    padding-top: 2vh;
+    padding-bottom: -10px;
+}
+.navbar{
+    background-color: #082C73;
+    color: white;
+}
+
+.navbar-header img {
+    height: 8vh;
+    margin-top: 5px;
+    margin-left: 5vh;
+    padding-bottom: 8px;
+    color: white;
+}
+
+.navbar .navbar-header {
+    color: #fefefe;
+    padding-left: 10px;
+}
+
+.navbar .navbar-nav li a {
+    font-size: 17px;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.5s ease;
+    border: none ;
+}
+
+.navbar .navbar-nav li .active{
+    border-bottom: 5px solid #dedede;
+    width: 100%;
+    transition: 0.5s ease;
+    color: white;
+    margin-bottom: -10px;   
+}
+
+#navbarNav .profil{
+    margin: 0 20px;
+    padding-right: 30px;
+}
+
+#navbarNav .profil .dropdown-menu{
+    background: #F2F2F2;
+    border-radius: 10px;
+}
+
+.dropdown-menu.dropdown-menu-right.show {
+    margin-right: 4vh;
+    margin-top: -3vh;
+    justify-content: center;
+}
+
+#navbarNav .profil .icon-profil{
+    width: 6vh;
+}
+#navbarNav .profil .name .bg {
+    width: 29vh;
+    margin-top: -1vh;
+}
+#navbarNav .profil .name .profil-img{
+    width: 8vh;
+    margin-top: -5vh;
+}
+
+#navbarNav .profil .name h3{
+    color: #6666;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+#navbarNav .profil .name p{
+    color: #6666;
+}
+
+#navbarNav .profil .dropdown-item{
+    background-color: #F2F2F2;
+    color: #3477D2;
+    font-weight: bold;
+}
+
+#navbarNav .profil .dropdown-item:hover{
+    background-color: #3477D2;
+    color: #ffff;
+}
+
+#navbarNav .profil .log-out{
+    color: #FF5A72;   
+}
+#navbarNav .profil .log-out:hover{
+    background-color: #FF5A72;
+    color: #ffff;
+    margin-bottom: -10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#navbarNav .profil img{
+    width: 8vh;
+}
+
+
+/* LOGIN */
+
+.login{
+    background: linear-gradient(45deg, #082C73, #3477D2, transparent);
+    height: 100vh;
+}
+
+.login-container {
+    height: 90vh;
+    width: 100%;
+}
+
+.login-image img{
+    float: left;
+    height: 73vh;
+    margin-left: 40vh;
+    margin-top: 10vh;
+}
+
+form{
+    height: 73vh;
+    margin-top: 10vh;
+    margin-right: 40vh;
+    background-color: #0F3B92;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 9vh;
+}
+
+.login-form h2 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28pt;
+}
+
+.login-form p {
+    color: white;
+    text-align: center;
+
+}
+.login-form label{
+    color: white;
+    padding-top: 2vh;
+}
+.login-form input {
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    border-color: #F2F2F2;
+    padding-bottom: 2vh;
+}
+.login-form #hide{
+    color: #082C73;
+    z-index: 1;
+    position: absolute;
+    margin-top: -4.3vh;
+    margin-left: 32vh;
+}
+.login-form .button {
+    font-size: 15px;
+    padding-top: 10px;
+    margin: 4vh 0 4vh 0;
+    width: 250px;
+    background-color: #FF5A72;
+    border-color: #FF5A72;
+    border-radius: 20px;
+}
+
+.login-form a{
+    color: white;
+    text-decoration: none;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background-color: #3477D2;
+    width: 90px;
+    height: 100%;
+    top: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    
+}
+
+.sidebar .icon img{
+    width: 25px;
+}
+
+.sidebar ul{
+    margin-top: 100px;
+    margin-left: -40px;
+}
+
+.sidebar ul li{
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 1s ease;
+    -webkit-transition: 0.2s;
+}
+
+.sidebar ul li a{
+    color: #443653;
+    display: inline-block;
+    font-size: 25px;
+    width: 20px;
+    top: 15vh;
+    margin-left: -5px;
+}
+
+.sidebar ul li:hover {
+    background: #2764B8;
+    width: 80%;
+    border-radius: 10px;
+}
+li.active{
+    background: #2764B8;
+    width: 80%;
+    border-radius: 10px;
+    margin-left: 8px;
+}
+
+/* BANTUAN */
+.main-content{
+    margin-top: 10%;
+    width: 100%;
+    color: #3188B9;
+}
+
+.main-content .bantuan li{
+    list-style: none;
+    padding: 5px;
+}
