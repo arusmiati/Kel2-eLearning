@@ -252,6 +252,10 @@ body{
     font-size: 14px;
 }
 
+.login-form a:hover{
+    color: #082C73;
+}
+
 /* SIDEBAR */
 .sidebar {
     background-color: #3477D2;
@@ -555,6 +559,49 @@ progress::after {
     background: #FF5A72;
 }
 
+/* HELP & SUPPORT */
+.inner-form-help{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+.help-header{
+    color: white;
+    margin-top: 6vh;
+}
+
+.help-header span a{
+    text-decoration: none;
+    color: white;
+}
+.help-header span i{
+    padding: 7px 0px;
+}
+
+.help-header h1{
+    font-size: 23px;
+    padding: 0 0 15px 8px;
+}
+
+.help-item ul li{
+    list-style: none;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.help-item a{
+    color: white;
+    text-decoration: none;
+}
+
+.help-header span a:hover,
+.help-item a:hover{
+    color: #082C73;
+}
+
+
 @media screen and (min-width: 100px) and (max-width: 800px){
     #navbarNav .profil .icon-profil{
         width: 4vh;
@@ -764,4 +811,3 @@ progress::after {
         margin-left: 0px;
     }
 }
-
