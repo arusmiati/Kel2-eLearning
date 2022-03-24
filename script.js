@@ -29,3 +29,15 @@ $(".toggle-password-icon").click(function() {
          this.className += "active";
      })
  }
+
+var c = 0;
+function LogConfirm() {
+    if (c == 0) {
+        document.getElementById("confirm-box").style.display = "block"
+        c = 1;
+    }
+    else {
+        document.getElementById("confirm-box").style.display = "none"
+        c = 0;
+    }
+}
