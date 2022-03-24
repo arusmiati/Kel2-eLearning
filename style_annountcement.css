@@ -285,7 +285,40 @@ body {
   background-color: rgb(154, 162, 204, 0.6);
 }
 
-@media screen and (min-width: 100px) and (max-width: 800px) {
+@media screen and (min-width: 751px) and (max-width: 1200px) {
+  .details {
+    font-size: 8px;
+    padding-top: 10px;
+  }
+
+  .detail {
+    justify-content: center;
+  }
+  
+  .detail .text {
+    margin: 0 0 30px 0;
+    font-size: 12px;
+    position: relative;
+    width: 500px;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+  
+  .detail .image {
+    grid-column: 1;
+    grid-row: 1;
+    height: 300px;
+    width: 300px;
+    margin: 30px 0 0 20%;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 750px) {
   #navbarNav .profil .icon-profil{
       width: 4vh;
   }
@@ -332,21 +365,28 @@ body {
   .footer{
       display: inline-block;
   }
+
+  .footer .nama-footer{
+    margin-left: 157px;
+}
   
   .details {
     font-size: 8px;
     padding-top: 10px;
   }
-  
+
   .detail {
-    font-size: 8px;
+    justify-content: center;
   }
   
   .detail .text {
-    margin: 40px 30px 30px 0;
-    font-size: 8px;
+    margin: 0 0 30px 0;
+    font-size: 12px;
     position: relative;
-    width: 250px;
+    width: 300px;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
   }
 
   h3 {
@@ -354,9 +394,11 @@ body {
   }
   
   .detail .image {
-    height: 200px;
-    width: 200px;
-    margin: 30px 20px 30px 10px;
+    grid-column: 1;
+    grid-row: 1;
+    height: 300px;
+    width: 300px;
+    margin: 30px 0 0 0;
   }
 }
 
