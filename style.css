@@ -340,16 +340,26 @@ li.active{
     margin-left: 150px;
 }
 
+.footer .web-detail-mapel {
+    grid-column: 1;
+    grid-row: 4;
+    margin-left: 50px;
+}
+
+.footer .web-detail-mapel ul li,
 .footer .web ul li{
     list-style: none;
     padding: 5px;
 }
 
+
+.footer .web-detail-mapel span,
 .footer .web span{
     color: white;
     padding: 10px;
 }
 
+.footer .web-detail-mapel i,
 .footer .web i{
     color: white;
 }
@@ -360,7 +370,15 @@ li.active{
     margin-left: 150px;
 }
 
-.footer .nama-footer .tfooter{
+.footer .nama-footer-mapel {
+    grid-column: 3;
+    grid-row: 4;
+    color: white;
+    margin-left: 50px;
+}
+
+.footer .nama-footer .tfooter,
+.footer .nama-footer-mapel .tfooter{
     font-size: 15px;
 }
 
@@ -601,8 +619,149 @@ progress::after {
     color: #082C73;
 }
 
+/* MAPEL */
+.main-content-mapel{
+    margin: 15vh;
+    min-height: 100vh;
+    position: relative;
+}
+
+.detail-mapel{
+    width: 100%;
+    height: 100px;
+}
+
+.detail-mapel .detail-header{
+    color: #082C73;
+
+}
+
+.detail-mapel .detail-title{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.detail-mapel .btn-mapel{
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #dddd;
+    border: none;
+    text-align: center;
+}
+
+#drop-history {
+    width: 300px;
+    background: #dedede;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#drop-history .dropdown-item:hover{
+    background: #082C73;
+    color: white;
+}
+
+.list-mapel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.list-mapel-item {
+    width: 305px;
+    background: #F2F2F2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #dedede;
+    margin: 10px;
+}
+
+.class-mapel {
+    background: #082C73;
+    color: #dedede;
+    width: 60px;
+    padding: 0px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 200;
+    margin-top: -55%;
+    position: relative;
+    float: right;
+    margin-right: 5px;  
+}
+
+.class-mapel h1 {
+    margin-top: -20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.class-mapel p{
+    margin-top: 5px;
+    font-size: 10px;
+}
+.logo-mapel {
+    z-index: 20;
+    position: relative;
+}
+
+.logo-mapel img {
+    width: 305px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.nama-mapel{
+    background-color: #082C73;
+    color: #EFEFEF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nama-mapel h3{
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+}
+
+.ket-mapel,
+.jlh-siswa {
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.ket-mapel i,
+.jlh-siswa i {
+    padding-right: 10px;
+}
+
+.deskripsi {
+    padding: 0 10px 0 10px;
+    text-align: justify;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -12px;
+}
+
+.btn-detail {
+    margin-left: 18vh;
+}
+
+.btn-detail button {
+    background: #082C73;
+    color: white;
+    border-radius: 15px;
+    width: 90px;
+    border: none;
+    font-size: 12px;
+    padding: 3px;
+}
 
 @media screen and (min-width: 100px) and (max-width: 800px){
+    .sidebar ul{
+        margin-top: 30px;
+    }
+    
     #navbarNav .profil .icon-profil{
         width: 4vh;
     }
@@ -720,6 +879,35 @@ progress::after {
     .login-form a{
         font-size: 13px;
     }
+
+    .list-mapel{
+        display: grid;
+        grid-template-columns: 0fr;
+        grid-template-rows: 0fr;
+        width: 100%;
+    }
+
+    .detail-mapel{
+        height: auto;
+    }
+    .detail-mapel .detail-title{
+        font-size: 15px;
+    }
+    
+    .detail-mapel .btn-mapel{
+        width: 150px;
+        font-size: 10px;
+        margin-left: 20px;
+    }
+    
+    #drop-history {
+        width: 150px;
+        font-size: 10px;
+    }
+    
+    .footer .nama-footer-mapel{
+        margin-left: 150px;
+    }
 }
 
 @media screen and (min-width: 750px) and (max-width: 990px){
@@ -764,6 +952,9 @@ progress::after {
         text-align: center;
     }
 
+    .progres{
+        margin-top: -25px;
+    }
     .progres-bar1 progress, 
     .progres-bar2 progress,
     .progres-bar3 progress,
@@ -779,7 +970,13 @@ progress::after {
     .progres-content .progres-item ul li p{
         font-size: 13px;
     }
-    
+
+    .progres .progres-title {
+        padding-top: 40px;
+    }
+    .navbar-header img {
+        height: 6vh;
+    }
      
 }
 
