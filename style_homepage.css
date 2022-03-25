@@ -419,7 +419,85 @@ body {
 }
 
 /* responsive */
-@media screen and (min-width: 100px) and (max-width: 800px) {
+
+@media screen and (min-width: 751px) and (max-width: 1200px) {
+    .txt1, .txt {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+    
+    .content-announcements {
+        justify-content: center;
+    }
+    
+    .first {
+        width: fit-content;
+        margin-top: -25px;
+        height: fit-content;
+    }
+    
+    .first .text {
+        font-size: 12px;
+        position: relative;
+        width: 300px;
+        margin-top: -157px;
+        margin-left: 200px;
+    }
+    
+    .first .image {
+        height: 150px;
+        width: 150px;
+        margin: -10px;
+    }
+
+    .announcement {
+        margin-top: 3%;
+        width: 250px;
+        margin-left: 20%;
+        font-size: 8px;
+    }
+    
+    .announcement a {
+        font-size: 20px;
+    }
+    
+    .announ1 {
+        width: 80%;
+        margin-top: 5px;
+        height: 175px;
+    }
+
+    .announ1 .new {
+        width: 40px;
+        height: 40px;
+        margin: -8px 0 0 -8px;
+    }
+    
+    .announ2 {
+        width: 80%;
+        margin-top: -175px;
+        height: 175px;
+        margin-left: 250px;
+    }
+
+    h5 {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .announ1 h5 {
+        font-size: 14px;
+    }
+
+    .announ2 h5 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 750px) {
     #navbarNav .profil .icon-profil{
         width: 4vh;
     }
@@ -457,6 +535,10 @@ body {
 
     .footer{
         display: inline-block;
+    }
+
+    .footer .nama-footer{
+        margin-left: 157px;
     }
     
     .next {
@@ -496,6 +578,7 @@ body {
         width: fit-content;
         margin-top: -25px;
         height: 153px;
+        justify-content: center;
     }
     
     .first .text {
