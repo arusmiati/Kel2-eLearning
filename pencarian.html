@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;800&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Mata Pelajaran</title>
+    <title>Pencarian Mata Pelajaran</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -30,10 +30,10 @@
                     <a href="homepage.html" class="btn" aria-hidden="true">Homepage</a>
                 </li>
                 <li class="mapel nav-item">
-                    <a href="matapelajaran.html" class="btn active" aria-hidden="true">Mata Pelajaran</a>
+                    <a href="matapelajaran.html" class="btn" aria-hidden="true">Mata Pelajaran</a>
                 </li>
                 <li class="search-mapel nav-item">
-                    <a href="pencarian.html" class="btn" aria-hidden="true">Pencarian Mata Pelajaran </a>
+                    <a href="pencarian.html" class="btn active" aria-hidden="true">Pencarian Mata Pelajaran </a>
                 </li>
                 <li class="leader nav-item">
                     <a href="leaderboards.html" class="btn" aria-hidden="true">Leaderboards</a>
@@ -66,24 +66,61 @@
             <a href="login.html" class="yes">Iya</a>
             <a href="" class="no">Tidak</a>
         </div>
-        <div class="main-content-mapel">
-            <div class="detail-mapel">
-                <div class="detail-header d-flex">
-                    <h2 class="detail-title">Semester Genap</h2>
-                    <div class="dropdown ml-auto">
-                        <button class="btn-mapel dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          History Mata Pelajaran
-                        </button>
-                        <div id="drop-history" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Semester Ganjil</a>
-                          <a class="dropdown-item" href="#">Semester Genap</a>
-                        </div>
+        <div class="pencarian">
+            <div class="filter-pencarian">
+                <h5>Filter</h5>
+                <div class="dropdown ml-auto">
+                    <button class="btn-mapel">
+                        <p>Kelas X</p>
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <div id="drop-filter" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; X Mipa 1</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; X Mipa 2</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; X Mipa 3</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; X Mipa 4</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; X Mipa 5</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; X Mipa 6</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; X Ips 1</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; X Ips 2</label><br>
                     </div>
-                    
                 </div>
-            </div>
-            <div class="list-mapel">
-               <div class="list-mapel-item">  
+                <div class="dropdown ml-auto">
+                    <button class="btn-mapel">
+                        <p>Kelas XI</p>
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <div id="drop-filter" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XI Mipa 1</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XI Mipa 2</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XI Mipa 3</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XI Mipa 4</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XI Mipa 5</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XI Mipa 6</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XI Mipa 7</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XI Ips 1</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XI Ips 2</label><br>
+                    </div>
+                </div>
+                <div class="dropdown ml-auto">
+                    <button class="btn-mapel">
+                        <p>Kelas XII</p>
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <div id="drop-filter" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XII Mipa 1</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XII Mipa 2</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XII Mipa 3</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XII Mipa 4</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XII Mipa 5</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XII Mipa 6</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XII Ips 1</label><br>
+                      <label for="filter"><input type="radio"  name="filter">&nbsp;&nbsp; XII Ips 2</label><br>
+                    </div>
+                </div>
+            </div>   
+            <div class="list-pencarian">
+                <div class="list-pencarian-item">  
                     <div class="logo-mapel">
                         <img src="img/icon1.png" alt="">   
                     </div>
@@ -98,67 +135,15 @@
                         <p><i class="fa fa-user"></i> Islamuddin</p>
                         <p><i class="fa fa-calendar"></i>13 Oktober</p>
                     </div>
-                    <div class="deskripsi">
-                        <p>Mata Pelajaran yang mengajarkan siswa tentang Persmaan dan Pertidaksamaan Linear Nilai Mutlak, Fungsi Linear, Persamaan dan Fungsi Kuadrat, Fungsi Rasional, dan Trigonometri</p>
-                    </div>
+                   
                     <div class="jlh-siswa d-flex">
                         <p><i class="fa fa-user"></i>32 Siswa</p>
                         <div class="btn-detail">
-                            <button onclick="location.href='detailmapel.html'">Detail</button>
-                        </div>
-                    </div> 
-                </div>
-                <div class="list-mapel-item">  
-                    <div class="logo-mapel">
-                        <img src="img/icon1.png" alt="">   
-                    </div>
-                    <div class="class-mapel">
-                        <p>Class</p>
-                        <h1>X</h1>
-                    </div>
-                    <div class="nama-mapel">
-                        <h3>Matematika Wajib X Mipa 6</h3>
-                    </div>
-                    <div class="ket-mapel">
-                        <p><i class="fa fa-user"></i> Islamuddin</p>
-                        <p><i class="fa fa-calendar"></i>13 Oktober</p>
-                    </div>
-                    <div class="deskripsi">
-                        <p>Mata Pelajaran yang mengajarkan siswa tentang Persmaan dan Pertidaksamaan Linear Nilai Mutlak, Fungsi Linear, Persamaan dan Fungsi Kuadrat, Fungsi Rasional, dan Trigonometri</p>
-                    </div>
-                    <div class="jlh-siswa d-flex">
-                        <p><i class="fa fa-user"></i>32 Siswa</p>
-                        <div class="btn-detail">
-                            <button onclick="location.href='detailmapel.html'">Detail</button>
-                        </div>
-                    </div> 
-                </div>
-                <div class="list-mapel-item">  
-                    <div class="logo-mapel">
-                        <img src="img/icon1.png" alt="">   
-                    </div>
-                    <div class="class-mapel">
-                        <p>Class</p>
-                        <h1>X</h1>
-                    </div>
-                    <div class="nama-mapel">
-                        <h3>Matematika Wajib X Mipa 6</h3>
-                    </div>
-                    <div class="ket-mapel">
-                        <p><i class="fa fa-user"></i> Islamuddin</p>
-                        <p><i class="fa fa-calendar"></i>13 Oktober</p>
-                    </div>
-                    <div class="deskripsi">
-                        <p>Mata Pelajaran yang mengajarkan siswa tentang Persmaan dan Pertidaksamaan Linear Nilai Mutlak, Fungsi Linear, Persamaan dan Fungsi Kuadrat, Fungsi Rasional, dan Trigonometri</p>
-                    </div>
-                    <div class="jlh-siswa d-flex">
-                        <p><i class="fa fa-user"></i>32 Siswa</p>
-                        <div class="btn-detail">
-                            <button onclick="location.href='detailmapel.html'">Detail</button>
+                            <button onclick="location.href='detailpencarian.html'">Detail</button>
                         </div>
                     </div> 
                 </div>
-                <div class="list-mapel-item">  
+                <div class="list-pencarian-item">  
                     <div class="logo-mapel">
                         <img src="img/icon1.png" alt="">   
                     </div>
@@ -173,24 +158,44 @@
                         <p><i class="fa fa-user"></i> Islamuddin</p>
                         <p><i class="fa fa-calendar"></i>13 Oktober</p>
                     </div>
-                    <div class="deskripsi">
-                        <p>Mata Pelajaran yang mengajarkan siswa tentang Persmaan dan Pertidaksamaan Linear Nilai Mutlak, Fungsi Linear, Persamaan dan Fungsi Kuadrat, Fungsi Rasional, dan Trigonometri</p>
-                    </div>
+                   
                     <div class="jlh-siswa d-flex">
                         <p><i class="fa fa-user"></i>32 Siswa</p>
                         <div class="btn-detail">
-                            <button onclick="location.href='detailmapel.html'">Detail</button>
+                            <button>Detail</button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="list-pencarian-item">  
+                    <div class="logo-mapel">
+                        <img src="img/icon1.png" alt="">   
+                    </div>
+                    <div class="class-mapel">
+                        <p>Class</p>
+                        <h1>X</h1>
+                    </div>
+                    <div class="nama-mapel">
+                        <h3>Matematika Wajib X Mipa 6</h3>
+                    </div>
+                    <div class="ket-mapel">
+                        <p><i class="fa fa-user"></i> Islamuddin</p>
+                        <p><i class="fa fa-calendar"></i>13 Oktober</p>
+                    </div>
+                   
+                    <div class="jlh-siswa d-flex">
+                        <p><i class="fa fa-user"></i>32 Siswa</p>
+                        <div class="btn-detail">
+                            <button>Detail</button>
                         </div>
                     </div> 
                 </div>
             </div>
         </div>
-        
+
     </div>
 
-
     <div class="footer">
-        <div class="nama-footer-mapel">
+        <div class="nama-footer">
           <p class="tfooter">SMA Negeri 5 Luwu</p>
           <p>Jl.Jambu Kec. Bajo Kab. Luwu 91995</p>
         </div>
@@ -203,7 +208,6 @@
           </ul>
         </div>
     </div>
-
     <script src="script.js"></script>
     <script>
         var c = 0;
@@ -217,7 +221,24 @@
                 c = 0;
             }
         }
+
+        var dropdown = document.getElementsByClassName("btn-mapel");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+        
     </script>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

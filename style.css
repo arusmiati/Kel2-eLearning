@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 body{
@@ -227,7 +229,6 @@ body{
     padding-right: 40px;
     position: relative;
     z-index: 100;
-
 }
 
 .login-form .button {
@@ -467,6 +468,10 @@ li.active{
     padding: 0px;
 }
 
+.progres-detail .progres-item{
+    width: 200px;
+}
+
 .progres-content .progres-item li.progres-subitem .tprogress{
     width: 300px;
 }
@@ -621,24 +626,27 @@ progress::after {
 
 /* MAPEL */
 .main-content-mapel{
-    margin: 15vh;
+    width: 100%;
     min-height: 100vh;
-    position: relative;
+
 }
 
 .detail-mapel{
     width: 100%;
     height: 100px;
+    width: 100%;
+    height: 100px;
+    margin: 100px 5px 0px 5px;
 }
 
 .detail-mapel .detail-header{
     color: #082C73;
-
+    margin: 20px 20px;
 }
 
 .detail-mapel .detail-title{
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .detail-mapel .btn-mapel{
@@ -648,24 +656,26 @@ progress::after {
     background: #dddd;
     border: none;
     text-align: center;
+    margin-right: 50px;
+    font-weight: 400;
 }
 
 #drop-history {
+    background: #dddd;
     width: 300px;
-    background: #dedede;
-    border-radius: 10px;
     text-align: center;
 }
 
-#drop-history .dropdown-item:hover{
+#drop-history :hover{
     background: #082C73;
     color: white;
 }
-
 .list-mapel{
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    margin: 10px auto;
 }
 
 .list-mapel-item {
@@ -673,7 +683,7 @@ progress::after {
     background: #F2F2F2;
     border-radius: 10px;
     box-shadow: 0 0 10px #dedede;
-    margin: 10px;
+    margin: 30px;
 }
 
 .class-mapel {
@@ -744,7 +754,7 @@ progress::after {
 }
 
 .btn-detail {
-    margin-left: 18vh;
+    margin-left: auto;
 }
 
 .btn-detail button {
@@ -755,6 +765,672 @@ progress::after {
     border: none;
     font-size: 12px;
     padding: 3px;
+}
+
+
+/* DETAIL MAPEL */
+.detail{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.detail-sidebar {
+    width: 350px;
+    background: #0F3B92;
+    position: relative;
+}
+
+.title-mapel,.persen{
+    font-size: 15px;
+}
+
+.profil-detail {
+    margin-top: 40%;
+}
+
+.profil-detail img {
+    width: 100px;
+    border: 2px white solid;
+    border-radius: 50%;
+}
+.nama-detail {
+    color: white;
+    padding-top: 8px;
+}
+
+.progres-detail .progres-item ul li{
+    list-style: none;
+    color: white;
+}
+.progres-detail .progres-item {
+    background: #3477D2;
+    border-radius: 20px;
+    width: 80%;
+    height: 350px;
+    margin-bottom: 100px;
+}
+
+.progres-detail .progres-name{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px auto;
+    padding: 10px;
+}
+.progres-detail .tprogress{
+    padding: 0px 25px;
+}
+
+.progres-detail .progres-bar1, 
+.progres-detail .progres-bar2,
+.progres-detail .progres-bar3,
+.progres-detail .progres-bar4{
+    margin-top: -10px;
+}
+.progres-detail .progres-bar1 progress, 
+.progres-detail .progres-bar2 progress,
+.progres-detail .progres-bar3 progress,
+.progres-detail .progres-bar4 progress{
+    width: 230px;
+    height: 8px;
+    margin-right: 0px;
+}
+
+.detail-fitur {
+    background: white;
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.detail-fitur .title-kelas{
+    margin-top: 20%;
+}
+
+.detail-fitur .title-kelas h1{
+    text-align: center;
+    color: #082C73;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.list-fitur {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.list-fitur-item .item-img{
+    padding: 20px;
+    width: 120px;
+    height: 100px;
+    background: linear-gradient(45deg,#4986FF, #0056AA);
+    margin: 20px auto;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.list-fitur-item .title-fitur{
+    color: #3477D2;
+    font-weight: 500;
+}
+
+.list-fitur-item a{
+    text-decoration: none;
+}
+
+/* DOKUMEN */
+.dokumen{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.search-sidebar {
+    width: 320px;
+    background: #0F3B92;
+    position: relative;
+}
+
+.search-sidebar .search-box{
+    margin: 120px 20px 0px;
+    padding: 5px 10px 5px 10px;
+    background: #dedede;
+    border-radius: 50px;
+}
+
+.search-box1 p,
+.search-box p{
+    margin-bottom: 0px;
+    font-size: 12px;
+    color: #a7a2a2;
+    margin-left: 10px;
+}
+
+.search-box1 p,
+.search-box i{
+    color: #a7a2a2;
+}
+
+.doc-content .search-box1{
+    display: none !important;
+    padding: 0px 10px 5px 10px;
+    background: #dedede;
+    border-radius: 50px;
+    width: 200px;
+    height: 30px;
+
+}
+
+.doc-content .search-box1 i{
+    color: #a7a2a2;
+}
+
+.doc-content .search-box1 p {
+    color: #a7a2a2;
+    margin-top: -18px;
+    margin-left: 20px;
+}
+
+.doc-content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 100vh;
+}
+
+.doc-header{
+    margin-top: 80px;
+    padding: 50px 50px 70px;
+    height: 100px;
+    color: #0F3B92;
+}
+
+.doc-header h1{
+    font-size: 20pt;
+    font-weight: 600;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.doc-header a{
+    color: #0F3B92;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.doc-header .fa-arrow-left{
+    font-size: 30px;
+}
+
+.doc-header a:hover{
+    color: #a7a2a2;
+}
+
+.doc-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.item-docs{
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg,#4986FF, #0056AA);
+    place-content: center;
+    margin: 30px auto;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+.title-docs{
+    margin-top: 5px;
+    color: #2764B8;
+    font-weight: 600;
+    font-size: 15pt;
+}
+
+/* PENCARIAN KELAS */
+.pencarian{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.filter-pencarian{
+    width: 250px;
+    background: #0F3B92;
+}
+
+.filter-pencarian h5{
+    margin-top: 100px;
+    padding: 0px 15px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.filter-pencarian .btn-mapel{
+    width: 90%;
+    margin: 10px;
+    background: #0F3B92;
+    border: 2px white solid;
+    border-radius: 20px;
+    color: white;
+    padding-top: 5px;
+    display: block;
+}
+
+.filter-pencarian .btn-mapel p{
+    float: left;
+    margin-left: 10px;
+    color: white;
+    margin-bottom: 2px;
+    font-size: 13px;
+}
+.filter-pencarian .btn-mapel i.fa.fa-angle-down {
+    float: right;
+    margin-right: 10px;
+}
+.filter-pencarian .dropdown-menu{
+    background: none;
+    border: none;
+    color: white;
+    position: relative;
+    display: none;
+}
+
+.filter-pencarian .dropdown-menu label{
+    color: white;
+    margin-left: 20px;
+    padding: 0px;
+    font-size: 13px;
+}
+
+.header-filter{
+    margin-top: 150px;
+    color: white;
+    font-size: 20px;
+}
+.title-filter{
+    margin-top: 20px;
+    color: white;
+    background: #082C73;
+    border-radius: 50px;
+    width: 100%;
+    padding: 0px 20px;
+    margin-left: -20px;
+    margin-bottom: 5px;
+}
+
+.title-filter p{
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 11px;
+}
+
+.title-filter span{
+    margin-left: auto;
+    padding-top: 10px;
+}
+.list-pencarian{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 100px auto;
+}
+
+.list-pencarian-item {
+    width: 305px;
+    background: #F2F2F2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #dedede;
+    margin: 30px;
+
+}
+
+/* DETAIL PENCARIAN */
+.detail-pencarian{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-pencarian .header{
+    width: 100%;
+    height: 200px;
+    background: #0F3B92;
+}
+
+.title-detail{
+    color: white;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.title-detail h2{  
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.content-detail{
+    margin-bottom: 100px !important;
+}
+
+.content-detail .sidebar{
+    height: fit-content;
+    width: 305px;
+    background: #ffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #686666;
+    margin-left: 100px;
+    color: #082C73;
+    position: relative;
+}
+
+.profil-guru {
+    z-index: 200;
+    position: relative;
+}
+.content-detail .profil-guru img{
+    width: 90px;
+    margin-top: -50px;
+}
+
+.content-detail .ket-mapel{
+    width: 80%;
+    margin: 0px auto;
+    border-bottom: 2px #dedede solid;
+}
+.content-detail .ket-mapel .nama{
+    font-weight: 600;
+    margin-bottom: 0px !important;
+}
+.content-detail .ket-mapel .status{
+    color: black;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.content-detail .jadwal-mapel i{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.content-detail .jadwal-mapel p{
+    font-weight: 400;
+}
+
+.content-detail .btn-start button{
+    border-radius: 20px;
+    width: 50%;
+    padding: 5px;
+    margin-top: -5px;
+}
+
+.content-detail .jlh-siswa{
+    margin-left: 85px;
+    display: flex;
+    text-align: center;
+    color: #989898;
+    font-size: 10px;
+    margin-top: -10px;
+}
+.list-detail{
+    width: 70%;
+    min-height: 50vh;
+    margin: 10px;
+}
+
+.tabs{
+    width: 100%;
+    height: fit-content;
+    color: #082C73;
+    cursor: pointer;
+    margin: 50px auto;
+    position: relative;
+    padding: 10px;
+}
+
+.tabs-head{
+    display: flex;
+    align-items: stretch;
+}
+
+.tabs-toggle{
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    font-weight: 500;
+    text-align: center;
+}
+span.tabs-toggle.active,
+span.tabs-toggle:hover{
+    background: #2764B8;
+    border-radius: 20px;
+    color: white;   
+}
+
+.tabs-content{
+    background: #e1e1e1;
+    display: none;
+}
+
+.tabs-body{
+    min-height: 10vh;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.tabs-content.active{
+    display: block;
+}
+
+.tabs-toggle{
+    display: flex;
+}
+
+.tabs-title{
+    text-align: center;
+    padding: 10px;
+    color: black;
+    background: #c4c4c4;
+    font-size: 25px;
+}
+
+.tabs-content .deskripsi{
+    margin: 20px auto;
+    color: black;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+.tabs-content ul li{
+    margin-top: 0px !important;
+    margin-left: 30px;
+    list-style: none;
+}
+
+/* ULANGAN */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 50px;
+}
+
+th{
+    font-weight: 600;
+}
+
+  
+td, th {
+    border: 0px;
+    text-align: left;
+    padding: 15px;  
+}
+
+td{
+    font-weight: 400;
+}
+td a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+td a:hover{
+    text-decoration: none;
+    color: #3477D2;
+}
+
+tr{
+    background-color: #dedede;
+}
+  
+.th1, .td1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.th2, .td2{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+tr:nth-child(even) {
+    background-color: #ffff;
+}
+
+/* DETAIL ULANGAN */
+.ujian-detail {
+    background: #dedede;
+    width: 80%;
+    height: max-content;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #e5e5e5;
+}
+
+.ujian-detail .time table{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ujian-detail .time table tr {
+    background: #dedede;
+}
+
+.ujian-detail .title h1 {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    font-weight: 600;
+}
+
+.btn-start, .btn-back, .btn-finish{
+    padding: 10px;   
+    text-align: center;
+    background: none;
+}
+
+.btn-start button, 
+.btn-back button,
+.btn-finish button{
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.btn-start button:hover, 
+.btn-back button:hover,
+.btn-finish button:hover{
+    background: #2764B8;
+}
+.btn-start button{
+    background: #58BAAB;
+}
+
+.btn-back button{
+    background: #FF5A72;
+}
+
+/* START ULANGAN */
+.ujian-detail .click{
+    display: flex;
+    float: right;
+}
+
+.ujian-detail .btn-start i,
+.ujian-detail .btn-finish i{
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.ujian-detail .btn-back i{
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.ujian-detail .btn-start button,
+.ujian-detail .btn-back button,
+.ujian-detail .btn-finish button{
+    width: 150px;
+    font-size: 12px;
+    margin-left: auto;  
+    float: right;
+}
+
+.btn-finish button{
+    background: #f3a703;
+}
+
+/* FINISH UJIAN */
+.finish-detail{
+    background: #dedede;
+    width: 60%;
+    height: max-content;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #e5e5e5;
+    text-align: center;
+}
+
+.finish-detail .title h1 {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    font-weight: 600;
+}
+
+.finish-detail img{
+    width: 100px;
+}
+
+.finish-detail p{
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 0 !important;
+}
+
+.finish-detail .btn-start button,
+.finish-detail .btn-back button{
+    font-size: 12px;
 }
 
 @media screen and (min-width: 100px) and (max-width: 800px){
@@ -881,10 +1557,14 @@ progress::after {
     }
 
     .list-mapel{
-        display: grid;
-        grid-template-columns: 0fr;
-        grid-template-rows: 0fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         width: 100%;
+        margin-top: 0px;
+    }
+
+    .list-mapel-item{
+        margin: 30px auto;
     }
 
     .detail-mapel{
@@ -897,7 +1577,7 @@ progress::after {
     .detail-mapel .btn-mapel{
         width: 150px;
         font-size: 10px;
-        margin-left: 20px;
+        margin-right: 10px;
     }
     
     #drop-history {
@@ -908,6 +1588,133 @@ progress::after {
     .footer .nama-footer-mapel{
         margin-left: 150px;
     }
+
+    .detail{
+        flex-direction: column;
+    }
+
+    .detail-sidebar,
+    .detail-fitur{
+        width: 100%;
+    }
+
+    .profil-detail {
+        margin-top: 30%;
+    }
+
+    .detail-fitur{
+        margin-bottom: 50px;
+    }
+    .list-fitur {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .doc-list{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .item-docs{
+        width: 150px;
+        margin: 10px auto;
+
+    }
+    .search-sidebar{
+        display: none;
+    }
+
+    .doc-content{
+        width: 100%;
+    }
+
+    .doc-header{
+        padding-top: 70px;
+    }
+
+    .pencarian{
+        flex-direction: column;
+    }
+
+    .filter-pencarian{
+        width: 100%;
+    }
+
+    .doc-content .search-box1{
+        display: block !important;
+    }
+
+    .doc-content .search-box1 span,   
+    .doc-content .search-box1 p {
+        font-size: 10px;
+    }
+
+    .doc-header span{
+        font-size: 12px;
+    }
+    
+    .doc-header h1{
+        font-size: 15pt;
+    }
+
+    .pencarian{
+        flex-direction: column;
+    }
+
+    .filter-pencarian{
+        width: 100%;
+    }
+    .list-pencarian{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 0px;
+    }
+
+    .list-pencarian-item{
+        margin: 30px auto;
+    }
+
+    .content-detail{
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .tabs{
+        margin: 10px auto;
+        margin-bottom: -50px !important;
+    }
+    .tabs-toggle{
+        font-size: 10px;
+        padding: 0 20px;
+    }
+
+    .title-detail h2{
+        font-size: 20px;
+    }
+
+    .tabs-title{
+        font-size: 15px;
+    }
+
+    .tabs-content .deskripsi{
+        font-size: 11px;
+    }
+
+    .content-detail .sidebar{
+        margin: 20px auto;
+    }
+
+    th,td{
+        font-size: 12px;
+    }
+
+    .progres-detail .progres-item {
+        width: 305px;
+    }
+    
 }
 
 @media screen and (min-width: 750px) and (max-width: 990px){
@@ -977,7 +1784,73 @@ progress::after {
     .navbar-header img {
         height: 6vh;
     }
-     
+
+    .progres-detail .progres-item{
+        width: 290px;
+    }
+    .progres-detail .progres-bar1 progress, 
+    .progres-detail .progres-bar2 progress,
+    .progres-detail .progres-bar3 progress,
+    .progres-detail .progres-bar4 progress{
+        width: 230px;
+    }
+
+    .title-mapel, 
+    .persen{
+        font-size: 12px;
+    }
+    
+    .doc-list{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .doc-header{
+        padding-top: 80px;
+    }
+
+    .doc-content{
+        width: 100%;
+    }
+    .search-sidebar{
+        display: none;
+    }
+
+    .doc-content .search-box1{
+        display: block !important;
+    }
+
+    .pencarian{
+        flex-direction: column;
+    }
+
+    .filter-pencarian{
+        width: 100%;
+    }
+    .list-pencarian, .list-mapel{
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .content-detail{
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .tabs-toggle{
+        font-size: 15px;
+    }
+
+    .content-detail .sidebar{
+        margin: 10px auto;
+    }
+
+    .tabs{
+        margin-bottom: -50px !important;
+    }
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -1007,4 +1880,18 @@ progress::after {
         margin-right: 50px;
         margin-left: 0px;
     }
+
+    .detail-fitur .title-kelas{
+        margin-top: 15%;
+    }
+
+    .doc-content .search-box1{
+        display: none;
+    }
+    .detail-mapel .detail-header h2{
+        margin-left: 50px;
+    }
+    
 }
+
+
