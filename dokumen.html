@@ -61,9 +61,14 @@
     </nav>
 
     <div class="main-container">
-        <div id="confirm-box">
+        <div id="confirm-box-logout">
             <h1>Apakah anda ingin keluar dari E-LEARNING SMANEL?</h1>
             <a href="login.html" class="yes">Iya</a>
+            <a href="" class="no">Tidak</a>
+        </div>
+        <div id="confirm-box-unduh">
+            <h1>Apakah anda ingin mengunduh file ini?</h1>
+            <a href="" class="yes">Iya</a>
             <a href="" class="no">Tidak</a>
         </div>
         <div class="dokumen">
@@ -83,24 +88,28 @@
                 </div>
                 <div class="doc-list">
                     <div class="doc-list-item">
-                        <div class="item-docs">
-                        </div>
+                        <button onclick="UnduhConfirm()" class="unduh" type="button">
+                            <div class="item-docs"></div>
+                        </button>
                         <p class="title-docs" >Materi 1</p>
                     </div>
                     <div class="doc-list-item">
-                        <div class="item-docs">
-                        </div>
-                        <p class="title-docs" >Materi 2</p>
+                        <button onclick="UnduhConfirm()" class="unduh" type="button">
+                            <div class="item-docs"></div>
+                        </button>
+                        <p class="title-docs">Materi 1</p>
                     </div>
                     <div class="doc-list-item">
-                        <div class="item-docs">
-                        </div>
-                        <p class="title-docs" >Materi 3</p>
+                        <button onclick="UnduhConfirm()" class="unduh" type="button">
+                            <div class="item-docs"></div>
+                        </button>
+                        <p class="title-docs">Materi 1</p>
                     </div>
                     <div class="doc-list-item">
-                        <div class="item-docs">
-                        </div>
-                        <p class="title-docs" >Materi 4</p>
+                        <button onclick="UnduhConfirm()" class="unduh" type="button">
+                            <div class="item-docs"></div>
+                        </button>
+                        <p class="title-docs">Materi 1</p>
                     </div>
                 </div>
            </div>
@@ -125,11 +134,23 @@
         var c = 0;
         function LogConfirm() {
             if (c == 0) {
-                document.getElementById("confirm-box").style.display = "block"
+                document.getElementById("confirm-box-logout").style.display = "block"
                 c = 1;
             }
             else {
-                document.getElementById("confirm-box").style.display = "none"
+                document.getElementById("confirm-box-logout").style.display = "none"
+                c = 0;
+            }
+        }
+
+        
+        function UnduhConfirm() {
+            if (c == 0) {
+                document.getElementById("confirm-box-unduh").style.display = "block"; 
+                c = 1;  
+            }
+            else {
+                document.getElementById("confirm-box-unduh").style.display = "none";
                 c = 0;
             }
         }
