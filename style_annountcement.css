@@ -8,6 +8,54 @@ body {
   background: #dedede;
   justify-content: center;
   align-items: center;
+  height: fit-content;
+}
+
+#confirm-box{
+  width: 500px;
+  overflow: hidden;
+  background: #fefefe;
+  box-shadow: 0 0 20px #dedede;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+
+#confirm-box h1{
+  color: #333;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+#confirm-box a{
+  text-decoration: none;
+}
+
+#confirm-box a:hover{
+  color: black;
+}
+
+.yes, .no{
+  color: white;
+  padding: 3px 30px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.yes{
+  background: #58BAAB;
+  margin-right: 20px;
+}
+
+.no{
+  background: #FF5A72;
 }
 
 /* NAVBAR */
@@ -318,7 +366,7 @@ body {
   }
 }
 
-@media screen and (min-width: 100px) and (max-width: 750px) {
+@media screen and (min-width: 100px) and (max-width: 800px) {
   #navbarNav .profil .icon-profil{
       width: 4vh;
   }
@@ -354,7 +402,7 @@ body {
       font-size: 13px;
   }
   .header {
-    margin-top: 60px;
+    margin-top: 70px;
   }
   .header a {
   font-weight: 500;
