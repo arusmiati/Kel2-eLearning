@@ -71,6 +71,11 @@
             <a href="" class="yes">Iya</a>
             <a href="" class="no">Tidak</a>
         </div>
+        <div id="confirm-box-delete">
+            <h1>Apakah anda yakin ingin menghapus file ini?</h1>
+            <a href="" class="yes">Iya</a>
+            <a href="" class="no">Tidak</a>
+        </div>
         <div class="dokumen">
             <div class="search-sidebar">
                 <div class="search-box d-flex">
@@ -82,34 +87,76 @@
                 <div class="doc-header d-flex">
                     <span><a href="detailmapel.html"><i class="fa fa-arrow-left"></i></a> </span>
                     <h1>Dokumen</h1>
+                    <div class="btn-start ml-auto">
+                        <button onclick="location.href='tambahdocs.html'">Tambah File</button>
+                    </div>
                     <div class="search-box1 ml-auto">
                         <span><i class="fa fa-search"></i><p>Search Bar</p></span>
                     </div>
+                    
                 </div>
                 <div class="doc-list">
+                    
                     <div class="doc-list-item">
                         <button onclick="UnduhConfirm()" class="unduh" type="button">
-                            <div class="item-docs"></div>
+                            <div class="item-docs-guru"></div>
                         </button>
-                        <p class="title-docs" >Materi 1</p>
+                        <div class="dropdown">
+                            <button class="btn-mapel" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="colon" src="img/colon.png" alt="">
+                            </button>
+                            <div id="drop-history" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="editdocs.html">Edit Dokumen</a>
+                              <a class="dropdown-item" onclick="DeleteConfirm()" href="#">Delete Dokumen</a>
+                            </div>
+                        </div>
+                        <p class="title-docs-guru">Materi 1</p>
+                        
                     </div>
                     <div class="doc-list-item">
                         <button onclick="UnduhConfirm()" class="unduh" type="button">
-                            <div class="item-docs"></div>
+                            <div class="item-docs-guru"></div>
                         </button>
-                        <p class="title-docs">Materi 1</p>
+                        <div class="dropdown">
+                            <button class="btn-mapel" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="colon" src="img/colon.png" alt="">
+                            </button>
+                            <div id="drop-history" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="editdocs.html">Edit Dokumen</a>
+                              <a class="dropdown-item" onclick="DeleteConfirm()" href="#">Delete Dokumen</a>
+                            </div>
+                        </div>
+                        <p class="title-docs-guru">Materi 2</p>
                     </div>
                     <div class="doc-list-item">
                         <button onclick="UnduhConfirm()" class="unduh" type="button">
-                            <div class="item-docs"></div>
+                            <div class="item-docs-guru"></div>
                         </button>
-                        <p class="title-docs">Materi 1</p>
+                        <div class="dropdown">
+                            <button class="btn-mapel" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="colon" src="img/colon.png" alt="">
+                            </button>
+                            <div id="drop-history" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="editdocs.html">Edit Dokumen</a>
+                              <a class="dropdown-item" onclick="DeleteConfirm()" href="#">Delete Dokumen</a>
+                            </div>
+                        </div>
+                        <p class="title-docs-guru">Materi 3</p>
                     </div>
                     <div class="doc-list-item">
                         <button onclick="UnduhConfirm()" class="unduh" type="button">
-                            <div class="item-docs"></div>
+                            <div class="item-docs-guru"></div>
                         </button>
-                        <p class="title-docs">Materi 1</p>
+                        <div class="dropdown">
+                            <button class="btn-mapel" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="colon" src="img/colon.png" alt="">
+                            </button>
+                            <div id="drop-history" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="editdocs.html">Edit Dokumen</a>
+                              <a class="dropdown-item" onclick="DeleteConfirm()" href="#">Delete Dokumen</a>
+                            </div>
+                        </div>
+                        <p class="title-docs-guru">Materi 4</p>
                     </div>
                 </div>
            </div>
@@ -151,6 +198,17 @@
             }
             else {
                 document.getElementById("confirm-box-unduh").style.display = "none";
+                c = 0;
+            }
+        }
+
+        function DeleteConfirm() {
+            if (c == 0) {
+                document.getElementById("confirm-box-delete").style.display = "block"; 
+                c = 1;  
+            }
+            else {
+                document.getElementById("confirm-box-delete").style.display = "none";
                 c = 0;
             }
         }

@@ -177,6 +177,7 @@ body{
     position: relative;
     display: block;
     margin: 0 auto;
+    margin-bottom: 20px !important;
 }
 
 
@@ -535,6 +536,9 @@ progress::after {
   background: #082C73;
 }
 
+#confirm-box-delete,
+#confirm-box-logout,
+#confirm-box-unduh,
 #confirm-box{
     width: 500px;
     overflow: hidden;
@@ -551,16 +555,24 @@ progress::after {
     display: none;
 }
 
+#confirm-box-delete h1,
+#confirm-box-logout h1,
+#confirm-box-unduh h1,
 #confirm-box h1{
     color: #333;
     font-size: 15px;
     padding-bottom: 10px;
 }
-
+#confirm-box-delete a,
+#confirm-box-logout a,
+#confirm-box-unduh a,
 #confirm-box a{
     text-decoration: none;
 }
 
+#confirm-box-delete a:hover,
+#confirm-box-logout a:hover,
+#confirm-box-unduh a:hover,
 #confirm-box a:hover{
     color: black;
 }
@@ -882,6 +894,8 @@ progress::after {
     text-decoration: none;
 }
 
+
+
 /* DOKUMEN */
 .dokumen{
     display: flex;
@@ -980,7 +994,13 @@ progress::after {
     margin-top: 5px;
 }
 
-.item-docs{
+.doc-list-item .unduh{
+    background: none;
+    outline: none;
+    border: none;
+
+}
+.item-docs, .item-docs-guru{
     width: 150px;
     height: 150px;
     background: linear-gradient(45deg,#4986FF, #0056AA);
@@ -990,13 +1010,43 @@ progress::after {
     border-radius: 20px;
 }
 
+.item-docs-guru{   
+    margin-bottom: -10px !important;
+}
+
 .title-docs{
     margin-top: 5px;
     color: #2764B8;
     font-weight: 600;
     font-size: 15pt;
 }
+.title-docs-guru{
+    color: #2764B8;
+    font-weight: 600;
+    font-size: 15pt;
+    margin-top: -25px ;
+    padding-right: 40px;
+}
 
+.doc-list #drop-history{
+    text-align: left;
+    width: 50%;
+    font-size: 12px;
+}
+
+.doc-list button{
+    outline: none;
+    background: none;
+    border: none;
+}
+.doc-list img.colon{
+    height: 25px;
+    filter: invert(28%) sepia(100%) hue-rotate(-180deg) saturate(5);
+    margin-top: 15px;
+    margin-left: 100px;
+    padding-left: 15px;
+    
+}
 /* PENCARIAN KELAS */
 .pencarian{
     width: 100%;
@@ -1392,7 +1442,6 @@ tr:nth-child(even) {
     width: 150px;
     font-size: 12px;
     margin-left: auto;  
-    float: right;
 }
 
 .btn-finish button{
@@ -1433,6 +1482,82 @@ tr:nth-child(even) {
     font-size: 12px;
 }
 
+/* TAMBAH DOKUMEN */
+.doc-header .btn-start{
+    width: 100px;
+    font-size: 12px;
+    padding: 0px;
+}
+.add-docs{
+    background: #dedede;
+    width: 80%;
+    height: max-content;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #e5e5e5;
+}
+
+.add-docs p{
+    width: 20%;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.add-docs .title input{
+    position: relative;
+	background:#FEFEFE;
+	border: 1px solid #FEFEFE;
+	width: 95%;
+	font-size: 13px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.add-docs .title input:hover{
+    border: 3px solid #FEFEFE;
+}
+
+.add-docs .title{
+    margin-bottom: 10px;
+}
+
+.add-docs .click{
+    display: flex;
+    float: right;
+    flex-direction: row-reverse;
+}
+
+.add-docs .btn-start i{
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.add-docs .btn-back i{
+    font-size: 15px;
+    padding-right: 10px;
+}
+.add-docs .btn-start button,
+.add-docs .btn-back button {
+    width: 150px;
+    font-size: 12px;
+    margin-left: auto;  
+}
+
+/* TAUTAN */
+.tautan-head table .td1{
+    border-radius: 10px !important;
+}
+
+.tautan-head a{
+    padding-left: 20px;
+    font-weight: 300;
+}
+
+.tautan-head span i{
+    color: #082C73;
+}
 @media screen and (min-width: 100px) and (max-width: 800px){
     .sidebar ul{
         margin-top: 30px;
@@ -1542,7 +1667,7 @@ tr:nth-child(even) {
 
     .form-cont{
         width: 100%;
-        max-height: 400px;
+        height: max-content;
         border-top-left-radius: 40px;
         border-bottom-left-radius: 40px;
     }
@@ -1583,6 +1708,12 @@ tr:nth-child(even) {
     #drop-history {
         width: 150px;
         font-size: 10px;
+    }
+    
+    .doc-list #drop-history{
+        text-align: left;
+        width: 50%;
+        font-size: 12px;
     }
     
     .footer .nama-footer-mapel{
@@ -1715,6 +1846,9 @@ tr:nth-child(even) {
         width: 305px;
     }
     
+    .ujian-detail .click{
+        flex-direction: column-reverse;
+    }
 }
 
 @media screen and (min-width: 750px) and (max-width: 990px){
@@ -1893,5 +2027,4 @@ tr:nth-child(even) {
     }
     
 }
-
 

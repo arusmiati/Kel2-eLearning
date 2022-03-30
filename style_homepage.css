@@ -8,6 +8,7 @@ body {
     background: #dedede;
     justify-content: center;
     align-items: center;
+    min-height: 100%;
 }
 
 /* NAVBAR */
@@ -118,6 +119,7 @@ body {
     position: relative;
     padding: 10px;
     font-size: 12px;
+    margin-top: 140px;
 }
   
 .footer .web {
@@ -158,6 +160,8 @@ body {
     text-align: center;
     border-radius: 5px;
     margin-bottom: 20px;
+    height: 100%;
+    position: relative;
 }
 
 .content-slide {
@@ -279,6 +283,7 @@ body {
     margin-left: 83px;
     border-radius: 10px;
     width: 45%;
+    
 }
 
 .first .text {
@@ -434,15 +439,15 @@ body {
     }
     
     .first {
-        width: fit-content;
+        width: 80%;
         margin-top: -25px;
-        height: fit-content;
+        height: 200px;
     }
     
     .first .text {
         font-size: 12px;
         position: relative;
-        width: 300px;
+        width: 60%;
         margin-top: -157px;
         margin-left: 200px;
     }
@@ -450,7 +455,7 @@ body {
     .first .image {
         height: 150px;
         width: 150px;
-        margin: -10px;
+        margin-bottom: 10px;
     }
 
     .announcement {
@@ -573,26 +578,24 @@ body {
     }
 
     .first {
-        margin-right: 43px;
-        margin-left: 43px;
-        width: fit-content;
-        margin-top: -25px;
-        height: 153px;
+        margin: 0px auto;
+        width: 80%;
+        padding: 10px 20px;
         justify-content: center;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
     }
     
     .first .text {
         font-size: 8px;
-        position: relative;
-        width: 250px;
-        margin-top: -115px;
-        margin-left: 140px;
+        width: 100%;
+        margin: 0px;
     }
     
     .first .image {
         height: 110px;
-        width: 110px;
-        margin: -10px;
+        width: 100%;
     }
 
     .announcement {
@@ -619,10 +622,7 @@ body {
     }
     
     .announ2 {
-        width: 80%;
-        margin-top: -175px;
-        height: 175px;
-        margin-left: 250px;
+        display: none;
     }
 
     h5 {
@@ -639,7 +639,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1201px) {
     .navbar .navbar-nav li a{
         font-size: 16px;
         padding: 20px;
