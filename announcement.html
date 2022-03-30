@@ -172,6 +172,12 @@
     </div>
   </div>
 
+  <div id="confirm-box">
+    <h1>Apakah anda ingin keluar dari E-LEARNING SMANEL?</h1>
+    <a href="login.html" class="yes">Iya</a>
+    <a href="" class="no">Tidak</a>
+  </div>
+
   <!-- DETAIL -->
   <div class="details">
     <div class="detail container">
@@ -214,6 +220,19 @@
         }
       });
     });
+  </script>
+  <script>
+    var c = 0;
+    function LogConfirm() {
+      if (c == 0) {
+        document.getElementById("confirm-box").style.display = "block"
+        c = 1;
+      }
+      else {
+        document.getElementById("confirm-box").style.display = "none"
+        c = 0;
+      }
+    }
   </script>
 
 </body>

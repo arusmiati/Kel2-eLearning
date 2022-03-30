@@ -1444,6 +1444,213 @@ tr:nth-child(even) {
     font-size: 12px;
 }
 
+/* FORUM */
+.main-content-forum{
+    min-height: 100vh;
+    position: relative;
+    margin: 15vh 20vh 15vh 20vh;
+    text-decoration: none;
+}
+
+.forum-header {
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    color: #0F3B92;
+}
+
+.forum-header h1{
+    font-size: 20pt;
+    font-weight: 600;
+    margin-top: -7vh;
+    margin-left: 4vw;
+}
+
+.forum-header a{
+    color: #0F3B92;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.forum-header .fa-arrow-left{
+    font-size: 30px;
+    margin-left: 0;
+}
+
+.forum-header a:hover{
+    color: #a7a2a2;
+}
+
+.box {
+    margin-top: 4vh;
+    text-decoration: none;
+}
+
+.forum-item {
+    height: fit-content;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    background-color: #082C73;
+    margin: 4vh 0 0 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.forum-item p {
+    padding: 15px;
+    color: white;
+    font-weight: 300;
+}
+
+.forum-item .go {
+    margin-left: 96%;
+    font-size: 30px;
+    margin-top: -82px;
+    padding: 15px 0 5px 0;
+}
+
+.forum-item:hover {
+    transform-style: preserve-3d;
+    transform: scale(1.01);
+    transition: all ease 0.2s;
+}
+
+/* TAUTAN */
+.tautan{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.search-sidebar {
+    width: 320px;
+    background: #0F3B92;
+    position: relative;
+}
+
+.search-sidebar .search-box{
+    margin: 120px 20px 0px;
+    padding: 5px 10px 5px 10px;
+    background: #dedede;
+    border-radius: 50px;
+}
+
+.search-box1 p,
+.search-box p{
+    margin-bottom: 0px;
+    font-size: 12px;
+    color: #a7a2a2;
+    margin-left: 10px;
+}
+
+.search-box1 p,
+.search-box i{
+    color: #a7a2a2;
+}
+
+.tautan .search-box p {
+    margin-top: 3vh;
+}
+
+.tautan-content .search-box1{
+    display: none !important;
+    padding: 0px 10px 5px 10px;
+    background: #dedede;
+    border-radius: 50px;
+    width: 200px;
+    height: 30px;
+
+}
+
+.tautan-content .search-box1 i{
+    color: #a7a2a2;
+}
+
+.tautan-content .search-box1 p {
+    color: #a7a2a2;
+    margin-top: -18px;
+    margin-left: 20px;
+}
+
+.tautan-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 15vh 5vw 0 0;
+    text-decoration: none;
+}
+
+.tautan-header{
+    color: #0F3B92;
+    margin-left: 3.5vw;
+}
+
+.tautan-header h1{
+    font-size: 20pt;
+    font-weight: 600;
+    padding-left: 80px;
+    padding-right: 20px;
+    margin-top: -7vh;
+}
+
+.tautan-header a{
+    color: #0F3B92;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tautan-header .fa-arrow-left{
+    font-size: 30px;
+}
+
+.tautan-header a:hover{
+    color: #a7a2a2;
+}
+
+.tautan-list {
+    margin-top: 4vh;
+    text-decoration: none;
+    color: #082C73;
+    width: 93%;
+    margin-left: 5vw;
+}
+
+.tautan-item1 {
+    height: fit-content;
+    width: 100%;
+    font-size: 18px;
+    background-color: #ebebeb;
+    border-radius: 5px;
+}
+
+.tautan-item2 {
+    height: fit-content;
+    width: 100%;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.tautan-item2 a, i {
+    margin: 3vh;
+}
+
+.tautan-item1 a, i {
+    margin: 3vh;
+}
+
+.tautan-item1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.tautan-item2 a {
+    color: black;
+    text-decoration: none;
+}
+
 @media screen and (min-width: 100px) and (max-width: 800px){
     .sidebar ul{
         margin-top: 30px;
@@ -1729,6 +1936,69 @@ tr:nth-child(even) {
     .ujian-detail .click{
         flex-direction: column-reverse;
     }
+
+    .main-content-forum{
+        margin: 15vh 4vh 0 4vh;
+    }
+    
+    .forum-header h1{
+        font-size: 20pt;
+        margin-left: 5vw;
+        margin-top: -4.5vh;
+    }
+    
+    .forum-header .fa-arrow-left{
+        font-size: 20px;
+        margin-left: -0.5vw;
+    }
+
+    .forum-item p {
+        font-size: 15px;
+    }
+    
+    .forum-item .go {
+        margin-left: 90%;
+    }
+
+    .tautan-content {
+        width: 100%;
+    }
+    
+    .tautan-header h1{
+        font-size: 18pt;
+        padding-left: 30px;
+        padding-right: 20px;
+        margin-top: -4.5vh;
+    }
+    
+    .tautan-header .fa-arrow-left{
+        font-size: 20px;
+    }
+
+    .tautan-list {
+        width: 93%;
+    }
+    
+    .tautan-item1, .tautan-item2 {
+        font-size: 12px;
+    }
+    
+    .tautan-item2 a, i {
+        margin: 1vh;
+    }
+    
+    .tautan-item1 a, i {
+        margin: 1vh;
+    }
+    
+    .tautan-content .search-box1{
+        display: block !important;
+    }
+
+    .tautan-content .search-box1 p {
+        margin-top: -3vh;
+        margin-left: 8vw;
+    }
 }
 
 @media screen and (min-width: 750px) and (max-width: 990px){
@@ -1865,6 +2135,18 @@ tr:nth-child(even) {
         margin-bottom: -50px !important;
     }
 
+    .tautan-content .search-box1{
+        display: block !important;
+        margin-top: 4vh;
+    }
+    .tautan-content .search-box1 p {
+        margin-top: -4.7vh;
+        margin-left: 5vw;
+    }
+    .tautan-content .search-box1 .fa {
+        margin-top: -1.7vh;
+    }
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -1905,7 +2187,10 @@ tr:nth-child(even) {
     .detail-mapel .detail-header h2{
         margin-left: 50px;
     }
-    
+
+    .tautan-content .search-box1 {
+        display: none;
+    }
 }
 
 
