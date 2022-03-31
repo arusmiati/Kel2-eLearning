@@ -1553,18 +1553,17 @@ tr:nth-child(even) {
     text-decoration: none;
 }
 
-.forum-header {
-    background-color: white;
-    width: 100%;
-    height: fit-content;
+.forum-header{
+    padding: 20px 0 70px 0;
+    height: 100px;
     color: #0F3B92;
 }
 
 .forum-header h1{
     font-size: 20pt;
     font-weight: 600;
-    margin-top: -4vh;
-    margin-left: 4vw;
+    padding-left: 30px;
+    padding-right: 20px;
 }
 
 .forum-header a{
@@ -1575,7 +1574,6 @@ tr:nth-child(even) {
 
 .forum-header .fa-arrow-left{
     font-size: 30px;
-    margin-left: 0;
 }
 
 .forum-header a:hover{
@@ -1942,25 +1940,18 @@ tr:nth-child(even) {
         margin: 15vh 4vh 0 4vh;
     }
     
+    .forum-header{
+        padding: 15px 0 30px 0;
+        height: 80px;
+    }
+    
     .forum-header h1{
-        font-size: 20pt;
-        margin-left: 5vw;
-        margin-top: -3.5vh;
+        font-size: 18pt;
     }
     
     .forum-header .fa-arrow-left{
-        font-size: 20px;
-        margin-left: -0.5vw;
+        font-size: 28px;
     }
-
-    .forum-item p {
-        font-size: 15px;
-    }
-    
-    .forum-item .go {
-        margin-left: 90%;
-    }
-
 
 }
 
