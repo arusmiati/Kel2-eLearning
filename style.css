@@ -556,13 +556,14 @@ progress::after {
 }
 
 #confirm-box-delete h1,
+#confirm-box h1,
 #confirm-box-logout h1,
-#confirm-box-unduh h1,
-#confirm-box h1{
+#confirm-box-unduh h1{
     color: #333;
     font-size: 15px;
     padding-bottom: 10px;
 }
+
 #confirm-box-delete a,
 #confirm-box-logout a,
 #confirm-box-unduh a,
@@ -571,9 +572,9 @@ progress::after {
 }
 
 #confirm-box-delete a:hover,
+#confirm-box a:hover,
 #confirm-box-logout a:hover,
-#confirm-box-unduh a:hover,
-#confirm-box a:hover{
+#confirm-box-unduh a:hover{
     color: black;
 }
 
@@ -1544,6 +1545,77 @@ tr:nth-child(even) {
     font-size: 12px;
     margin-left: auto;  
 }
+/* FORUM */
+.main-content-forum{
+    min-height: 100vh;
+    position: relative;
+    margin: 15vh 20vh 15vh 20vh;
+    text-decoration: none;
+}
+
+.forum-header {
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    color: #0F3B92;
+}
+
+.forum-header h1{
+    font-size: 20pt;
+    font-weight: 600;
+    margin-top: -4vh;
+    margin-left: 4vw;
+}
+
+.forum-header a{
+    color: #0F3B92;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.forum-header .fa-arrow-left{
+    font-size: 30px;
+    margin-left: 0;
+}
+
+.forum-header a:hover{
+    color: #a7a2a2;
+}
+
+.box {
+    margin-top: 4vh;
+    text-decoration: none;
+}
+
+.forum-item {
+    height: fit-content;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    background-color: #082C73;
+    margin: 4vh 0 0 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.forum-item p {
+    padding: 15px;
+    color: white;
+    font-weight: 300;
+}
+
+.forum-item .go {
+    margin-left: 96%;
+    font-size: 30px;
+    margin-top: -82px;
+    padding: 15px 0 5px 0;
+}
+
+.forum-item:hover {
+    transform-style: preserve-3d;
+    transform: scale(1.01);
+    transition: all ease 0.2s;
+}
 
 /* TAUTAN */
 .tautan-head table .td1{
@@ -1558,6 +1630,8 @@ tr:nth-child(even) {
 .tautan-head span i{
     color: #082C73;
 }
+
+
 @media screen and (min-width: 100px) and (max-width: 800px){
     .sidebar ul{
         margin-top: 30px;
@@ -1849,6 +1923,45 @@ tr:nth-child(even) {
     .ujian-detail .click{
         flex-direction: column-reverse;
     }
+
+    .doc-header .btn-start{
+        font-size: 10px;
+        width: 100px;
+    }
+
+    .doc-header .doc-guru{
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .finish-detail{
+        width: 80%;
+    }
+
+    .main-content-forum{
+        margin: 15vh 4vh 0 4vh;
+    }
+    
+    .forum-header h1{
+        font-size: 20pt;
+        margin-left: 5vw;
+        margin-top: -3.5vh;
+    }
+    
+    .forum-header .fa-arrow-left{
+        font-size: 20px;
+        margin-left: -0.5vw;
+    }
+
+    .forum-item p {
+        font-size: 15px;
+    }
+    
+    .forum-item .go {
+        margin-left: 90%;
+    }
+
+
 }
 
 @media screen and (min-width: 750px) and (max-width: 990px){
@@ -1985,6 +2098,18 @@ tr:nth-child(even) {
         margin-bottom: -50px !important;
     }
 
+    .tautan-content .search-box1{
+        display: block !important;
+        margin-top: 4vh;
+    }
+    .tautan-content .search-box1 p {
+        margin-top: -4.7vh;
+        margin-left: 5vw;
+    }
+    .tautan-content .search-box1 .fa {
+        margin-top: -1.7vh;
+    }
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -2025,6 +2150,9 @@ tr:nth-child(even) {
     .detail-mapel .detail-header h2{
         margin-left: 50px;
     }
-    
+
+    .tautan-content .search-box1 {
+        display: none;
+    }
 }
 
