@@ -1773,6 +1773,114 @@ tr:nth-child(even) {
     padding: 3px;
 }
 
+/* FORUM THREAD */
+.forumthread-list {
+    position: relative;
+    width: 80%;
+    height: fit-content;
+}
+
+.forumthread-content {
+    width: 100%;
+    height: fit-content;
+    margin-left: 15vh;
+}
+
+.main-item {
+    height: fit-content;
+    background-color: #F2F2F2;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+    box-shadow: 0 1vh 1vw 0 rgba(0, 0, 0, 0.308);
+}
+
+.sub-item {
+    height: fit-content;
+    background-color: #F2F2F2;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+    margin-left: 5vh;
+    box-shadow: 0 1vh 1vw 0 rgba(0, 0, 0, 0.308);
+}
+
+.foto {
+    position: relative;
+    text-align: center;
+    margin-left: -47vw;
+}
+
+.sub-item .foto {
+    margin-left: -44vw;
+}
+
+.foto img {
+    width: 8vw;
+    border-radius: 10px;
+    margin-top: 5vh;
+}
+
+.forumthread-description {
+    position: relative;
+    width: 70%;
+    text-align: justify;
+    position: relative;
+    margin-left: 28vh;
+    margin-top: -10vw;
+}
+
+.forumthread-title p {
+    font-size: 14px;
+    color: #a7a2a2;
+    margin-top: -4.3vh;
+    margin-left: 37vw;
+}
+
+.sub-item .forumthread-title p {
+    margin-left: 35vw;
+}
+
+.forumthread p {
+    font-size: 13px;
+}
+
+.forumthread {
+    margin-bottom: 5vh;
+}
+
+.info {
+    font-size: 13px;
+}
+
+.info .fa {
+    color: #082C73;
+    font-size: 15px;
+    margin-right: 1vh;
+}
+
+.btn-reply button {
+    background: #082C73;
+    color: white;
+    border-radius: 15px;
+    width: 160px;
+    border: none;
+    font-size: 12px;
+    padding: 3px;
+}
+
+.main-item .btn-reply {
+    margin-top: -5.5vh;
+    padding-bottom: 5vh;
+    margin-left: 31vw;
+}
+
+.sub-item .btn-reply {
+    margin-top: -5.5vh;
+    padding-bottom: 5vh;
+    margin-left: 29vw;
+}
+
 @media screen and (min-width: 100px) and (max-width: 800px) {
     .sidebar ul {
         margin-top: 30px;
@@ -2125,6 +2233,77 @@ tr:nth-child(even) {
         text-align: justify;
         margin-top: -8vh;
     }
+
+    /* Forum Thread */
+    .forumthread-content {
+        margin-left: 10vw;
+        margin-top: 3vh;
+    }
+
+    .foto,
+    .sub-item .foto {
+        margin-left: 0;
+        margin-bottom: 2vh;
+    }
+
+    .foto img {
+        width: 8vw;
+        border-radius: 10px;
+        margin-top: 3vh;
+    }
+
+    .forumthread-description {
+        width: 90%;
+        margin-left: 5vw;
+        margin-top: 0;
+    }
+
+    .forumthread-title p,
+    h5 {
+        font-size: 13px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .sub-item .forumthread-title p,
+    h5 {
+        margin-left: 0;
+    }
+
+    .forumthread p {
+        font-size: 10px;
+    }
+
+    .forumthread {
+        margin-bottom: 5vh;
+        margin-right: 1.5vh;
+    }
+
+    .info {
+        font-size: 10px;
+    }
+
+    .info .fa {
+        font-size: 13px;
+    }
+
+    .btn-reply button {
+        width: 100px;
+        border: none;
+        font-size: 10px;
+    }
+
+    .main-item .btn-reply {
+        margin-top: 0;
+        padding-bottom: 3vh;
+        margin-left: 0;
+    }
+
+    .sub-item .btn-reply {
+        margin-top: 0;
+        padding-bottom: 3vh;
+        margin-left: 0;
+    }
 }
 
 @media screen and (min-width: 750px) and (max-width: 990px) {
@@ -2285,6 +2464,21 @@ tr:nth-child(even) {
         margin-top: -1.7vh;
     }
 
+    /* Forum Thread */
+    .foto {
+        position: relative;
+        margin-left: -60vw;
+    }
+
+    .sub-item .foto {
+        position: relative;
+        margin-left: -55vw;
+    }
+
+    .forumthread p {
+        font-size: 13px;
+        margin-right: 3vh;
+    }
 }
 
 @media screen and (min-width: 1300px) {
