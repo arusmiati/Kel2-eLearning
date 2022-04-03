@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
     font-weight: 300;
 }
 
-body {
+body{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     min-height: 100%;
@@ -14,13 +14,12 @@ body {
 }
 
 /* NAVBAR */
-.navbar1 {
+.navbar1{
     padding-left: 4vh;
     padding-top: 2vh;
     padding-bottom: -10px;
 }
-
-.navbar {
+.navbar{
     background-color: #082C73;
     color: white;
 }
@@ -48,19 +47,18 @@ body {
     float: right;
 }
 
-.navbar .navbar-nav li a:hover {
+.navbar .navbar-nav li a:hover{
     color: #2764B8;
     transition: 0.5s ease;
     border: #082C73;
 }
-
-#navbarNav .profil {
+#navbarNav .profil{
     margin: 0 20px;
     padding-right: 30px;
     float: right;
 }
 
-#navbarNav .profil .dropdown-menu {
+#navbarNav .profil .dropdown-menu{
     background: #F2F2F2;
     border-radius: 10px;
 }
@@ -69,68 +67,64 @@ body {
     justify-content: center;
 }
 
-#navbarNav .profil .icon-profil {
+#navbarNav .profil .icon-profil{
     width: 4vh;
 }
-
 #navbarNav .profil .name .bg {
     width: 29vh;
     margin-top: -1vh;
 }
-
-#navbarNav .profil .name .profil-img {
+#navbarNav .profil .name .profil-img{
     width: 6vh;
     margin-top: -5vh;
 }
 
-#navbarNav .profil .name h3 {
+#navbarNav .profil .name h3{
     color: #6666;
     font-size: 15pt;
 }
 
-#navbarNav .profil .name p {
+#navbarNav .profil .name p{
     color: #6666;
 }
 
-#navbarNav .profil .dropdown-item {
+#navbarNav .profil .dropdown-item{
     background-color: #F2F2F2;
     color: #3477D2;
 }
 
-#navbarNav .profil .dropdown-item:hover {
+#navbarNav .profil .dropdown-item:hover{
     background-color: #3477D2;
     color: #ffff;
 }
 
-#navbarNav .profil .log-out {
-    color: #FF5A72;
+#navbarNav .profil .log-out{
+    color: #FF5A72;   
 }
-
-#navbarNav .profil .log-out:hover {
+#navbarNav .profil .log-out:hover{
     background-color: #FF5A72;
     color: #ffff;
     margin-bottom: -10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
-#navbarNav .profil img {
+#navbarNav .profil img{
     width: 8vh;
 }
 
-.main {
+.main{
     position: relative;
     height: 100vh;
     background: linear-gradient(45deg, #082C73, #3477D2, transparent);
-
+    
 }
 
-.main svg {
+.main svg{
     position: absolute;
     width: 100%;
 }
 
-.navigation {
+.navigation{
     height: 50px;
     padding: 30px 100px;
     position: relative;
@@ -138,11 +132,11 @@ body {
     justify-content: space-between;
 }
 
-.navigation .brand img {
+.navigation .brand img{
     width: 150px;
 }
 
-.login-container {
+.login-container{
     display: flex;
     height: 80vh;
     width: 60vw;
@@ -156,13 +150,13 @@ body {
 }
 
 
-.photo {
+.photo{
     position: relative;
     height: 100%;
     width: 50%;
 }
-
-.photo img {
+ 
+.photo img{
     position: relative;
     height: 100%;
     width: 100%;
@@ -170,7 +164,7 @@ body {
     border-bottom-left-radius: 40px;
 }
 
-.form-cont {
+.form-cont{
     background-color: #0F3B92;
     width: 50%;
     height: 100%;
@@ -179,7 +173,7 @@ body {
     z-index: 2;
 }
 
-.inner-form {
+.inner-form{
     width: 60%;
     height: 100%;
     position: relative;
@@ -189,49 +183,49 @@ body {
 }
 
 
-.social-login {
+.social-login{
     position: relative;
     margin-top: 30px;
     text-align: center;
 }
 
-.social-login h1 {
+.social-login h1{
     color: #fff;
     font-size: 28pt;
     font-weight: 500;
     text-align: center;
 }
 
-.social-login p {
+.social-login p{
     color: #fff;
     font-size: 15px;
 }
 
-.inner-form .login-form {
+.inner-form .login-form{
     margin: 10px 0;
 }
 
-.login-form label {
+.login-form label{
     color: white;
     padding-top: 2vh;
     font-size: 15px;
 }
 
-.login-form input {
+.login-form input{
     position: relative;
-    background: #FEFEFE;
-    border: 1px solid #FEFEFE;
-    width: 95%;
-    font-size: 13px;
-    padding: 10px;
-    border-radius: 5px;
+	background:#FEFEFE;
+	border: 1px solid #FEFEFE;
+	width: 95%;
+	font-size: 13px;
+	padding: 10px;
+	border-radius: 5px;
 }
 
-.login-form input:hover {
+.login-form input:hover{
     border: 3px solid #FEFEFE;
 }
 
-.login-form #hide {
+.login-form #hide{
     color: #0F3B92;
     float: right;
     margin-top: -25px;
@@ -252,19 +246,18 @@ body {
     color: #FEFEFE;
 }
 
-.login-form .button:hover {
+.login-form .button:hover{
     background: #082C73;
     border-color: #082C73
 }
-
-.login-form a {
+.login-form a{
     padding-bottom: 2px;
     color: white;
     text-decoration: none;
     font-size: 14px;
 }
 
-.login-form a:hover {
+.login-form a:hover{
     color: #082C73;
 }
 
@@ -279,32 +272,27 @@ body {
     position: fixed;
     z-index: 100;
     top: 50px;
-
+    
 }
 
-.sidebar .icon img {
+.sidebar .icon img{
     width: 25px;
 }
 
-<<<<<<< HEAD
 .sidebar ul{
     margin-top: 60px;
-=======
-.sidebar ul {
-    margin-top: 40px;
->>>>>>> 273e0848d05c3ca6102760c40890456a239b69a1
     margin-left: -40px;
 }
 
 
-.sidebar ul li {
+.sidebar ul li{
     list-style: none;
     margin: 20px 0px 35px 40px;
     transition: all 1s ease;
     -webkit-transition: 0.2s;
 }
 
-.sidebar ul li a {
+.sidebar ul li a{
     color: #443653;
     display: inline-block;
     font-size: 25px;
@@ -314,26 +302,26 @@ body {
 }
 
 .sidebar ul li:hover,
-li.active {
+li.active{
     background: #2764B8;
     width: 70%;
     height: 60px;
     border-radius: 10px;
 }
 
-.sidebar span {
+.sidebar span{
     color: white;
 }
 
 /* BANTUAN */
-.main-content-bantuan {
+.main-content-bantuan{
     margin: 20vh 25vh;
     position: relative;
     min-height: 100vh;
 
 }
 
-.main-content-bantuan .bantuan ul li {
+.main-content-bantuan .bantuan ul li{
     list-style: none;
     padding: 0 20px;
 }
@@ -350,7 +338,7 @@ li.active {
     padding: 10px;
     font-size: 12px;
 }
-
+  
 .footer .web {
     grid-column: 1;
     grid-row: 4;
@@ -364,23 +352,22 @@ li.active {
 }
 
 .footer .web-detail-mapel ul li,
-.footer .web ul li {
+.footer .web ul li{
     list-style: none;
     padding: 5px;
 }
 
 
 .footer .web-detail-mapel span,
-.footer .web span {
+.footer .web span{
     color: white;
     padding: 10px;
 }
 
 .footer .web-detail-mapel i,
-.footer .web i {
+.footer .web i{
     color: white;
 }
-
 .footer .nama-footer {
     grid-column: 3;
     grid-row: 4;
@@ -396,12 +383,12 @@ li.active {
 }
 
 .footer .nama-footer .tfooter,
-.footer .nama-footer-mapel .tfooter {
+.footer .nama-footer-mapel .tfooter{
     font-size: 15px;
 }
 
 /* PROGRESS */
-.main-content-progres {
+.main-content-progres{
     margin: 10vh auto;
     min-height: 100vh;
     position: relative;
@@ -415,7 +402,7 @@ li.active {
     position: relative;
 }
 
-.progres .progres-title {
+.progres .progres-title{
     font-size: 20px;
     color: #0F3B92;
     margin-left: 200px;
@@ -423,15 +410,14 @@ li.active {
     font-weight: 600;
     padding-bottom: 10px;
 }
-
 .progres-header img {
-    padding-bottom: 10px;
+    padding-bottom: 10px; 
     margin-top: -10px;
     margin-right: -10px;
     height: 50px;
 }
 
-.progres-header ul li {
+.progres-header ul li{
     margin-top: -40px;
     padding-right: 20px;
     list-style: none;
@@ -442,23 +428,23 @@ li.active {
     display: flex;
 }
 
-.progres-xp h2 {
+.progres-xp h2{
     font-size: 20px;
     color: #0F3B92;
     font-weight: 600;
     margin-right: 100px;
 }
 
-.progres-content {
+.progres-content{
     position: relative;
-    width: 90%;
-    top: 10px;
-    bottom: 50px;
+    width:90%;
+    top:10px;
+    bottom:50px;
     margin: 10px;
     padding-left: 100px;
 }
 
-.progres-content .progres-item {
+.progres-content .progres-item{
     background-color: #3477D2;
     z-index: 10;
     border-radius: 10px;
@@ -467,107 +453,99 @@ li.active {
     margin-left: 80px;
 }
 
-.progres-content .progres-item ul li {
+.progres-content .progres-item ul li{
     list-style: none;
     color: #EFEFEF;
     z-index: 100;
     padding-top: 20px;
     margin-left: 80px;
 }
-
-.progres-content .progres-item ul li p {
+.progres-content .progres-item ul li p{
     margin-right: 30px;
 }
-
-.progres-content .progres-item li.progres-name {
+.progres-content .progres-item li.progres-name{
     font-weight: 600;
     padding-bottom: 20px;
 }
-
-.progres-content .progres-item li.progres-subitem {
+.progres-content .progres-item li.progres-subitem{
     display: flex;
     padding: 0px;
 }
 
-.progres-detail .progres-item {
+.progres-detail .progres-item{
     width: 200px;
 }
 
-.progres-content .progres-item li.progres-subitem .tprogress {
+.progres-content .progres-item li.progres-subitem .tprogress{
     width: 300px;
 }
-
-.progres-bar1 progress,
+.progres-bar1 progress, 
 .progres-bar2 progress,
 .progres-bar3 progress,
-.progres-bar4 progress {
-    position: relative;
-    width: 400px;
-    margin-right: 20px;
+.progres-bar4 progress{
+  position: relative;
+  width: 400px;
+  margin-right: 20px;
 }
 
 progress::before,
 progress::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100px;
-    border-radius: 10px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100px;
+  border-radius: 10px;
 }
 
 .progres-bar1 progress::before {
-    width: 100%;
-    background: #fefefe;
+  width: 100%;
+  background: #fefefe;
 }
 
 .progres-bar1 progress::after {
-    width: 75%;
-    background: #082C73;
+  width: 75%;
+  background: #082C73;
 }
 
 .progres-bar2 progress::before {
-    width: 100%;
-    background: #fefefe;
+  width: 100%;
+  background: #fefefe;
 }
 
 .progres-bar2 progress::after {
-    width: 60%;
-    background: #082C73;
+  width: 60%;
+  background: #082C73;
 }
 
 .progres-bar3 progress::before {
-    width: 100%;
-    background: #fefefe;
+  width: 100%;
+  background: #fefefe;
 }
 
 .progres-bar3 progress::after {
-    width: 50%;
-    background: #082C73;
+  width: 50%;
+  background: #082C73;
 }
 
 .progres-bar4 progress::before {
-    width: 100%;
-    background: #fefefe;
+  width: 100%;
+  background: #fefefe;
 }
 
 .progres-bar4 progress::after {
-    width: 90%;
-    background: #082C73;
+  width: 90%;
+  background: #082C73;
 }
 
 #confirm-box-delete,
 #confirm-box-logout,
 #confirm-box-unduh,
-<<<<<<< HEAD
 #confirm-box-tambah,
 #confirm-box-unduh-yaps,
 #confirm-box-delete-yaps,
 #confirm-box{
-=======
-#confirm-box {
->>>>>>> 273e0848d05c3ca6102760c40890456a239b69a1
     width: 500px;
     overflow: hidden;
     background: #fefefe;
@@ -599,13 +577,9 @@ progress::after {
 #confirm-box-delete h1,
 #confirm-box h1,
 #confirm-box-logout h1,
-<<<<<<< HEAD
 #confirm-box-unduh h1,
 #confirm-box-unduh-yaps h1,
 #confirm-box-delete-yaps h1{
-=======
-#confirm-box-unduh h1 {
->>>>>>> 273e0848d05c3ca6102760c40890456a239b69a1
     color: #333;
     font-size: 15px;
     padding-bottom: 10px;
@@ -614,19 +588,18 @@ progress::after {
 #confirm-box-delete a,
 #confirm-box-logout a,
 #confirm-box-unduh a,
-#confirm-box a {
+#confirm-box a{
     text-decoration: none;
 }
 
 #confirm-box-delete a:hover,
 #confirm-box a:hover,
 #confirm-box-logout a:hover,
-#confirm-box-unduh a:hover {
+#confirm-box-unduh a:hover{
     color: black;
 }
 
-.yes,
-.no {
+.yes, .no{
     color: white;
     padding: 3px 30px;
     cursor: pointer;
@@ -634,67 +607,65 @@ progress::after {
     font-size: 14px;
 }
 
-.yes {
+.yes{
     background: #58BAAB;
     margin-right: 20px;
 }
 
-.no {
+.no{
     background: #FF5A72;
 }
 
 /* HELP & SUPPORT */
-.inner-form-help {
+.inner-form-help{
     width: 80%;
     height: 100%;
     position: relative;
     display: block;
     margin: 0 auto;
 }
-
-.help-header {
+.help-header{
     color: white;
     margin-top: 6vh;
 }
 
-.help-header span a {
+.help-header span a{
     text-decoration: none;
     color: white;
 }
-
-.help-header span i {
+.help-header span i{
     padding: 7px 0px;
 }
 
-.help-header h1 {
+.help-header h1{
     font-size: 23px;
     padding: 0 0 15px 8px;
 }
 
-.help-item ul li {
+.help-item ul li{
     list-style: none;
     font-size: 12px;
     padding-bottom: 10px;
 }
 
-.help-item a {
+.help-item a{
     color: white;
     text-decoration: none;
 }
 
 .help-header span a:hover,
-.help-item a:hover {
+.help-item a:hover{
     color: #082C73;
 }
 
 /* MAPEL */
-.main-content-mapel {
+.main-content-mapel{
     width: 100%;
     min-height: 100vh;
 
 }
 
-.detail-mapel {
+.detail-mapel{
     width: 100%;
     height: 100px;
     width: 100%;
@@ -702,17 +673,17 @@ progress::after {
     margin: 100px 5px 0px 5px;
 }
 
-.detail-mapel .detail-header {
+.detail-mapel .detail-header{
     color: #082C73;
     margin: 20px 20px;
 }
 
-.detail-mapel .detail-title {
+.detail-mapel .detail-title{
     font-size: 25px;
     font-weight: 600;
 }
 
-.detail-mapel .btn-mapel {
+.detail-mapel .btn-mapel{
     width: 300px;
     padding: 10px;
     border-radius: 10px;
@@ -730,16 +701,12 @@ progress::after {
     text-align: center;
 }
 
-#drop-history :hover {
+#drop-history :hover{
     background: #082C73;
     color: white;
 }
 
-<<<<<<< HEAD
 .list-mapel{
-=======
-.list-mapel {
->>>>>>> 273e0848d05c3ca6102760c40890456a239b69a1
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -766,7 +733,7 @@ progress::after {
     margin-top: -55%;
     position: relative;
     float: right;
-    margin-right: 5px;
+    margin-right: 5px;  
 }
 
 .class-mapel h1 {
@@ -774,35 +741,29 @@ progress::after {
     font-size: 25px;
     font-weight: 600;
 }
-
-.class-mapel p {
+.class-mapel p{
     margin-top: 5px;
     font-size: 10px;
 }
-
 .logo-mapel {
     z-index: 20;
     position: relative;
-    height: 100%;
-    width: 50%;
 }
 
 .logo-mapel img {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
+    width: 305px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.nama-mapel {
+.nama-mapel{
     background-color: #082C73;
     color: #EFEFEF;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.nama-mapel h3 {
+.nama-mapel h3{
     font-size: 18px;
     text-align: center;
     padding: 15px;
@@ -845,7 +806,7 @@ progress::after {
 
 
 /* DETAIL MAPEL */
-.detail {
+.detail{
     display: flex;
     width: 100%;
     min-height: 100vh;
@@ -857,8 +818,7 @@ progress::after {
     position: relative;
 }
 
-.title-mapel,
-.persen {
+.title-mapel,.persen{
     font-size: 15px;
 }
 
@@ -871,17 +831,15 @@ progress::after {
     border: 2px white solid;
     border-radius: 50%;
 }
-
 .nama-detail {
     color: white;
     padding-top: 8px;
 }
 
-.progres-detail .progres-item ul li {
+.progres-detail .progres-item ul li{
     list-style: none;
     color: white;
 }
-
 .progres-detail .progres-item {
     background: #3477D2;
     border-radius: 20px;
@@ -890,28 +848,26 @@ progress::after {
     margin-bottom: 100px;
 }
 
-.progres-detail .progres-name {
+.progres-detail .progres-name{
     font-size: 20px;
     font-weight: 500;
     margin: 10px auto;
     padding: 10px;
 }
-
-.progres-detail .tprogress {
+.progres-detail .tprogress{
     padding: 0px 25px;
 }
 
-.progres-detail .progres-bar1,
+.progres-detail .progres-bar1, 
 .progres-detail .progres-bar2,
 .progres-detail .progres-bar3,
-.progres-detail .progres-bar4 {
+.progres-detail .progres-bar4{
     margin-top: -10px;
 }
-
-.progres-detail .progres-bar1 progress,
+.progres-detail .progres-bar1 progress, 
 .progres-detail .progres-bar2 progress,
 .progres-detail .progres-bar3 progress,
-.progres-detail .progres-bar4 progress {
+.progres-detail .progres-bar4 progress{
     width: 230px;
     height: 8px;
     margin-right: 0px;
@@ -923,11 +879,11 @@ progress::after {
     margin-bottom: 50px;
 }
 
-.detail-fitur .title-kelas {
+.detail-fitur .title-kelas{
     margin-top: 20%;
 }
 
-.detail-fitur .title-kelas h1 {
+.detail-fitur .title-kelas h1{
     text-align: center;
     color: #082C73;
     font-size: 25px;
@@ -943,30 +899,30 @@ progress::after {
     margin-top: 5px;
 }
 
-.list-fitur-item .item-img {
+.list-fitur-item .item-img{
     padding: 20px;
     width: 120px;
     height: 100px;
-    background: linear-gradient(45deg, #4986FF, #0056AA);
+    background: linear-gradient(45deg,#4986FF, #0056AA);
     margin: 20px auto;
     color: white;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.list-fitur-item .title-fitur {
+.list-fitur-item .title-fitur{
     color: #3477D2;
     font-weight: 500;
 }
 
-.list-fitur-item a {
+.list-fitur-item a{
     text-decoration: none;
 }
 
 
 
 /* DOKUMEN */
-.dokumen {
+.dokumen{
     display: flex;
     width: 100%;
     min-height: 100vh;
@@ -979,7 +935,7 @@ progress::after {
     position: relative;
 }
 
-.search-sidebar .search-box {
+.search-sidebar .search-box{
     margin: 120px 20px 0px;
     padding: 5px 10px 5px 10px;
     background: #dedede;
@@ -987,7 +943,7 @@ progress::after {
 }
 
 .search-box1 p,
-.search-box p {
+.search-box p{
     margin-bottom: 0px;
     font-size: 12px;
     color: #a7a2a2;
@@ -995,11 +951,11 @@ progress::after {
 }
 
 .search-box1 p,
-.search-box i {
+.search-box i{
     color: #a7a2a2;
 }
 
-.doc-content .search-box1 {
+.doc-content .search-box1{
     display: none !important;
     padding: 0px 10px 5px 10px;
     background: #dedede;
@@ -1009,7 +965,7 @@ progress::after {
 
 }
 
-.doc-content .search-box1 i {
+.doc-content .search-box1 i{
     color: #a7a2a2;
 }
 
@@ -1019,42 +975,42 @@ progress::after {
     margin-left: 20px;
 }
 
-.doc-content {
+.doc-content{
     display: flex;
     flex-direction: column;
     width: 80%;
     min-height: 100vh;
 }
 
-.doc-header {
+.doc-header{
     margin-top: 80px;
     padding: 50px 50px 70px;
     height: 100px;
     color: #0F3B92;
 }
 
-.doc-header h1 {
+.doc-header h1{
     font-size: 20pt;
     font-weight: 600;
     padding-left: 30px;
     padding-right: 20px;
 }
 
-.doc-header a {
+.doc-header a{
     color: #0F3B92;
     text-decoration: none;
     cursor: pointer;
 }
 
-.doc-header .fa-arrow-left {
+.doc-header .fa-arrow-left{
     font-size: 30px;
 }
 
-.doc-header a:hover {
+.doc-header a:hover{
     color: #a7a2a2;
 }
 
-.doc-list {
+.doc-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -1063,77 +1019,72 @@ progress::after {
     margin-top: 5px;
 }
 
-.doc-list-item .unduh {
+.doc-list-item .unduh{
     background: none;
     outline: none;
     border: none;
 
 }
-
-.item-docs,
-.item-docs-guru {
+.item-docs, .item-docs-guru{
     width: 150px;
     height: 150px;
-    background: linear-gradient(45deg, #4986FF, #0056AA);
+    background: linear-gradient(45deg,#4986FF, #0056AA);
     place-content: center;
     margin: 30px auto;
     padding: 20px 10px;
     border-radius: 20px;
 }
 
-.item-docs-guru {
+.item-docs-guru{   
     margin-bottom: -10px !important;
 }
 
-.title-docs {
+.title-docs{
     margin-top: 5px;
     color: #2764B8;
     font-weight: 600;
     font-size: 15pt;
 }
-
-.title-docs-guru {
+.title-docs-guru{
     color: #2764B8;
     font-weight: 600;
     font-size: 15pt;
-    margin-top: -25px;
+    margin-top: -25px ;
     padding-right: 40px;
 }
 
-.doc-list #drop-history {
+.doc-list #drop-history{
     text-align: left;
     width: 50%;
     font-size: 12px;
 }
 
-.doc-list button {
+.doc-list button{
     outline: none;
     background: none;
     border: none;
 }
-
-.doc-list img.colon {
+.doc-list img.colon{
     height: 25px;
     filter: invert(28%) sepia(100%) hue-rotate(-180deg) saturate(5);
     margin-top: 15px;
     margin-left: 100px;
     padding-left: 15px;
-
+    
 }
-
 /* PENCARIAN KELAS */
-.pencarian {
+.pencarian{
     width: 100%;
     min-height: 100vh;
     display: flex;
 }
 
-.filter-pencarian {
+.filter-pencarian{
     width: 250px;
     background: #0F3B92;
 }
 
-.filter-pencarian h5 {
+.filter-pencarian h5{
     margin-top: 100px;
     padding: 0px 15px;
     color: white;
@@ -1141,7 +1092,7 @@ progress::after {
     font-size: 18px;
 }
 
-.filter-pencarian .btn-mapel {
+.filter-pencarian .btn-mapel{
     width: 90%;
     margin: 10px;
     background: #0F3B92;
@@ -1153,20 +1104,18 @@ progress::after {
     outline: none;
 }
 
-.filter-pencarian .btn-mapel p {
+.filter-pencarian .btn-mapel p{
     float: left;
     margin-left: 10px;
     color: white;
     margin-bottom: 2px;
     font-size: 13px;
 }
-
 .filter-pencarian .btn-mapel i.fa.fa-angle-down {
     float: right;
     margin-right: 10px;
 }
-
-.filter-pencarian .dropdown-menu {
+.filter-pencarian .dropdown-menu{
     background: none;
     border: none;
     color: white;
@@ -1174,20 +1123,19 @@ progress::after {
     display: none;
 }
 
-.filter-pencarian .dropdown-menu label {
+.filter-pencarian .dropdown-menu label{
     color: white;
     margin-left: 20px;
     padding: 0px;
     font-size: 13px;
 }
 
-.header-filter {
+.header-filter{
     margin-top: 150px;
     color: white;
     font-size: 20px;
 }
-
-.title-filter {
+.title-filter{
     margin-top: 20px;
     color: white;
     background: #082C73;
@@ -1198,18 +1146,17 @@ progress::after {
     margin-bottom: 5px;
 }
 
-.title-filter p {
+.title-filter p{
     font-size: 15px;
     font-weight: 500;
     padding-top: 11px;
 }
 
-.title-filter span {
+.title-filter span{
     margin-left: auto;
     padding-top: 10px;
 }
-
-.list-pencarian {
+.list-pencarian{
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1227,35 +1174,35 @@ progress::after {
 }
 
 /* DETAIL PENCARIAN */
-.detail-pencarian {
+.detail-pencarian{
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.detail-pencarian .header {
+.detail-pencarian .header{
     width: 100%;
     height: 200px;
     background: #0F3B92;
 }
 
-.title-detail {
+.title-detail{
     color: white;
     margin-top: 120px;
     text-align: center;
 }
 
-.title-detail h2 {
+.title-detail h2{  
     font-weight: 600;
     font-size: 30px;
 }
 
-.content-detail {
+.content-detail{
     margin-bottom: 100px !important;
 }
 
-.content-detail .sidebar {
+.content-detail .sidebar{
     height: fit-content;
     width: 305px;
     background: #ffff;
@@ -1270,47 +1217,44 @@ progress::after {
     z-index: 200;
     position: relative;
 }
-
-.content-detail .profil-guru img {
+.content-detail .profil-guru img{
     width: 90px;
     margin-top: -50px;
 }
 
-.content-detail .ket-mapel {
+.content-detail .ket-mapel{
     width: 80%;
     margin: 0px auto;
     border-bottom: 2px #dedede solid;
 }
-
-.content-detail .ket-mapel .nama {
+.content-detail .ket-mapel .nama{
     font-weight: 600;
     margin-bottom: 0px !important;
 }
-
-.content-detail .ket-mapel .status {
+.content-detail .ket-mapel .status{
     color: black;
     font-weight: 400;
     margin-bottom: 5px;
 }
 
-.content-detail .jadwal-mapel i {
+.content-detail .jadwal-mapel i{
     font-size: 20px;
     font-weight: 600;
     margin-top: 30px;
 }
 
-.content-detail .jadwal-mapel p {
+.content-detail .jadwal-mapel p{
     font-weight: 400;
 }
 
-.content-detail .btn-start button {
+.content-detail .btn-start button{
     border-radius: 20px;
     width: 50%;
     padding: 5px;
     margin-top: -5px;
 }
 
-.content-detail .jlh-siswa {
+.content-detail .jlh-siswa{
     margin-left: 85px;
     display: flex;
     text-align: center;
@@ -1318,14 +1262,13 @@ progress::after {
     font-size: 10px;
     margin-top: -10px;
 }
-
-.list-detail {
+.list-detail{
     width: 70%;
     min-height: 50vh;
     margin: 10px;
 }
 
-.tabs {
+.tabs{
     width: 100%;
     height: fit-content;
     color: #082C73;
@@ -1335,46 +1278,45 @@ progress::after {
     padding: 10px;
 }
 
-.tabs-head {
+.tabs-head{
     display: flex;
     align-items: stretch;
 }
 
-.tabs-toggle {
+.tabs-toggle{
     display: flex;
     align-items: center;
     padding: 0px 30px;
     font-weight: 500;
     text-align: center;
 }
-
 span.tabs-toggle.active,
-span.tabs-toggle:hover {
+span.tabs-toggle:hover{
     background: #2764B8;
     border-radius: 20px;
-    color: white;
+    color: white;   
 }
 
-.tabs-content {
+.tabs-content{
     background: #e1e1e1;
     display: none;
 }
 
-.tabs-body {
+.tabs-body{
     min-height: 10vh;
     border-radius: 10px;
     margin: 20px auto;
 }
 
-.tabs-content.active {
+.tabs-content.active{
     display: block;
 }
 
-.tabs-toggle {
+.tabs-toggle{
     display: flex;
 }
 
-.tabs-title {
+.tabs-title{
     text-align: center;
     padding: 10px;
     color: black;
@@ -1382,14 +1324,13 @@ span.tabs-toggle:hover {
     font-size: 25px;
 }
 
-.tabs-content .deskripsi {
+.tabs-content .deskripsi{
     margin: 20px auto;
     color: black;
     text-align: justify;
     padding-bottom: 20px;
 }
-
-.tabs-content ul li {
+.tabs-content ul li{
     margin-top: 0px !important;
     margin-left: 30px;
     list-style: none;
@@ -1403,49 +1344,44 @@ table {
     margin-left: 50px;
 }
 
-th {
+th{
     font-weight: 600;
 }
 
-
-td,
-th {
+  
+td, th {
     border: 0px;
     text-align: left;
-    padding: 15px;
+    padding: 15px;  
 }
 
-td {
+td{
     font-weight: 400;
 }
-
-td a {
+td a{
     text-decoration: none;
     color: black;
     font-weight: 400;
 }
 
-td a:hover {
+td a:hover{
     text-decoration: none;
     color: #3477D2;
 }
 
-tr {
+tr{
     background-color: #dedede;
 }
-
-.th1,
-.td1 {
+  
+.th1, .td1{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.th2,
-.td2 {
+.th2, .td2{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
 tr:nth-child(even) {
     background-color: #ffff;
 }
@@ -1461,7 +1397,7 @@ tr:nth-child(even) {
     box-shadow: 0px 0px 10px #e5e5e5;
 }
 
-.ujian-detail .time table {
+.ujian-detail .time table{
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -1478,17 +1414,15 @@ tr:nth-child(even) {
     font-weight: 600;
 }
 
-.btn-start,
-.btn-back,
-.btn-finish {
-    padding: 10px;
+.btn-start, .btn-back, .btn-finish{
+    padding: 10px;   
     text-align: center;
     background: none;
 }
 
-.btn-start button,
+.btn-start button, 
 .btn-back button,
-.btn-finish button {
+.btn-finish button{
     border-radius: 10px;
     border: none;
     color: white;
@@ -1498,51 +1432,50 @@ tr:nth-child(even) {
     cursor: pointer;
 }
 
-.btn-start button:hover,
+.btn-start button:hover, 
 .btn-back button:hover,
-.btn-finish button:hover {
+.btn-finish button:hover{
     background: #2764B8;
 }
-
-.btn-start button {
+.btn-start button{
     background: #58BAAB;
 }
 
-.btn-back button {
+.btn-back button{
     background: #FF5A72;
 }
 
 /* START ULANGAN */
-.ujian-detail .click {
+.ujian-detail .click{
     display: flex;
     float: right;
 }
 
 .ujian-detail .btn-start i,
-.ujian-detail .btn-finish i {
+.ujian-detail .btn-finish i{
     font-size: 15px;
     padding-left: 10px;
 }
 
-.ujian-detail .btn-back i {
+.ujian-detail .btn-back i{
     font-size: 15px;
     padding-right: 10px;
 }
 
 .ujian-detail .btn-start button,
 .ujian-detail .btn-back button,
-.ujian-detail .btn-finish button {
+.ujian-detail .btn-finish button{
     width: 150px;
     font-size: 12px;
-    margin-left: auto;
+    margin-left: auto;  
 }
 
-.btn-finish button {
+.btn-finish button{
     background: #f3a703;
 }
 
 /* FINISH UJIAN */
-.finish-detail {
+.finish-detail{
     background: #dedede;
     width: 60%;
     height: max-content;
@@ -1560,29 +1493,28 @@ tr:nth-child(even) {
     font-weight: 600;
 }
 
-.finish-detail img {
+.finish-detail img{
     width: 100px;
 }
 
-.finish-detail p {
+.finish-detail p{
     font-weight: 400;
     margin-top: 5px;
     margin-bottom: 0 !important;
 }
 
 .finish-detail .btn-start button,
-.finish-detail .btn-back button {
+.finish-detail .btn-back button{
     font-size: 12px;
 }
 
 /* TAMBAH DOKUMEN */
-.doc-header .btn-start {
+.doc-header .btn-start{
     width: 100px;
     font-size: 12px;
     padding: 0px;
 }
-
-.add-docs {
+.add-docs{
     background: #dedede;
     width: 80%;
     height: max-content;
@@ -1592,16 +1524,15 @@ tr:nth-child(even) {
     box-shadow: 0px 0px 10px #e5e5e5;
 }
 
-.add-docs p {
+.add-docs p{
     width: 20%;
     font-size: 15px;
     font-weight: 400;
     margin-top: 5px;
 }
 
-.add-docs .title input {
+.add-docs .title input{
     position: relative;
-<<<<<<< HEAD
 	background:#FEFEFE;
 	border: 1px solid #FEFEFE;
 	width: 95%;
@@ -1610,45 +1541,36 @@ tr:nth-child(even) {
 	border-radius: 5px;
     outline: none;
     margin-left: 25px;
-=======
-    background: #FEFEFE;
-    border: 1px solid #FEFEFE;
-    width: 95%;
-    font-size: 13px;
-    padding: 10px;
-    border-radius: 5px;
->>>>>>> 273e0848d05c3ca6102760c40890456a239b69a1
 }
 
-.add-docs .title input:hover {
+.add-docs .title input:hover{
     border: 3px solid #FEFEFE;
 }
 
-.add-docs .title {
+.add-docs .title{
     margin-bottom: 10px;
 }
 
-.add-docs .click {
+.add-docs .click{
     display: flex;
     float: right;
     flex-direction: row-reverse;
 }
 
-.add-docs .btn-start i {
+.add-docs .btn-start i{
     font-size: 15px;
     padding-left: 10px;
 }
 
-.add-docs .btn-back i {
+.add-docs .btn-back i{
     font-size: 15px;
     padding-right: 10px;
 }
-
 .add-docs .btn-start button,
 .add-docs .btn-back button {
     width: 150px;
     font-size: 12px;
-    margin-left: auto;
+    margin-left: auto;  
 }
 
 /* FORUM */
@@ -1723,16 +1645,16 @@ tr:nth-child(even) {
 }
 
 /* TAUTAN */
-.tautan-head table .td1 {
+.tautan-head table .td1{
     border-radius: 10px !important;
 }
 
-.tautan-head a {
+.tautan-head a{
     padding-left: 20px;
     font-weight: 300;
 }
 
-.tautan-head span i {
+.tautan-head span i{
     color: #082C73;
 }
 
@@ -1779,7 +1701,6 @@ tr:nth-child(even) {
     padding-left: 30%;
     padding-bottom: 4.5vh;
 }
-<<<<<<< HEAD
 
 .nama-gurumapel h6 {
     font-size: 12px;
@@ -2022,176 +1943,17 @@ button.add{
 @media screen and (min-width: 100px) and (max-width: 800px){
     .sidebar ul{
         margin-top: 50px;
-=======
-
-.nama-gurumapel h6 {
-    font-size: 12px;
-    text-align: justify;
-    margin-top: -22%;
-    padding-left: 30%;
-}
-
-.ket-forumcateg,
-.jlh-siswa {
-    padding: 10px;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.ket-forumcateg h6 {
-    font-size: 16px;
-}
-
-.ket-mapel i,
-.jlh-siswa i {
-    padding-right: 10px;
-}
-
-.deskripsi {
-    padding: 0 10px 0 10px;
-    text-align: justify;
-    font-size: 13px;
-    font-weight: 400;
-    margin-top: -12px;
-}
-
-.btn-open {
-    margin-left: auto;
-}
-
-.btn-open button {
-    background: #082C73;
-    color: white;
-    border-radius: 15px;
-    width: 90px;
-    border: none;
-    font-size: 12px;
-    padding: 3px;
-}
-
-/* FORUM THREAD */
-.forumthread-list {
-    position: relative;
-    width: 80%;
-    height: fit-content;
-}
-
-.forumthread-content {
-    width: 100%;
-    height: fit-content;
-    margin-left: 15vh;
-}
-
-.main-item {
-    height: fit-content;
-    background-color: #F2F2F2;
-    color: black;
-    border-radius: 10px;
-    margin-bottom: 5vh;
-    box-shadow: 0 1vh 1vw 0 rgba(0, 0, 0, 0.308);
-}
-
-.sub-item {
-    height: fit-content;
-    background-color: #F2F2F2;
-    color: black;
-    border-radius: 10px;
-    margin-bottom: 5vh;
-    margin-left: 5vh;
-    box-shadow: 0 1vh 1vw 0 rgba(0, 0, 0, 0.308);
-}
-
-.foto {
-    position: relative;
-    text-align: center;
-    margin-left: -47vw;
-}
-
-.sub-item .foto {
-    margin-left: -44vw;
-}
-
-.foto img {
-    width: 8vw;
-    border-radius: 10px;
-    margin-top: 5vh;
-}
-
-.forumthread-description {
-    position: relative;
-    width: 70%;
-    text-align: justify;
-    position: relative;
-    margin-left: 28vh;
-    margin-top: -10vw;
-}
-
-.forumthread-title p {
-    font-size: 14px;
-    color: #a7a2a2;
-    margin-top: -4.3vh;
-    margin-left: 37vw;
-}
-
-.sub-item .forumthread-title p {
-    margin-left: 35vw;
-}
-
-.forumthread p {
-    font-size: 13px;
-}
-
-.forumthread {
-    margin-bottom: 5vh;
-}
-
-.info {
-    font-size: 13px;
-}
-
-.info .fa {
-    color: #082C73;
-    font-size: 15px;
-    margin-right: 1vh;
-}
-
-.btn-reply button {
-    background: #082C73;
-    color: white;
-    border-radius: 15px;
-    width: 160px;
-    border: none;
-    font-size: 12px;
-    padding: 3px;
-}
-
-.main-item .btn-reply {
-    margin-top: -5.5vh;
-    padding-bottom: 5vh;
-    margin-left: 31vw;
-}
-
-.sub-item .btn-reply {
-    margin-top: -5.5vh;
-    padding-bottom: 5vh;
-    margin-left: 29vw;
-}
-
-@media screen and (min-width: 100px) and (max-width: 800px) {
-    .sidebar ul {
-        margin-top: 30px;
->>>>>>> 273e0848d05c3ca6102760c40890456a239b69a1
     }
-
-    #navbarNav .profil .icon-profil {
+    
+    #navbarNav .profil .icon-profil{
         width: 4vh;
     }
 
-    .navbar-header img {
+    .navbar-header img{
         height: 7vh;
     }
 
-    #navbarNav .profil {
+    #navbarNav .profil{
         margin: 0;
         padding-right: 0;
     }
@@ -2201,66 +1963,61 @@ button.add{
         margin-right: 10px;
     }
 
-    .footer {
+    .footer{
         display: inline-block;
     }
 
-    .progres-bar1 progress,
+    .progres-bar1 progress, 
     .progres-bar2 progress,
     .progres-bar3 progress,
-    .progres-bar4 progress {
+    .progres-bar4 progress{
         width: 100px;
         height: 10px;
         margin-right: 0px;
     }
-
-    .progres-content {
-        width: 95%;
-        top: 10px;
-        bottom: 50px;
+    .progres-content{
+        width:95%;
+        top:10px;
+        bottom:50px;
         margin-left: 15px;
         padding: 0 5px;
     }
-
-    .progres-content .progres-item ul li {
+    .progres-content .progres-item ul li{
         margin-left: 10px;
     }
-
-    .progres-content .progres-item ul li p {
+    .progres-content .progres-item ul li p{
         font-size: 11px;
         margin-right: 10px;
     }
 
-    .progres-content .progres-item li.progres-name {
+    .progres-content .progres-item li.progres-name{
         font-weight: 500;
         padding-bottom: 15px;
     }
 
-    .progres-xp h2 {
+    .progres-xp h2{
         padding-right: 5px;
         font-size: 12px;
         margin-right: 0px;
-    }
-
+    } 
+    
     .progres-header img {
-        padding-bottom: 10px;
+        padding-bottom: 10px; 
         margin-top: -10px;
         margin-right: -10px;
         height: 40px;
     }
-
-    .progres .progres-title {
+    .progres .progres-title{
         margin-left: 100px;
         font-size: 14px;
         margin-bottom: 12px;
     }
-
-    .progres-header {
+    
+    .progres-header{
         margin-top: -5px;
         width: 100%;
     }
-
-    .progres-content .progres-item li.progres-subitem .tprogress {
+    .progres-content .progres-item li.progres-subitem .tprogress{
         width: 200px;
     }
 
@@ -2286,83 +2043,71 @@ button.add{
         font-size: 13px;
     }
 
-    .photo {
+    .photo{
         display: none;
     }
 
-    .form-cont {
+    .form-cont{
         width: 100%;
         height: max-content;
         border-top-left-radius: 40px;
         border-bottom-left-radius: 40px;
     }
 
-    .social-login h1 {
+    .social-login h1{
         font-size: 20px;
     }
-
     .social-login p,
     .login-form label,
-    .login-form a {
+    .login-form a{
         font-size: 13px;
     }
 
-<<<<<<< HEAD
     .list-mapel, .list-forumcateg{
-=======
-    .list-mapel,
-    .list-forumcateg {
->>>>>>> 273e0848d05c3ca6102760c40890456a239b69a1
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         width: 100%;
         margin-top: 0px;
     }
 
-<<<<<<< HEAD
     .list-mapel-item, .list-forumcateg-item{
-=======
-    .list-mapel-item,
-    .list-forumcateg-item {
->>>>>>> 273e0848d05c3ca6102760c40890456a239b69a1
         margin: 30px auto;
     }
 
-    .detail-mapel {
+    .detail-mapel{
         height: auto;
     }
-
-    .detail-mapel .detail-title {
+    .detail-mapel .detail-title{
         font-size: 15px;
     }
-
-    .detail-mapel .btn-mapel {
+    
+    .detail-mapel .btn-mapel{
         width: 150px;
         font-size: 10px;
         margin-right: 10px;
     }
-
+    
     #drop-history {
         width: 150px;
         font-size: 10px;
     }
-
-    .doc-list #drop-history {
+    
+    .doc-list #drop-history{
         text-align: left;
         width: 50%;
         font-size: 12px;
     }
-
-    .footer .nama-footer-mapel {
+    
+    .footer .nama-footer-mapel{
         margin-left: 150px;
     }
 
-    .detail {
+    .detail{
         flex-direction: column;
     }
 
     .detail-sidebar,
-    .detail-fitur {
+    .detail-fitur{
         width: 100%;
     }
 
@@ -2370,139 +2115,134 @@ button.add{
         margin-top: 30%;
     }
 
-    .detail-fitur {
+    .detail-fitur{
         margin-bottom: 50px;
     }
-
     .list-fitur {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
 
-    .doc-list {
+    .doc-list{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
 
-    .item-docs {
+    .item-docs{
         width: 150px;
         margin: 10px auto;
 
     }
-
-    .search-sidebar {
+    .search-sidebar{
         display: none;
     }
 
-    .doc-content {
+    .doc-content{
         width: 100%;
     }
 
-    .doc-header {
+    .doc-header{
         padding-top: 70px;
     }
 
-    .pencarian {
+    .pencarian{
         flex-direction: column;
     }
 
-    .filter-pencarian {
+    .filter-pencarian{
         width: 100%;
     }
 
-    .doc-content .search-box1 {
+    .doc-content .search-box1{
         display: block !important;
     }
 
-    .doc-content .search-box1 span,
+    .doc-content .search-box1 span,   
     .doc-content .search-box1 p {
         font-size: 10px;
     }
 
-    .doc-header span {
+    .doc-header span{
         font-size: 12px;
     }
-
-    .doc-header h1 {
+    
+    .doc-header h1{
         font-size: 15pt;
     }
 
-    .pencarian {
+    .pencarian{
         flex-direction: column;
     }
 
-    .filter-pencarian {
+    .filter-pencarian{
         width: 100%;
     }
-
-    .list-pencarian {
+    .list-pencarian{
         width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         margin-top: 0px;
     }
 
-    .list-pencarian-item {
+    .list-pencarian-item{
         margin: 30px auto;
     }
 
-    .content-detail {
+    .content-detail{
         flex-direction: column-reverse;
         margin-bottom: 50px;
         width: 100%;
     }
 
-    .tabs {
+    .tabs{
         margin: 10px auto;
         margin-bottom: -50px !important;
     }
-
-    .tabs-toggle {
+    .tabs-toggle{
         font-size: 10px;
         padding: 0 20px;
     }
 
-    .title-detail h2 {
+    .title-detail h2{
         font-size: 20px;
     }
 
-    .tabs-title {
+    .tabs-title{
         font-size: 15px;
     }
 
-    .tabs-content .deskripsi {
+    .tabs-content .deskripsi{
         font-size: 11px;
     }
 
-    .content-detail .sidebar {
+    .content-detail .sidebar{
         margin: 20px auto;
     }
 
-    th,
-    td {
+    th,td{
         font-size: 12px;
     }
 
     .progres-detail .progres-item {
         width: 305px;
     }
-
-    .ujian-detail .click {
+    
+    .ujian-detail .click{
         flex-direction: column-reverse;
     }
 
-    .doc-header .btn-start {
+    .doc-header .btn-start{
         font-size: 10px;
         width: 100px;
     }
 
-    .doc-header .doc-guru {
+    .doc-header .doc-guru{
         width: 100%;
         margin: 10px auto;
     }
 
-    .finish-detail {
+    .finish-detail{
         width: 80%;
     }  
 
@@ -2573,7 +2313,6 @@ button.add{
     .sub-item .forumthread-title p,
     h5 {
         margin-left: 0;
-<<<<<<< HEAD
     }
 
     .forumthread p {
@@ -2593,27 +2332,6 @@ button.add{
         font-size: 13px;
     }
 
-=======
-    }
-
-    .forumthread p {
-        font-size: 10px;
-    }
-
-    .forumthread {
-        margin-bottom: 5vh;
-        margin-right: 1.5vh;
-    }
-
-    .info {
-        font-size: 10px;
-    }
-
-    .info .fa {
-        font-size: 13px;
-    }
-
->>>>>>> 273e0848d05c3ca6102760c40890456a239b69a1
     .btn-reply button {
         width: 100px;
         border: none;
@@ -2633,35 +2351,34 @@ button.add{
     }
 }
 
-@media screen and (min-width: 750px) and (max-width: 990px) {
-    .login-container {
+@media screen and (min-width: 750px) and (max-width: 990px){
+    .login-container{
         height: 75vh;
         top: 50%;
         margin: 10px;
     }
 
-    .photo {
+    .photo{
         display: none;
     }
 
-    .form-cont {
+    .form-cont{
         width: 100%;
         max-height: 400px;
         border-top-left-radius: 40px;
         border-bottom-left-radius: 40px;
     }
 
-    .social-login h1 {
+    .social-login h1{
         font-size: 20px;
     }
-
     .social-login p,
     .login-form label,
-    .login-form a {
+    .login-form a{
         font-size: 13px;
     }
-
-    .navbar .navbar-nav li a {
+    
+    .navbar .navbar-nav li a{
         font-size: 14px;
     }
 
@@ -2669,124 +2386,113 @@ button.add{
         margin-right: 5vh;
         margin-left: 15vh;
     }
-
-    .footer.web,
-    .footer.nama-footer {
+    .footer.web, .footer.nama-footer{
         grid-column: 2;
         grid-row: 4;
         position: static;
         text-align: center;
     }
 
-    .progres {
+    .progres{
         margin-top: -25px;
     }
-
-    .progres-bar1 progress,
+    .progres-bar1 progress, 
     .progres-bar2 progress,
     .progres-bar3 progress,
-    .progres-bar4 progress {
+    .progres-bar4 progress{
         position: relative;
         width: 200px;
         margin-right: 20px;
     }
 
-    .progres-content .progres-item ul li {
+    .progres-content .progres-item ul li{
         margin-left: 20px;
     }
-
-    .progres-content .progres-item ul li p {
+    .progres-content .progres-item ul li p{
         font-size: 13px;
     }
 
     .progres .progres-title {
         padding-top: 40px;
     }
-
     .navbar-header img {
         height: 6vh;
     }
 
-    .progres-detail .progres-item {
+    .progres-detail .progres-item{
         width: 290px;
     }
-
-    .progres-detail .progres-bar1 progress,
+    .progres-detail .progres-bar1 progress, 
     .progres-detail .progres-bar2 progress,
     .progres-detail .progres-bar3 progress,
-    .progres-detail .progres-bar4 progress {
+    .progres-detail .progres-bar4 progress{
         width: 230px;
     }
 
-    .title-mapel,
-    .persen {
+    .title-mapel, 
+    .persen{
         font-size: 12px;
     }
-
-    .doc-list {
+    
+    .doc-list{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
 
-    .doc-header {
+    .doc-header{
         padding-top: 80px;
     }
 
-    .doc-content {
+    .doc-content{
         width: 100%;
     }
-
-    .search-sidebar {
+    .search-sidebar{
         display: none;
     }
 
-    .doc-content .search-box1 {
+    .doc-content .search-box1{
         display: block !important;
     }
 
-    .pencarian {
+    .pencarian{
         flex-direction: column;
     }
 
-    .filter-pencarian {
+    .filter-pencarian{
         width: 100%;
     }
-
-    .list-pencarian,
-    .list-mapel {
+    .list-pencarian, .list-mapel{
         width: 100%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
 
-    .content-detail {
+    .content-detail{
         flex-direction: column-reverse;
         margin-bottom: 50px;
         width: 100%;
     }
 
-    .tabs-toggle {
+    .tabs-toggle{
         font-size: 15px;
     }
 
-    .content-detail .sidebar {
+    .content-detail .sidebar{
         margin: 10px auto;
     }
 
-    .tabs {
+    .tabs{
         margin-bottom: -50px !important;
     }
 
-    .tautan-content .search-box1 {
+    .tautan-content .search-box1{
         display: block !important;
         margin-top: 4vh;
     }
-
     .tautan-content .search-box1 p {
         margin-top: -4.7vh;
         margin-left: 5vw;
     }
-
     .tautan-content .search-box1 .fa {
         margin-top: -1.7vh;
     }
@@ -2806,32 +2512,29 @@ button.add{
         font-size: 13px;
         margin-right: 3vh;
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> 273e0848d05c3ca6102760c40890456a239b69a1
 }
 
 @media screen and (min-width: 1300px) {
-    .navbar .navbar-nav li a {
+    .navbar .navbar-nav li a{
         font-size: 16px;
         padding: 20px;
     }
 
-    .navbar .navbar-nav li .active {
+    .navbar .navbar-nav li .active{
         border-bottom: 3px solid #dedede;
         width: 100%;
-        margin-bottom: -30px;
-        border-radius: 0px;
+        margin-bottom: -30px; 
+        border-radius: 0px; 
         color: white;
         outline: none;
     }
 
-    #navbarNav .profil .icon-profil {
+    #navbarNav .profil .icon-profil{
         width: 6vh;
     }
 
-    .navbar-header img {
+    .navbar-header img{
         height: 8vh;
     }
 
@@ -2841,15 +2544,14 @@ button.add{
         margin-left: 0px;
     }
 
-    .detail-fitur .title-kelas {
+    .detail-fitur .title-kelas{
         margin-top: 15%;
     }
 
-    .doc-content .search-box1 {
+    .doc-content .search-box1{
         display: none;
     }
-
-    .detail-mapel .detail-header h2 {
+    .detail-mapel .detail-header h2{
         margin-left: 50px;
     }
 
