@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;800&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Tambah Dokumen</title>
+    <title>Tambah Mata Pelajaran</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -66,7 +66,7 @@
             <a href="" class="no">Tidak</a>
         </div>
         <div id="confirm-box-tambah">
-            <h1>File Ini<br> Berhasil Ditambahkan</h1>
+            <h1>Kelas Mata Pelajaran <br> Berhasil Ditambahkan</h1>
         </div>
         <div class="dokumen">
             <div class="search-sidebar">
@@ -77,27 +77,63 @@
             </div>
             <div class="doc-content">
                 <div class="doc-header d-flex">
-                    <span><a href="dokumen_guru.html"><i class="fa fa-arrow-left"></i></a> </span>
-                    <h1>Tambah Dokumen</h1>
+                    <span><a href="tambahmapel.html"><i class="fa fa-arrow-left"></i></a> </span>
+                    <h1>Tambah Kelas Mata Pelajaran</h1>
                     <div class="search-box1 ml-auto">
                         <span><i class="fa fa-search"></i><p>Search Bar</p></span>
                     </div>
                 </div>
                 <div class="add-docs">
                     <div class="title d-flex">
-                        <p>Judul</p>
-                        <input type="text" placeholder="Ketikkan judul dokumen disini">
+                        <p>Nama Kelas </p>
+                        <input type="text" placeholder="Ketikkan nama kelas disini">
                     </div>
-                    <div class="add-file d-flex">
-                        <p>Tambah File</p>
+                    <div class="title d-flex">
+                        <p>Kelas </p>
+                        <select class="pilihKelas">
+                            <option value="">Pilih Kelas</option>
+                            <option value="X">Kelas X</option>
+                            <option value="XI">Kelas XI</option>
+                            <option value="XII">Kelas XII</option>
+                        </select>
+                    </div>
+                    <div class="title d-flex">
+                        <p>Jadwal Kelas</p>
+                        <select class="pilihHari">
+                            <option value="">Hari</option>
+                            <option value="X">Senin</option>
+                            <option value="XI">Selasa</option>
+                            <option value="XII">Rabu</option>
+                            <option value="X">Kamis</option>
+                            <option value="XI">Jumat</option>
+                            <option value="XII">Sabtu</option>
+                            <option value="XII">Minggu</option>
+                        </select>
+                        
+                        <input class="waktu" placeholder="Waktu"  type="time" name="time" value="23:59" timeformat="24h" />
+                    </div>
+                    <div class="title d-flex">
+                        <p>Semester </p>
+                        <select class="pilihSemester">
+                            <option value="">Pilih Semester</option>
+                            <option value="X">Semester Ganjil</option>
+                            <option value="XI">Semester Genap</option>
+                        </select>
+                    </div>
+                    <div class="title d-flex">
+                        <p>Deskripsi </p>
+                        <textarea name="paragraph_text" placeholder="Ketikkan deskripsi kelas disini (optional)"></textarea>
+                    </div>
+                    <div class="title d-flex">
+                        <p>Sampul Kelas</p>
                         <div class="upload-btn-wrapper">
-                            <button class="add">Upload File</button>
-                            <input type="file" name="myfile"/>
+                            <button class="add">Add Image</button>
+                            <input type="file" name="myfile" accept="image/*"/>
                         </div>
                     </div>
                     <div class="click">
                         <div class="btn-back">
-                            <button onclick="location.href='dokumen_guru.html'">Kembali</button>
+                            <button onclick="location.href='tambahmapel.html'">Kembali</button>
                         </div>
                         <div class="btn-start">
                             <button onclick="tambahConfirm()">Tambah</button>
@@ -127,8 +163,9 @@
 
     <script src="script.js"></script>
     <script>
+
         var c = 0;
-        function LogConfirm() {e4
+        function LogConfirm() {
             if (c == 0) {
                 document.getElementById("confirm-box").style.display = "block"
                 c = 1;
@@ -138,12 +175,12 @@
                 c = 0;
             }
         }
-
+        
         function tambahConfirm() {
             if (c == 0) {
                 document.getElementById("confirm-box-tambah").style.display = "block"
                 setTimeout (()=>{
-                    window.location.href='dokumen_guru.html'
+                    window.location.href='tambahmapel.html'
                 },3000); 
                 c = 1;
             }
@@ -152,7 +189,6 @@
                 c = 0;
             }
         }
-        
     </script>
 
     <!-- Optional JavaScript -->

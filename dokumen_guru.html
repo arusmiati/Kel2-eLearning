@@ -67,13 +67,19 @@
         </div>
         <div id="confirm-box-unduh">
             <h1>Apakah anda ingin mengunduh file ini?</h1>
-            <a href="" class="yes">Iya</a>
+            <a href="#" onclick="unduhYaps()" class="yes">Iya</a>
             <a href="" class="no">Tidak</a>
         </div>
         <div id="confirm-box-delete">
             <h1>Apakah anda yakin ingin menghapus file ini?</h1>
-            <a href="" class="yes">Iya</a>
+            <a href="#" onclick="deleteYaps()" class="yes">Iya</a>
             <a href="" class="no">Tidak</a>
+        </div>
+        <div id="confirm-box-unduh-yaps">
+            <h1>Anda Berhasil Mengunduh File ini</h1>
+        </div>
+        <div id="confirm-box-delete-yaps">
+            <h1>File ini Berhasil Dihapus</h1>
         </div>
         <div class="dokumen">
             <div class="search-sidebar">
@@ -210,6 +216,34 @@
             }
             else {
                 document.getElementById("confirm-box-delete").style.display = "none";
+                c = 0;
+            }
+        }
+
+        function unduhYaps() {
+            if (c == 0) {
+                document.getElementById("confirm-box-unduh-yaps").style.display = "block"; 
+                setTimeout (()=>{
+                    window.location.href='dokumen_guru.html'
+                },3000);     
+                c = 1;  
+            }
+            else {
+                document.getElementById("confirm-box-unduh-yaps").style.display = "none";
+                c = 0;
+            }
+        }
+
+        function deleteYaps() {
+            if (c == 0) {
+                document.getElementById("confirm-box-delete-yaps").style.display = "block"; 
+                setTimeout (()=>{
+                    window.location.href='dokumen_guru.html'
+                },3000);       
+                c = 1;
+            }
+            else {
+                document.getElementById("confirm-box-delete-yaps").style.display = "none";
                 c = 0;
             }
         }

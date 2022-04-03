@@ -10,6 +10,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     min-height: 100%;
+    outline: none;
 }
 
 /* NAVBAR */
@@ -49,6 +50,7 @@ body{
 .navbar .navbar-nav li a:hover{
     color: #2764B8;
     transition: 0.5s ease;
+    border: #082C73;
 }
 #navbarNav .profil{
     margin: 0 20px;
@@ -240,6 +242,7 @@ body{
     background-color: #FF5A72;
     border-color: #FF5A72;
     border-radius: 20px;
+    outline: none;
     color: #FEFEFE;
 }
 
@@ -277,7 +280,7 @@ body{
 }
 
 .sidebar ul{
-    margin-top: 40px;
+    margin-top: 60px;
     margin-left: -40px;
 }
 
@@ -539,6 +542,9 @@ progress::after {
 #confirm-box-delete,
 #confirm-box-logout,
 #confirm-box-unduh,
+#confirm-box-tambah,
+#confirm-box-unduh-yaps,
+#confirm-box-delete-yaps,
 #confirm-box{
     width: 500px;
     overflow: hidden;
@@ -555,10 +561,25 @@ progress::after {
     display: none;
 }
 
+#confirm-box-unduh-yaps,
+#confirm-box-delete-yaps,
+#confirm-box-tambah{
+    height: 100px;
+}
+
+#confirm-box-tambah h1,
+#confirm-box-delete-yaps h1,
+#confirm-box-unduh-yaps h1{
+    margin-top: 20px;
+}
+
+#confirm-box-tambah h1,
 #confirm-box-delete h1,
 #confirm-box h1,
 #confirm-box-logout h1,
-#confirm-box-unduh h1{
+#confirm-box-unduh h1,
+#confirm-box-unduh-yaps h1,
+#confirm-box-delete-yaps h1{
     color: #333;
     font-size: 15px;
     padding-bottom: 10px;
@@ -671,6 +692,7 @@ progress::after {
     text-align: center;
     margin-right: 50px;
     font-weight: 400;
+    outline: none;
 }
 
 #drop-history {
@@ -683,6 +705,7 @@ progress::after {
     background: #082C73;
     color: white;
 }
+
 .list-mapel{
     width: 80%;
     display: grid;
@@ -778,6 +801,7 @@ progress::after {
     border: none;
     font-size: 12px;
     padding: 3px;
+    outline: none;
 }
 
 
@@ -1077,6 +1101,7 @@ progress::after {
     color: white;
     padding-top: 5px;
     display: block;
+    outline: none;
 }
 
 .filter-pencarian .btn-mapel p{
@@ -1514,6 +1539,8 @@ tr:nth-child(even) {
 	font-size: 13px;
 	padding: 10px;
 	border-radius: 5px;
+    outline: none;
+    margin-left: 25px;
 }
 
 .add-docs .title input:hover{
@@ -1545,8 +1572,9 @@ tr:nth-child(even) {
     font-size: 12px;
     margin-left: auto;  
 }
+
 /* FORUM */
-.main-content-forum{
+.main-content-forum {
     min-height: 100vh;
     position: relative;
     margin: 15vh 20vh 15vh 20vh;
@@ -1554,31 +1582,29 @@ tr:nth-child(even) {
 }
 
 .forum-header {
-    background-color: white;
-    width: 100%;
-    height: fit-content;
+    padding: 20px 0 70px 0;
+    height: 100px;
     color: #0F3B92;
 }
 
-.forum-header h1{
+.forum-header h1 {
     font-size: 20pt;
     font-weight: 600;
-    margin-top: -4vh;
-    margin-left: 4vw;
+    padding-left: 30px;
+    padding-right: 20px;
 }
 
-.forum-header a{
+.forum-header a {
     color: #0F3B92;
     text-decoration: none;
     cursor: pointer;
 }
 
-.forum-header .fa-arrow-left{
+.forum-header .fa-arrow-left {
     font-size: 30px;
-    margin-left: 0;
 }
 
-.forum-header a:hover{
+.forum-header a:hover {
     color: #a7a2a2;
 }
 
@@ -1596,6 +1622,7 @@ tr:nth-child(even) {
     margin: 4vh 0 0 0;
     border-radius: 5px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .forum-item p {
@@ -1631,10 +1658,291 @@ tr:nth-child(even) {
     color: #082C73;
 }
 
+/* FORUM CATEGORIES */
+.list-forumcateg {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 10px auto;
+}
+
+.list-forumcateg-item {
+    width: 305px;
+    background: #F2F2F2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #dedede;
+    margin: 30px;
+}
+
+.logo-forumcateg {
+    z-index: 20;
+    position: relative;
+}
+
+.logo-forumcateg img {
+    width: 50px;
+    margin: 25px;
+}
+
+.nama-gurumapel {
+    background-color: #082C73;
+    color: #EFEFEF;
+    height: fit-content;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nama-gurumapel p {
+    font-size: 10px;
+    text-align: justify;
+    padding-left: 30%;
+    padding-bottom: 4.5vh;
+}
+
+.nama-gurumapel h6 {
+    font-size: 12px;
+    text-align: justify;
+    margin-top: -22%;
+    padding-left: 30%;
+}
+
+.ket-forumcateg,
+.jlh-siswa {
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.ket-forumcateg h6 {
+    font-size: 16px;
+}
+
+.ket-mapel i,
+.jlh-siswa i {
+    padding-right: 10px;
+}
+
+.deskripsi {
+    padding: 0 10px 0 10px;
+    text-align: justify;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -12px;
+}
+
+.btn-open {
+    margin-left: auto;
+}
+
+.btn-open button {
+    background: #082C73;
+    color: white;
+    border-radius: 15px;
+    width: 90px;
+    border: none;
+    font-size: 12px;
+    padding: 3px;
+}
+
+/* FORUM THREAD */
+.forumthread-list {
+    position: relative;
+    width: 80%;
+    height: fit-content;
+}
+
+.forumthread-content {
+    width: 100%;
+    height: fit-content;
+    margin-left: 15vh;
+}
+
+.main-item {
+    height: fit-content;
+    background-color: #F2F2F2;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+    box-shadow: 0 1vh 1vw 0 rgba(0, 0, 0, 0.308);
+}
+
+.sub-item {
+    height: fit-content;
+    background-color: #F2F2F2;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+    margin-left: 5vh;
+    box-shadow: 0 1vh 1vw 0 rgba(0, 0, 0, 0.308);
+}
+
+.foto {
+    position: relative;
+    text-align: center;
+    margin-left: -47vw;
+}
+
+.sub-item .foto {
+    margin-left: -44vw;
+}
+
+.foto img {
+    width: 8vw;
+    border-radius: 10px;
+    margin-top: 5vh;
+}
+
+.forumthread-description {
+    position: relative;
+    width: 70%;
+    text-align: justify;
+    position: relative;
+    margin-left: 28vh;
+    margin-top: -10vw;
+}
+
+.forumthread-title p {
+    font-size: 14px;
+    color: #a7a2a2;
+    margin-top: -4.3vh;
+    margin-left: 37vw;
+}
+
+.sub-item .forumthread-title p {
+    margin-left: 35vw;
+}
+
+.forumthread p {
+    font-size: 13px;
+}
+
+.forumthread {
+    margin-bottom: 5vh;
+}
+
+.info {
+    font-size: 13px;
+}
+
+.info .fa {
+    color: #082C73;
+    font-size: 15px;
+    margin-right: 1vh;
+}
+
+.btn-reply button {
+    background: #082C73;
+    color: white;
+    border-radius: 15px;
+    width: 160px;
+    border: none;
+    font-size: 12px;
+    padding: 3px;
+}
+
+.main-item .btn-reply {
+    margin-top: -5.5vh;
+    padding-bottom: 5vh;
+    margin-left: 31vw;
+}
+
+.sub-item .btn-reply {
+    margin-top: -5.5vh;
+    padding-bottom: 5vh;
+    margin-left: 29vw;
+}
+
+/* TAMBAH MAPEL */
+.add-mapel{
+    width: 305px;
+    background: #F2F2F2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #dedede;
+    margin: 30px;
+}
+
+.add-mapel button{
+    height: 410px;
+    width: 250px;
+    margin: 30px;
+    outline: none;
+    border-style: dashed;
+    border-radius: 10px;
+    border-color: rgb(182, 182, 182);
+    font-size: 23px;
+    color: rgb(182, 182, 182);
+    font-weight: 600;
+}
+
+/* DETAIL TAMBAH MAPEL */
+.pilihKelas, .pilihHari, .pilihSemester{
+    position: relative;
+    background: #FEFEFE;
+    border: 1px solid #FEFEFE;
+    width: 15%;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    color: rgba(71, 71, 71, 0.867);
+}
+
+textarea{
+    position: relative;
+    background: #FEFEFE;
+    border: 1px solid #FEFEFE;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    width: 80%;
+    min-height: 100px;
+    color: rgba(71, 71, 71, 0.867);
+}
+.pilihSemester{
+    width: 25%;
+}
+
+.add-docs .title input.waktu{
+    width: 20%;
+    margin-left: 20px;
+}
+
+.add-docs .title input.deskripsi{
+    margin-top: 2px;
+}
+
+button.add{
+    background: #082C73;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+  
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
 
 @media screen and (min-width: 100px) and (max-width: 800px){
     .sidebar ul{
-        margin-top: 30px;
+        margin-top: 50px;
     }
     
     #navbarNav .profil .icon-profil{
@@ -1755,14 +2063,14 @@ tr:nth-child(even) {
         font-size: 13px;
     }
 
-    .list-mapel{
+    .list-mapel, .list-forumcateg{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         width: 100%;
         margin-top: 0px;
     }
 
-    .list-mapel-item{
+    .list-mapel-item, .list-forumcateg-item{
         margin: 30px auto;
     }
 
@@ -1936,32 +2244,111 @@ tr:nth-child(even) {
 
     .finish-detail{
         width: 80%;
-    }
+    }  
 
-    .main-content-forum{
+    .main-content-forum {
         margin: 15vh 4vh 0 4vh;
     }
-    
-    .forum-header h1{
-        font-size: 20pt;
+
+    .forum-header {
+        padding: 15px 0 30px 0;
+        height: 80px;
+    }
+
+    .forum-header h1 {
+        font-size: 18pt;
+    }
+
+    .forum-header .fa-arrow-left {
+        font-size: 28px;
+    }
+
+    .nama-gurumapel p {
+        font-size: 10px;
+        text-align: justify;
+        padding-bottom: 30px;
+    }
+
+    .nama-gurumapel {
+        height: fit-content;
+    }
+
+    .nama-gurumapel h6 {
+        font-size: 12px;
+        text-align: justify;
+        margin-top: -8vh;
+    }
+
+    /* Forum Thread */
+    .forumthread-content {
+        margin-left: 10vw;
+        margin-top: 3vh;
+    }
+
+    .foto,
+    .sub-item .foto {
+        margin-left: 0;
+        margin-bottom: 2vh;
+    }
+
+    .foto img {
+        width: 8vw;
+        border-radius: 10px;
+        margin-top: 3vh;
+    }
+
+    .forumthread-description {
+        width: 90%;
         margin-left: 5vw;
-        margin-top: -3.5vh;
-    }
-    
-    .forum-header .fa-arrow-left{
-        font-size: 20px;
-        margin-left: -0.5vw;
+        margin-top: 0;
     }
 
-    .forum-item p {
-        font-size: 15px;
-    }
-    
-    .forum-item .go {
-        margin-left: 90%;
+    .forumthread-title p,
+    h5 {
+        font-size: 13px;
+        margin-top: 0;
+        margin-left: 0;
     }
 
+    .sub-item .forumthread-title p,
+    h5 {
+        margin-left: 0;
+    }
 
+    .forumthread p {
+        font-size: 10px;
+    }
+
+    .forumthread {
+        margin-bottom: 5vh;
+        margin-right: 1.5vh;
+    }
+
+    .info {
+        font-size: 10px;
+    }
+
+    .info .fa {
+        font-size: 13px;
+    }
+
+    .btn-reply button {
+        width: 100px;
+        border: none;
+        font-size: 10px;
+    }
+
+    .main-item .btn-reply {
+        margin-top: 0;
+        padding-bottom: 3vh;
+        margin-left: 0;
+    }
+
+    .sub-item .btn-reply {
+        margin-top: 0;
+        padding-bottom: 3vh;
+        margin-left: 0;
+    }
 }
 
 @media screen and (min-width: 750px) and (max-width: 990px){
@@ -2110,6 +2497,22 @@ tr:nth-child(even) {
         margin-top: -1.7vh;
     }
 
+    /* Forum Thread */
+    .foto {
+        position: relative;
+        margin-left: -60vw;
+    }
+
+    .sub-item .foto {
+        position: relative;
+        margin-left: -55vw;
+    }
+
+    .forumthread p {
+        font-size: 13px;
+        margin-right: 3vh;
+    }
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -2124,6 +2527,7 @@ tr:nth-child(even) {
         margin-bottom: -30px; 
         border-radius: 0px; 
         color: white;
+        outline: none;
     }
 
     #navbarNav .profil .icon-profil{
