@@ -1693,7 +1693,7 @@ tr:nth-child(even) {
 }
 
 /* TAUTAN */
-.tautan-head table .td1 {
+.tautan-head table .td3 {
     border-radius: 10px !important;
 }
 
@@ -1990,6 +1990,74 @@ button.add {
     top: 0;
     opacity: 0;
 }
+
+/* TAMBAH THREAD */
+.title_thread {
+    height: 40vh;
+}
+
+/* ALUR */
+.alur {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 50px;
+}
+
+.th4,
+.td4 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.th5,
+.td5 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 480px;
+}
+
+.bar-progres1 progress,
+.bar-progres2 progress {
+    position: relative;
+    width: 400px;
+    margin-right: 10px;
+}
+
+.bar-progres1 p {
+    margin-right: 30px;
+}
+
+progress::before,
+progress::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50vh;
+    border-radius: 10px;
+}
+
+.bar-progres1 progress::before {
+    width: 100%;
+    background: gray;
+}
+
+.bar-progres1 progress::after {
+    width: 100%;
+    background: #082C73;
+}
+
+.bar-progres2 progress::before {
+    width: 100%;
+    background: gray;
+}
+
+.bar-progres2 progress::after {
+    width: 75%;
+    background: #082C73;
+}
+
 
 @media screen and (min-width: 100px) and (max-width: 800px) {
     .sidebar ul {
@@ -2413,6 +2481,28 @@ button.add {
         margin-top: 0;
         padding-bottom: 3vh;
         margin-left: 0;
+    }
+
+    /* Alur */
+    .alur {
+        margin-left: 10px;
+    }
+
+    .bar-progres1 progress,
+    .bar-progres2 progress {
+        position: relative;
+        width: 150px;
+    }
+
+    .td4,
+    .th4 {
+        width: 250vh;
+    }
+
+    .td4 a,
+    .td5 p {
+        font-size: 10px;
+        padding: 0;
     }
 }
 
