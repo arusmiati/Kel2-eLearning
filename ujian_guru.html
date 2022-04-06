@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;800&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Tambah Dokumen</title>
+    <title>Ujian</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -30,10 +30,10 @@
                     <a href="homepage.html" class="btn" aria-hidden="true">Homepage</a>
                 </li>
                 <li class="mapel nav-item">
-                    <a href="kelas.html" class="btn active" aria-hidden="true">Kelasku</a>
+                    <a href="matapelajaran.html" class="btn active" aria-hidden="true">Mata Pelajaran</a>
                 </li>
                 <li class="search-mapel nav-item">
-                    <a href="tambahmapel.html" class="btn" aria-hidden="true">Tambah Kelas </a>
+                    <a href="pencarian.html" class="btn" aria-hidden="true">Pencarian Mata Pelajaran </a>
                 </li>
                 <li class="leader nav-item">
                     <a href="leaderboards.html" class="btn" aria-hidden="true">Leaderboards</a>
@@ -65,9 +65,7 @@
             <a href="login.html" class="yes">Iya</a>
             <a href="" class="no">Tidak</a>
         </div>
-        <div id="confirm-box-tambah">
-            <h1>File Ini<br> Berhasil Ditambahkan</h1>
-        </div>
+           
         <div class="dokumen">
             <div class="search-sidebar">
                 <div class="search-box d-flex">
@@ -78,35 +76,36 @@
             <div class="doc-content">
                 <div class="doc-header">
                     <div class="d-flex">
-                        <span><a href="dokumen_guru.html"><i class="fa fa-arrow-left"></i></a> </span>
-                        <h1>Tambah Dokumen</h1>
+                        <span><a href="detailkelas.html"><i class="fa fa-arrow-left"></i></a> </span>
+                        <h1>Ulangan Harian</h1>
+                        <div class="btn-start ml-auto">
+                            <button onclick="location.href='tambahujian.html'">Tambah</button>
+                        </div>
                     </div>
                     
                     <div class="search-box1 doc-guru ml-auto">
                         <span><i class="fa fa-search"></i><p>Search Bar</p></span>
                     </div>
                 </div>
-                <div class="add-docs tambah-tugas">
-                    <div class="title d-flex">
-                        <p>Judul</p>
-                        <input type="text" placeholder="Ketikkan judul dokumen disini">
+                <div class="ujian-list">
+                    <div class="ujian-head">
+                        <table>
+                            <tr class="title">
+                              <th class="th1">Nama Ulangan</th>
+                              <th class="th2">Status</th>
+                            </tr>
+                            <tr class="isi">
+                              <td class="td1"><a href="detailujian_guru.html">Ulangan 1</a> </td>
+                              <td class="td2">Aktif Pada Tanggal 15 Maret 2022 10.00 - 11.00 WITA</td>
+                              
+                            </tr>
+                            <tr class="isi">
+                                <td class="td1"><a href="#"> Ulangan 2</a></td>
+                                <td class="td2">Aktif Pada Tanggal 16 Maret 2022 10.00 - 11.00 WITA</td>   
+                            </tr>
+                        </table>
                     </div>
-                    <div class="add-file d-flex">
-                        <p>Tambah File</p>
-                        <div class="upload-btn-wrapper">
-                            <button class="add">Upload File</button>
-                            <input type="file" name="myfile"/>
-                        </div>
-                    </div>
-                    <div class="click">
-                        <div class="btn-back">
-                            <button onclick="location.href='dokumen_guru.html'">Kembali</button>
-                        </div>
-                        <div class="btn-start">
-                            <button onclick="tambahConfirm()">Tambah</button>
-                        </div>
-                    </div>
-                </div>     
+                </div>
            </div>
         </div>
 
@@ -142,19 +141,6 @@
             }
         }
 
-        function tambahConfirm() {
-            if (c == 0) {
-                document.getElementById("confirm-box-tambah").style.display = "block"
-                setTimeout (()=>{
-                    window.location.href='dokumen_guru.html'
-                },3000); 
-                c = 1;
-            }
-            else {
-                document.getElementById("confirm-box-tambah").style.display = "none"
-                c = 0;
-            }
-        }
         
     </script>
 

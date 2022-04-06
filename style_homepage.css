@@ -423,6 +423,29 @@ body {
     margin-bottom: 10px;
 }
 
+/* KELOLA USER */
+.editslide {
+    position: absolute;
+    z-index: 100;
+    width: 90%;
+    margin-top: 10px;
+}
+
+button.edit {
+    float: right;
+    background: #8abbff ;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+    font-size: 15px;
+}
+
+.edit2 {
+    position: absolute;
+    margin: 50px 25px;
+}
 /* responsive */
 
 @media screen and (min-width: 751px) and (max-width: 1200px) {

@@ -33,16 +33,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="name nav-item">
-          <a href="homepage_guru.html" class="btn active" aria-hidden="true">Homepage</a>
+          <a href="homepage.html" class="btn active" aria-hidden="true">Homepage</a>
         </li>
         <li class="mapel nav-item">
-          <a href="kelas.html" class="btn" aria-hidden="true">Kelasku</a>
+          <a href="kelola_user.html" class="btn" aria-hidden="true">Kelola Users</a>
         </li>
         <li class="search-mapel nav-item">
-          <a href="tambahkelas.html" class="btn" aria-hidden="true">Tambah Kelas</a>
+          <a href="pencarian.html" class="btn" aria-hidden="true">Kelola Mata Pelajaran</a>
         </li>
         <li class="leader nav-item">
-          <a href="leaderboards.html" class="btn" aria-hidden="true">Leaderboards</a>
+          <a href="leaderboards.html" class="btn" aria-hidden="true">Kelola Sistem</a>
         </li>
       </ul>
       <div class="profil nav-item dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
@@ -57,7 +57,6 @@
               <p>Nis/Nip</p>
             </div>
             <button class="dropdown-item" type="button">Profil</button>
-            <button class="dropdown-item" type="button" onclick="window.location.href='progress.html'">Progress</button>
             <button class="dropdown-item" type="button" onclick="window.location.href='bantuan.html'">Bantuan</button>
             <button onclick="LogConfirm()" class="log-out dropdown-item" type="button">Logout</button>
         </div>
@@ -70,7 +69,9 @@
   <div class="container">
     <div class="content-slide">
       <div class="imgslide">
+        <div class="editslide"><button onclick="location.href='editslide.html'" class="edit">Edit Slide</button></div>
         <img class="img" src="img_homepage/home_1.jpeg" alt="gambar 3">
+        
         <div class="txt1">
           <h1><b>Datang</b></h1>
           <h1><b>E-LEARNING SMANEL</b></h1>
@@ -82,6 +83,7 @@
       </div>
 
       <div class="imgslide">
+        <div class="editslide"><button onclick="location.href='editslide.html'" class="edit">Edit Slide</button></div>
         <img class="img" src="img_homepage/home_2.jpeg" alt="gambar 2">
         <div class="txt">
           <h1><b>Perkembangan</b></h1>
@@ -94,6 +96,7 @@
       </div>
 
       <div class="imgslide">
+        <div class="editslide"><button onclick="location.href='editslide.html'" class="edit">Edit Slide</button></div>
         <img class="img" src="img_homepage/home_3.jpeg" alt="gambar 3">
         <div class="txt">
           <h1><b>Standar Penerimaan</b></h1>
@@ -116,6 +119,7 @@
     </div>
     <div class="content-announcements">
       <div class="first">
+        <div class="edit2"><button onclick="location.href='editannouncement.html'" class="edit">Edit <br> Announcement</button></div>
         <div class="image"></div>
         <div class="text">
           <h5>Lorem Ipsum</h5>
@@ -126,8 +130,8 @@
         </div>
       </div>
       <div class="announcement">
-        <a id="announcement" href="announcement.html">Announcement</a>
-        <a id="announcement" href="announcement.html">&#10095;</a>
+        <a id="announcement" href="announcement_admin.html">Announcement</a>
+        <a id="announcement" href="announcement_admin.html">&#10095;</a>
         <div class="announ1">
           <img class="new" src="img/new.png" alt="">
           <a onclick="">&#10095;</a>

@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;800&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-lite.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-lite.js"></script>
+    
     <title>Tambah Ujian</title>
     <link rel="stylesheet" href="style.css">
 
@@ -30,10 +34,10 @@
                     <a href="homepage.html" class="btn" aria-hidden="true">Homepage</a>
                 </li>
                 <li class="mapel nav-item">
-                    <a href="matapelajaran.html" class="btn" aria-hidden="true">Mata Pelajaran</a>
+                    <a href="kelas.html" class="btn active" aria-hidden="true">Kelasku</a>
                 </li>
                 <li class="search-mapel nav-item">
-                    <a href="pencarian.html" class="btn" aria-hidden="true">Pencarian Mata Pelajaran </a>
+                    <a href="tambahmapel.html" class="btn" aria-hidden="true">Tambah Kelas </a>
                 </li>
                 <li class="leader nav-item">
                     <a href="leaderboards.html" class="btn" aria-hidden="true">Leaderboards</a>
@@ -66,7 +70,7 @@
             <a href="" class="no">Tidak</a>
         </div>
         <div id="confirm-box-tambah">
-            <h1>Kelas Mata Pelajaran <br> Berhasil Ditambahkan</h1>
+            <h1>Soal Ujian<br> Berhasil Ditambahkan</h1>
         </div>
         <div class="dokumen">
             <div class="search-sidebar">
@@ -77,72 +81,95 @@
             </div>
             <div class="doc-content">
                 <div class="doc-header d-flex">
-                    <span><a href="tambahmapel.html"><i class="fa fa-arrow-left"></i></a> </span>
-                    <h1>Tambah Kelas Mata Pelajaran</h1>
+                    <span><a href="ujian_guru.html"><i class="fa fa-arrow-left"></i></a> </span>
+                    <h1>Tambah Ulangan Harian</h1>
                     <div class="search-box1 ml-auto">
                         <span><i class="fa fa-search"></i><p>Search Bar</p></span>
                     </div>
                 </div>
                 <div class="add-docs">
                     <div class="title d-flex">
-                        <p>Nama Kelas </p>
-                        <input type="text" placeholder="Ketikkan nama kelas disini">
+                        <p>Judul </p>
+                        <input type="text" placeholder="Ketikkan judul ulangan disini">
                     </div>
                     <div class="title d-flex">
-                        <p>Kelas </p>
-                        <select class="pilihKelas">
-                            <option value="">Pilih Kelas</option>
-                            <option value="X">Kelas X</option>
-                            <option value="XI">Kelas XI</option>
-                            <option value="XII">Kelas XII</option>
+                        <p>Waktu</p>
+                        <input type="datetime-local" class="date">
+                    </div>
+                    <div class="title d-flex">
+                        <p>Skor</p>
+                        <select class="pilihSkor">
+                            <option value="100">100</option>
+                            <option value="not">Tidak Dinilai</option>
                         </select>
                     </div>
                     <div class="title d-flex">
-                        <p>Jadwal Kelas</p>
-                        <select class="pilihHari">
-                            <option value="">Hari</option>
-                            <option value="X">Senin</option>
-                            <option value="XI">Selasa</option>
-                            <option value="XII">Rabu</option>
-                            <option value="X">Kamis</option>
-                            <option value="XI">Jumat</option>
-                            <option value="XII">Sabtu</option>
-                            <option value="XII">Minggu</option>
+                        <p>Durasi</p>
+                        <select class="pilihDurasi">
+                            <option value="30Menit">30 Menit</option>
+                            <option value="45Menit">45 Menit</option>
+                            <option value="60Menit">60 Menit</option>
+                            <option value="90Menit">90 Menit</option>
+                            <option value="120Menit">120 Menit</option>
+                            <option value="Unlimited">Tanpa Batas</option>
                         </select>
-                        
-                        <input class="waktu" placeholder="Waktu"  type="time" name="time" value="23:59" timeformat="24h" />
-                    </div>
-                    <div class="title d-flex">
-                        <p>Semester </p>
-                        <select class="pilihSemester">
-                            <option value="">Pilih Semester</option>
-                            <option value="X">Semester Ganjil</option>
-                            <option value="XI">Semester Genap</option>
-                        </select>
-                    </div>
-                    <div class="title d-flex">
-                        <p>Deskripsi </p>
-                        <textarea name="paragraph_text" placeholder="Ketikkan deskripsi kelas disini (optional)"></textarea>
                     </div>
                     <div class="title">
                         <p>Pertanyaan/Soal</p>
-                        <div class="header d-flex">
-                            <input type="text" placeholder="ketik pertanyaan disini">
-                            <select class="types ml-auto">
-                                <option value="X">Semester Ganjil</option>
-                                <option value="XI">Semester Genap</option>
-                            </select>
-                            <input type="text">
-                            <button onclick="add()">Add</button>
-                            <button onclick="remove()">remove</button>
-                            <div id="new_chq"></div>
-                            <input type="hidden" value="1" id="total_chq">
-  
-                    </div>
+                        <div class="header soal" id="soal">
+                            <div class="header-item d-flex">
+                                <div class="judul-soal">
+                                    <p>Soal</p>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn-mapel dropdown-toggle" data-toggle="dropdown">
+                                        Tipe Soal
+                                    </button>
+                                    <div id="drop-history" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <button onclick="pg()" class="dropdown-item">Pilihan Ganda</button>
+                                        <button onclick="essay()" class="dropdown-item">Jawaban Singkat</button> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="soall">
+                                <input type="text" placeholder="ketikkan soal disini">
+                            </div>
+                            <div class="soal-default1" id="soal-default1">
+                               <div id="container0">
+                                    <input type="radio" name="mytext[]" class="opsi1">
+                                    <input type="text" placeholder="Opsi" class="keterangan">
+                               </div>
+                               <div class="soal-default1" hidden>
+                                    <input type="radio" name="mytext[]" class="opsi1">
+                                    <input type="text" placeholder="Opsi" class="keterangan">
+                                    <button class="remove" onclick="remove(this)"><i class="fa fa-close"></i></button>
+                               </div>
+                            </div> 
+                            <div class="add-opsi" onclick="addoptions()" id="add-opsi">
+                                <input type="radio" name="mytext[]" class="opsi1">
+                                <input type="text" readonly class="keterangan" placeholder="Tambah Opsi">
+                            </div>
+                            <div class="soal-default2" id="soal-default2">
+                                <div id="summernote"></div>
+                            </div> 
+                            <div class="menu">
+                                <button><abbr title="Lampirkan Link"><i class="fa fa-link"></i></abbr></button>
+                                <button><abbr title="Lampirkan File"><i class="fa fa-paperclip"></i></abbr></button>
+                                <button><abbr title="Lampirkan Gambar"><i class="fa fa-picture-o"></i></abbr></button>
+                            </div>
+                           <div class="btnAddDel d-flex">
+                            <div class="add-soal" onclick="addSoal()" id="add-soal">
+                                <button><i class="fa fa-plus"></i>Tambah Soal</button>
+                            </div>
+                            <div class="del-soal" onclick="delSoal()" id="del-soal">
+                                <button><i class="fa fa-trash"></i>Hapus Soal</button>
+                            </div>
+                           </div>
+                        </div>
                     </div>
                     <div class="click">
                         <div class="btn-back">
-                            <button onclick="location.href='tambahmapel.html'">Kembali</button>
+                            <button onclick="location.href='ujian_guru.html'">Kembali</button>
                         </div>
                         <div class="btn-start">
                             <button onclick="tambahConfirm()">Tambah</button>
@@ -169,12 +196,10 @@
         </div>
     </div>
 
-
     <script src="script.js"></script>
     <script>
-
         var c = 0;
-        function LogConfirm() {
+        function LogConfirm() {e4
             if (c == 0) {
                 document.getElementById("confirm-box").style.display = "block"
                 c = 1;
@@ -184,12 +209,12 @@
                 c = 0;
             }
         }
-        
+
         function tambahConfirm() {
             if (c == 0) {
                 document.getElementById("confirm-box-tambah").style.display = "block"
                 setTimeout (()=>{
-                    window.location.href='tambahmapel.html'
+                    window.location.href='ujian_guru.html'
                 },3000); 
                 c = 1;
             }
@@ -199,13 +224,20 @@
             }
         }
 
- </script>
+        $('#summernote').summernote({
+            placeholder: 'Ketikkan Jawaban Di Sini',
+            tabsize: 2,
+            height: 100
+        });
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"crossorigin="anonymous"></script>
+</body>
+
 </body>
 
 </html>

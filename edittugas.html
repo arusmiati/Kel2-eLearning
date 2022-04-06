@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;800&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Tambah Dokumen</title>
+    <title>Tambah Mata Pelajaran</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -30,10 +30,10 @@
                     <a href="homepage.html" class="btn" aria-hidden="true">Homepage</a>
                 </li>
                 <li class="mapel nav-item">
-                    <a href="kelas.html" class="btn active" aria-hidden="true">Kelasku</a>
+                    <a href="matapelajaran.html" class="btn active" aria-hidden="true">Kelasku</a>
                 </li>
                 <li class="search-mapel nav-item">
-                    <a href="tambahmapel.html" class="btn" aria-hidden="true">Tambah Kelas </a>
+                    <a href="pencarian.html" class="btn" aria-hidden="true">Pencarian Kelas</a>
                 </li>
                 <li class="leader nav-item">
                     <a href="leaderboards.html" class="btn" aria-hidden="true">Leaderboards</a>
@@ -66,7 +66,7 @@
             <a href="" class="no">Tidak</a>
         </div>
         <div id="confirm-box-tambah">
-            <h1>File Ini<br> Berhasil Ditambahkan</h1>
+            <h1>Tugas Ini<br> Berhasil Diedit</h1>
         </div>
         <div class="dokumen">
             <div class="search-sidebar">
@@ -78,8 +78,8 @@
             <div class="doc-content">
                 <div class="doc-header">
                     <div class="d-flex">
-                        <span><a href="dokumen_guru.html"><i class="fa fa-arrow-left"></i></a> </span>
-                        <h1>Tambah Dokumen</h1>
+                        <span><a href="tugas_guru.html"><i class="fa fa-arrow-left"></i></a> </span>
+                        <h1>Edit Tugas</h1>
                     </div>
                     
                     <div class="search-box1 doc-guru ml-auto">
@@ -89,21 +89,29 @@
                 <div class="add-docs tambah-tugas">
                     <div class="title d-flex">
                         <p>Judul</p>
-                        <input type="text" placeholder="Ketikkan judul dokumen disini">
+                        <input type="text" placeholder="Ketikkan nama kelas disini">
                     </div>
-                    <div class="add-file d-flex">
-                        <p>Tambah File</p>
-                        <div class="upload-btn-wrapper">
-                            <button class="add">Upload File</button>
-                            <input type="file" name="myfile"/>
-                        </div>
+                    <div class="title d-flex">
+                        <p>Deskripsi</p>
+                        <textarea name="paragraph_text" placeholder="Ketikkan deskripsi tugas disini (optional)"></textarea>
+                    </div>
+                    <div class="title d-flex">
+                        <p>Batas Pengumpulan</p>
+                        <input type="datetime-local" name="" id="">
+                    </div>
+                    <div class="title d-flex">
+                        <p>Skor</p>
+                        <select class="pilihSemester">
+                            <option value="100">100</option>
+                            <option value="null">Tidak Dinilai</option>
+                        </select>
                     </div>
                     <div class="click">
                         <div class="btn-back">
-                            <button onclick="location.href='dokumen_guru.html'">Kembali</button>
+                            <button onclick="location.href='tugas_guru.html'">Kembali</button>
                         </div>
                         <div class="btn-start">
-                            <button onclick="tambahConfirm()">Tambah</button>
+                            <button onclick="tambahConfirm()">Edit</button>
                         </div>
                     </div>
                 </div>     
@@ -130,8 +138,9 @@
 
     <script src="script.js"></script>
     <script>
+
         var c = 0;
-        function LogConfirm() {e4
+        function LogConfirm() {
             if (c == 0) {
                 document.getElementById("confirm-box").style.display = "block"
                 c = 1;
@@ -141,12 +150,12 @@
                 c = 0;
             }
         }
-
+        
         function tambahConfirm() {
             if (c == 0) {
                 document.getElementById("confirm-box-tambah").style.display = "block"
                 setTimeout (()=>{
-                    window.location.href='dokumen_guru.html'
+                    window.location.href='tugas_guru.html'
                 },3000); 
                 c = 1;
             }
@@ -155,7 +164,6 @@
                 c = 0;
             }
         }
-        
     </script>
 
     <!-- Optional JavaScript -->
