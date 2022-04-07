@@ -179,6 +179,7 @@ body {
   border-radius: 40px;
 }
 
+<<<<<<< HEAD
 .password-user {
   width: 100%;
   height: 900px;
@@ -199,6 +200,23 @@ body {
 }
 
 .container-change-password {
+=======
+.profil-sidebar {
+  width: 246px;
+  height: 100%;
+  margin-left: 90px;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  background: #082c73;
+  box-shadow: 15px 0px 25px rgb(0 0 0 / 15%);
+  position: fixed;
+  z-index: 100;
+}
+
+.profil-sidebar-page {
+>>>>>>> b4fe283f862abf148dbebef6219efb9b6a9d1b08
   position: absolute;
   width: 784px;
   height: 311px;
@@ -245,6 +263,184 @@ body {
 }
 
 #confirm-password {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  left: 280px;
+  top: 210px;
+  background: #58BAAB;
+  border-radius: 40px;
+}
+
+#batal-password {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  left: 484px;
+  top: 210px;
+  background: #FF5A72;
+  border-radius: 40px;
+}
+
+#simpan {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  left: 595px;
+  top: 850px;
+  background: #58BAAB;
+  border-radius: 40px;
+}
+
+<<<<<<< HEAD
+#batal {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  left: 840px;
+  top: 850px;
+  background: #FF5A72;
+  border-radius: 40px;
+}
+
+.password-user {
+  width: 100%;
+  height: 900px;
+  color: #434343;
+}
+
+.password-user h2 {
+  position: absolute;
+  width: 387px;
+  height: 54px;
+  left: 405px;
+  top: 161px;
+=======
+.profil-user {
+  height: 900px;
+  width: 100%;
+  background-color: white;
+  align-items: center;
+}
+
+.profil-responsive {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profil-responsive img {
+  size: 100px;
+  margin-top: 150px;
+  margin-left: 688px;
+}
+
+.profil-responsive a {
+  margin-left: 738px;
+  margin-top: 360px;
+  position: absolute;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #0F3B92;
+}
+
+#NamaPengguna {
+  position: absolute;
+  left: 665px;
+  top: 386px;
+>>>>>>> b4fe283f862abf148dbebef6219efb9b6a9d1b08
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+<<<<<<< HEAD
+.container-change-password {
+=======
+#NomorInduk {
+  position: absolute;
+  left: 729px;
+  top: 440px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+.container-field-user {
+>>>>>>> b4fe283f862abf148dbebef6219efb9b6a9d1b08
+  position: absolute;
+  width: 784px;
+  height: 311px;
+  left: 405px;
+  top: 240px;
+  background: #F5F5F5;
+  border-radius: 10px;
+}
+
+.container-change-password label {
+  width: 243px;
+  padding: 10px 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #434343;
+}
+
+.container-change-password button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+.container-change-password input {
+  width: 470px;
+  height: 30px;
+<<<<<<< HEAD
+  background: #F5F5F5;
+  border: 1px solid #AFAFAF;
+=======
+  border-radius: 5px;
+  font-family: 'Poppins';
+  font-style: normal;
+  line-height: 20px;
+  color: #000000;
+  border: 1px solid #B9B9B9;
+>>>>>>> b4fe283f862abf148dbebef6219efb9b6a9d1b08
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.field-password {
+  margin-left: 32px;
+  margin-top: 30px;
+}
+
+<<<<<<< HEAD
+#confirm-password {
+=======
+::placeholder {
+  color: #B9B9B9;
+  opacity: 1;
+}
+
+.profil-user button {
+>>>>>>> b4fe283f862abf148dbebef6219efb9b6a9d1b08
   position: absolute;
   width: 143px;
   height: 30px;
@@ -483,6 +679,7 @@ body {
 
 /* SIDEBAR */
 .sidebar {
+<<<<<<< HEAD
     background-color: #3477D2;
     width: 90px;
     height: 100%;
@@ -492,6 +689,17 @@ body {
     position: fixed;
     z-index: 100;
     top: 50px;
+=======
+  background-color: #3477d2;
+  width: 90px;
+  height: 100%;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  position: fixed;
+  z-index: 200;
+  top: 50px;
+>>>>>>> b4fe283f862abf148dbebef6219efb9b6a9d1b08
 }
 
 .sidebar .icon img {
@@ -548,6 +756,7 @@ li.active {
 /* FOOTER */
 
 .footer {
+<<<<<<< HEAD
     display: grid;
     height: max-content;
     width: 100%;
@@ -556,6 +765,17 @@ li.active {
     position: relative;
     padding: 10px;
     font-size: 12px;
+=======
+  display: grid;
+  height: max-content;
+  width: 100%;
+  bottom: 0;
+  background-color: #082c73;
+  position: relative;
+  padding: 10px;
+  font-size: 12px;
+  z-index: 100;
+>>>>>>> b4fe283f862abf148dbebef6219efb9b6a9d1b08
 }
 
 .footer .web {
