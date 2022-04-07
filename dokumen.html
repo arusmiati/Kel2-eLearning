@@ -50,7 +50,6 @@
                             <p>Nis/Nip</p>
                         </div>
                         <button class="dropdown-item" type="button">Profil</button>
-                        <button class="dropdown-item" type="button">Agenda</button>
                         <button class="dropdown-item" type="button"onclick="window.location.href='progress.html'">Progress</button>
                         <button class="dropdown-item" type="button"onclick="window.location.href='bantuan.html'">Bantuan</button>
                         <button onclick="LogConfirm()" class="log-out dropdown-item" type="button">Logout</button>
@@ -68,8 +67,11 @@
         </div>
         <div id="confirm-box-unduh">
             <h1>Apakah anda ingin mengunduh file ini?</h1>
-            <a href="" class="yes">Iya</a>
+            <a href="#" onclick="unduhYaps()" class="yes">Iya</a>
             <a href="" class="no">Tidak</a>
+        </div>
+        <div id="confirm-box-unduh-yaps">
+            <h1>Anda Berhasil Mengunduh File ini</h1>
         </div>
         <div class="dokumen">
             <div class="search-sidebar">
@@ -151,6 +153,19 @@
             }
             else {
                 document.getElementById("confirm-box-unduh").style.display = "none";
+                c = 0;
+            }
+        }
+        
+        function unduhYaps() {
+            if (c == 0) {
+                document.getElementById("confirm-box-unduh-yaps").style.display = "block"; 
+                setTimeout (()=>{
+                    window.location.href='dokumen.html'
+                },3000);       
+            }
+            else {
+                document.getElementById("confirm-box-unduh-yaps").style.display = "none";
                 c = 0;
             }
         }

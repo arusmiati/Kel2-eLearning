@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;800&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Pencarian Mata Pelajaran</title>
+    <title>Ujian</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -50,7 +50,6 @@
                             <p>Nis/Nip</p>
                         </div>
                         <button class="dropdown-item" type="button">Profil</button>
-                        <button class="dropdown-item" type="button">Agenda</button>
                         <button class="dropdown-item" type="button"onclick="window.location.href='progress.html'">Progress</button>
                         <button class="dropdown-item" type="button"onclick="window.location.href='bantuan.html'">Bantuan</button>
                         <button onclick="LogConfirm()" class="log-out dropdown-item" type="button">Logout</button>
@@ -110,10 +109,9 @@
                     </div>
                 </div>
            </div>
-    </div>
+        </div>
 
     </div>
-
     <div class="footer">
         <div class="nama-footer">
           <p class="tfooter">SMA Negeri 5 Luwu</p>
@@ -136,14 +134,13 @@
         function LogConfirm() {e4
             if (c == 0) {
                 document.getElementById("confirm-box").style.display = "block"
-                c = 1;
+                c = 1;           
             }
             else {
                 document.getElementById("confirm-box").style.display = "none"
                 c = 0;
             }
         }
-
         
     </script>
 
