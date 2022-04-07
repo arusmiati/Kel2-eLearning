@@ -54,7 +54,6 @@
               <p>Nis/Nip</p>
             </div>
             <button class="dropdown-item" type="button">Profil</button>
-            <button class="dropdown-item" type="button">Agenda</button>
             <button class="dropdown-item" type="button" onclick="window.location.href='progress.html'">Progress</button>
             <button class="dropdown-item" type="button" onclick="window.location.href='bantuan.html'">Bantuan</button>
             <button onclick="LogConfirm()" class="log-out dropdown-item" type="button">Logout</button>
@@ -70,85 +69,94 @@
       <a href="login.html" class="yes">Iya</a>
       <a href="" class="no">Tidak</a>
     </div>
-    <div class="tautan">
+
+    <div class="dokumen">
       <div class="search-sidebar">
         <div class="search-box d-flex">
           <span><i class="fa fa-search"></i></span>
           <p>Search Bar</p>
         </div>
       </div>
-      <div class="tautan-content">
-        <div class="tautan-header d-flex">
-          <span><a href="detailmapel.html"><i class="fa fa-arrow-left"></i>
-              <h1>Tautan</h1>
-            </a> </span>
+      <div class="doc-content">
+        <div class="doc-header d-flex">
+          <span><a href="detailmapel.html"><i class="fa fa-arrow-left"></i></a> </span>
+          <h1>Tautan</h1>
           <div class="search-box1 ml-auto">
             <span><i class="fa fa-search"></i>
               <p>Search Bar</p>
             </span>
           </div>
         </div>
-        <div class="tautan-list">
-          <div style="text-decoration: none;">
-            <div class="tautan-item1">
-              <span><i class="fa fa-link"></i></span>
-              <a href="http://www.antotunggal.com/2021/11/cara-menyelesaikan-persamaan-linier.html" target="blank">Cara
-                Menyelesaikan
-                Persamaan Linear Satu Variabel</a>
-            </div>
-            <div class="tautan-item2">
-              <span><i class="fa fa-link"></i></span>
-              <a href="" target="blank">Rumus Dasar Persamaan Linear Satu Variabel</a>
-            </div>
-            <div class="tautan-item1">
-              <span><i class="fa fa-link"></i></span>
-              <a href="" target="blank">Definisi Persamaan Linear Satu Variabel</a>
-            </div>
+        <div class="ujian-list">
+          <div class="tautan-head">
+            <table>
+              <tr class="isi">
+                <td class="td3">
+                  <span><i class="fa fa-link"></i></span>
+                  <a href="http://www.antotunggal.com/2021/11/cara-menyelesaikan-persamaan-linier.html"
+                    target="blank">Cara
+                    Menyelesaikan
+                    Persamaan Linear Satu Variabel</a>
+                </td>
+              </tr>
+              <tr class="isi">
+                <td class="td3"><span><i class="fa fa-link"></i></span>
+                  <a href="" target="blank">Rumus Dasar Persamaan Linear Satu Variabel</a>
+                </td>
+              </tr>
+              <tr class="isi">
+                <td class="td3"><span><i class="fa fa-link"></i></span>
+                  <a href="" target="blank">Definisi Persamaan Linear Satu Variabel</a>
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="footer">
-      <div class="nama-footer">
-        <p class="tfooter">SMA Negeri 5 Luwu</p>
-        <p>Jl.Jambu Kec. Bajo Kab. Luwu 91995</p>
-      </div>
-      <div class="web">
-        <ul>
-          <li><a href="http://sman5luwu.sch.id/index.php"><i class="fa fa-globe"></i><span>sman5luwu.sch.id</span></a>
-          </li>
-          <li><a href="#"><i class="fa fa-envelope"></i><span>smanel5luwu@gmail.com</span></a></li>
-          <li><a href="#"><i class="fa fa-phone"></i><span>085340062586</span></a></li>
-        </ul>
-      </div>
-    </div>
-    <script src="script.js"></script>
-    <script>
-      var c = 0;
-      function LogConfirm() {
-        if (c == 0) {
-          document.getElementById("confirm-box").style.display = "block"
-          c = 1;
-        }
-        else {
-          document.getElementById("confirm-box").style.display = "none"
-          c = 0;
-        }
-      }
-    </script>
+  </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"></script>
+  <div class="footer">
+    <div class="nama-footer">
+      <p class="tfooter">SMA Negeri 5 Luwu</p>
+      <p>Jl.Jambu Kec. Bajo Kab. Luwu 91995</p>
+    </div>
+    <div class="web">
+      <ul>
+        <li><a href="http://sman5luwu.sch.id/index.php"><i class="fa fa-globe"></i><span>sman5luwu.sch.id</span></a>
+        </li>
+        <li><a href="#"><i class="fa fa-envelope"></i><span>smanel5luwu@gmail.com</span></a></li>
+        <li><a href="#"><i class="fa fa-phone"></i><span>085340062586</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    var c = 0;
+    function LogConfirm() {
+      if (c == 0) {
+        document.getElementById("confirm-box").style.display = "block"
+        c = 1;
+      }
+      else {
+        document.getElementById("confirm-box").style.display = "none"
+        c = 0;
+      }
+    }
+  </script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

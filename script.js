@@ -79,3 +79,70 @@ function LogConfirm() {
         c = 0;
     }
 }
+
+
+c = 0;
+function PG(){
+    if (c == 0 ){
+        document.getElementsByClassName("radio").style.display = "block";
+        document.getElementsByClassName("paragraf").style.display = "none";
+        c = 1;
+    } else{
+        document.getElementsByClassName(".radio").style.display = "none"
+        c = 0;
+    }
+}
+
+function TEKS(){
+    if (c == 0 ){
+        document.getElementsByClassName(".paragraf").style.display = "block";
+        document.getElementsByClassName(".radio").style.display = "none"
+        
+        c = 1;
+    } else{
+        document.getElementsByClassName(".paragraf").style.display = "none"
+        c = 0;
+    }
+}
+
+
+
+function pg(){
+    if(c = 1) {
+        document.getElementById("soal-default1").style.display = "block"
+        document.getElementById("soal-default2").style.display = "none"
+        document.getElementById("add-opsi").style.display = "block"
+        c = 1;
+    } else{
+        document.getElementById("soal-default1").style.display = "block"
+        c = 0;
+    }
+}
+
+function essay(){
+    if(c = 1) {
+        document.getElementById("soal-default2").style.display = "block"
+        document.getElementById("soal-default1").style.display = "none"
+        document.getElementById("add-opsi").style.display = "none"
+        c = 1;
+    } else{
+        document.getElementById("soal-default2").style.display = "none"
+        c = 0;
+    }
+}
+
+
+function addoptions() {
+    $('#soal-default1').append('<div>'
+     + '<input type="radio" name="mytext[]" class="opsi">'
+     + ' <input type="text" placeholder="Opsi" class="keterangan">' 
+     + '<button class="remove" onclick="remove(this)"><i class="fa fa-close"></i></button>' 
+     + "</div>");
+}
+  
+function remove(btn) {
+    ((btn.parentNode).parentNode).removeChild(btn.parentNode);
+}
+
+
+
