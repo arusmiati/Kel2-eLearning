@@ -159,6 +159,216 @@ body {
     padding: 70px 0 30px 0;
 }
 
+#simpan {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  left: 595px;
+  top: 850px;
+  background: #58BAAB;
+  border-radius: 40px;
+}
+
+#batal {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  left: 840px;
+  top: 850px;
+  background: #FF5A72;
+  border-radius: 40px;
+}
+
+.password-user {
+  width: 100%;
+  height: 900px;
+  color: #434343;
+}
+
+.password-user h2 {
+  position: absolute;
+  width: 387px;
+  height: 54px;
+  left: 405px;
+  top: 161px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.container-change-password {
+  position: absolute;
+  width: 784px;
+  height: 311px;
+  left: 405px;
+  top: 240px;
+  background: #F5F5F5;
+  border-radius: 10px;
+}
+
+.container-change-password label {
+  width: 243px;
+  padding: 10px 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #434343;
+}
+
+.container-change-password button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+.container-change-password input {
+  width: 470px;
+  height: 30px;
+  background: #F5F5F5;
+  border: 1px solid #AFAFAF;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.field-password {
+  margin-left: 32px;
+  margin-top: 30px;
+}
+
+#confirm-password {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  left: 280px;
+  top: 210px;
+  background: #58BAAB;
+  border-radius: 40px;
+}
+
+#batal-password {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  left: 484px;
+  top: 210px;
+  background: #FF5A72;
+  border-radius: 40px;
+}
+
+#simpan {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  left: 595px;
+  top: 850px;
+  background: #58BAAB;
+  border-radius: 40px;
+}
+
+#batal {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  left: 840px;
+  top: 850px;
+  background: #FF5A72;
+  border-radius: 40px;
+}
+
+.password-user {
+  width: 100%;
+  height: 900px;
+  color: #434343;
+}
+
+.password-user h2 {
+  position: absolute;
+  width: 387px;
+  height: 54px;
+  left: 405px;
+  top: 161px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.container-change-password {
+  position: absolute;
+  width: 784px;
+  height: 311px;
+  left: 405px;
+  top: 240px;
+  background: #F5F5F5;
+  border-radius: 10px;
+}
+
+.container-change-password label {
+  width: 243px;
+  padding: 10px 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #434343;
+}
+
+.container-change-password button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+.container-change-password input {
+  width: 470px;
+  height: 30px;
+  background: #F5F5F5;
+  border: 1px solid #AFAFAF;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.field-password {
+  margin-left: 32px;
+  margin-top: 30px;
+}
+
+#confirm-password {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  left: 280px;
+  top: 210px;
+  background: #58BAAB;
+  border-radius: 40px;
+}
+
+#batal-password {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  left: 484px;
+  top: 210px;
+  background: #FF5A72;
+  border-radius: 40px;
+}
+
 .photo {
     position: relative;
     height: 100%;
@@ -282,7 +492,6 @@ body {
     position: fixed;
     z-index: 100;
     top: 50px;
-
 }
 
 .sidebar .icon img {
@@ -2747,9 +2956,16 @@ iframe {
 }
 
 /* PROFIL */
+
+.profil-header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
 .profil-sidebar {
-    width: 246px;
-    height: 100%;
+    width: 300px;
+    min-height: 100vh;
     margin-left: 90px;
     font-size: 12px;
     text-align: center;
@@ -2757,42 +2973,27 @@ iframe {
     top: 50px;
     background: #082c73;
     box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.15);
-    position: fixed;
 }
 
-.profil-sidebar-page {
-    position: absolute;
-    width: 167px;
-    height: 40px;
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 18px;
-    line-height: 27px;
-    color: #FFFFFF;
-    background: #082c73;
-    border-radius: 21px;
+.profil-sidebar .button{
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.profil-sidebar .button button{
+    background: none;
+    outline: none;
     border: none;
+    padding: 10px;
+    color: white;
 }
 
-.profil-sidebar-page:hover {
+.profil-sidebar .button button:hover {
     background: rgba(0, 0, 0, 0.28);
     border-radius: 21px;
-}
-
-.profil-sidebar-icon {
-    height: 20px;
-    width: 14.48px;
-    left: 10px;
-}
-
-#user {
-    left: 40px;
-    top: 40px;
-}
-
-#password {
-    left: 40px;
-    top: 90px;
 }
 
 .profil-sidebar a {
@@ -2808,59 +3009,39 @@ iframe {
 }
 
 .profil-user {
-    float: right;
     height: 900px;
     width: 100%;
     background-color: white;
-    align-items: center;
+    text-align: center;
 }
 
 .profil-user img {
     size: 100px;
-    margin-top: 150px;
-    margin-left: 688px;
+    margin: 150px auto;
+    
 }
 
-#NamaPengguna {
-    position: absolute;
-    left: 645px;
-    top: 375px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
+.profil-user .nama-profil{
     line-height: 54px;
-    text-align: center;
-    color: #000000;
+    margin-top: 350px;
 }
 
-#NomorInduk {
-    position: absolute;
-    left: 722px;
-    top: 440px;
-    font-family: 'Poppins';
-    font-style: normal;
+.profil-user .nama-profil p{
     font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
-    color: #000000;
+    font-size: 30px;
+    line-height: 54px;
+    margin-bottom: 0px !important;
 }
 
 .container-field-user {
-    position: absolute;
-    width: 784px;
-    height: 336px;
-    left: 400px;
-    top: 490px;
-
     background: #F5F5F5;
     border-radius: 10px;
+    width: 80%;
+    margin: 10px auto;
 }
 
-.field-user {
-    margin-left: 32px;
-    margin-top: 30px;
+form.field-user {
+    padding-bottom: 20px;
 }
 
 .field-user label {
@@ -2873,6 +3054,7 @@ iframe {
     font-size: 18px;
     line-height: 27px;
     color: #434343;
+    text-align: justify;
 }
 
 .field-user input {
@@ -2888,31 +3070,74 @@ iframe {
     border: 1px solid #B9B9B9;
     box-sizing: border-box;
     border-radius: 5px;
+    outline: none;
 }
 
 .field-user label,
 input {
-    padding: 10px 0;
+    padding: 10px;
+}
+
+.profil-sidebar i{
+    padding-right: 15px;
 }
 
 .profil-user button {
-    position: absolute;
-    width: 143px;
-    height: 30px;
-    left: 710px;
-    top: 840px;
     background: #0F3B92;
     border-radius: 40px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
     font-size: 13px;
-    line-height: 20px;
-    text-align: center;
     color: #FFFFFF;
     border: none;
+    outline: none;
+    padding: 5px 20px;
+    font-weight: 600;
 }
 
+.pass-title{
+    margin-top: 200px;
+}
+
+.pass-title h2{
+    font-weight: 600;
+    text-align: justify !important;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pass{
+    padding: 20px 10px;
+}
+.pass .confirm{
+    background: #58BAAB;
+}
+
+.pass .batal{
+    background: #FF5A72;
+}
+.pass label{
+    font-size: 15px;
+}
+
+/* DAFTAR SISWA */
+.daftar-siswa table{
+    box-shadow: 0px 0px 10px #e5e5e5;
+}
+.daftar-siswa table th{
+    background: #e5e5e5;
+}
+
+.daftar-siswa table td{
+    background: #EFEFEF;
+}
+
+.daftar-siswa table .header{
+    border-top-left-radius: 10px;
+}
+
+.daftar-siswa table .header1{
+    border-top-right-radius: 10px;
+}
 @media screen and (min-width: 100px) and (max-width: 800px) {
     .sidebar ul {
         margin-top: 50px;
@@ -3473,6 +3698,63 @@ input {
     .ujian-list {
         margin-top: 2vh;
     }
+
+    .profil-header{
+        flex-direction: column;
+        margin-left: 70px;
+    }
+
+    .profil-sidebar{
+        width: 100%;
+        min-height: max-content;
+        margin: 0px auto;
+        margin-bottom: 0px !important;
+    }
+
+    .profil-user{
+        width: 100%;
+        height: max-content !important;
+        margin-left: 10px;
+    }
+
+    .profil-user img {
+        width: 150px;
+        margin: 170px auto;
+    }
+
+    .profil-user .nama-profil p {
+        font-size: 25px;
+    }
+
+    .container-field-user {
+        width: 80%;
+    }
+
+    .field-user label{
+        font-size: 15px;
+    }
+
+    .field-user input{
+        width: 200px;
+        border: none;
+        outline: none;
+    }
+    .profil-user button{
+        margin: 20px auto;
+    }
+
+    .pass-title{
+        margin-top: 100px;
+    }
+    
+    .pass-title h2{
+        margin-left: 50px;
+        font-weight: 600;
+        text-align: justify !important;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
 }
 
 @media screen and (min-width: 750px) and (max-width: 990px) {
@@ -3669,6 +3951,11 @@ input {
     .opsi-content {
         margin-top: 5px;
     }
+
+    .field-user label, .field-user input{
+        width: 50%;
+    }
+    
 
 }
 

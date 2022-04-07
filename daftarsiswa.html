@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;800&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Ujian</title>
+    <title>Daftar Siswa</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -27,18 +27,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="name nav-item">
-                    <a href="homepage.html" class="btn" aria-hidden="true">Homepage</a>
+                  <a href="homepage.html" class="btn" aria-hidden="true">Homepage</a>
                 </li>
                 <li class="mapel nav-item">
-                    <a href="kelas.html" class="btn active" aria-hidden="true">Kelasku</a>
+                  <a href="matapelajaran.html" class="btn" aria-hidden="true">Mata Pelajaran</a>
                 </li>
                 <li class="search-mapel nav-item">
-                    <a href="tambahmapel.html" class="btn" aria-hidden="true">Tambah Kelas </a>
+                  <a href="pencarian.html" class="btn" aria-hidden="true">Pencarian Mata Pelajaran </a>
                 </li>
                 <li class="leader nav-item">
-                    <a href="leaderboards.html" class="btn" aria-hidden="true">Leaderboards</a>
+                  <a href="leaderboards.html" class="btn" aria-hidden="true">Leaderboards</a>
                 </li>
-            </ul>
+              </ul>
             <div class="profil nav-item dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"aria-expanded="false">
                 <img class="icon-profil" src="img/profil.png" alt="" srcset="">
                 <div class="dropdown-menu dropdown-menu-right">
@@ -60,55 +60,62 @@
     </nav>
 
     <div class="main-container">
-        <div id="confirm-box">
+        <div id="confirm-box-logout">
             <h1>Apakah anda ingin keluar dari E-LEARNING SMANEL?</h1>
             <a href="login.html" class="yes">Iya</a>
             <a href="" class="no">Tidak</a>
         </div>
-        <div id="confirm-box-tambah">
-            <h1>File Ini<br> Berhasil Ditambahkan</h1>
+        <div id="confirm-box-unduh">
+            <h1>Apakah anda ingin mengunduh file ini?</h1>
+            <a href="#" onclick="unduhYaps()" class="yes">Iya</a>
+            <a href="" class="no">Tidak</a>
         </div>
-        <div class="tabel">
-            <div class="tabel-content">
-                <div class="doc-header">
-                    <div class="d-flex">
-                        <span><a href="ujian_guru.html"><i class="fa fa-arrow-left"></i></a> </span>
-                        <h1>Ulangan Harian</h1>
-                    </div>
-                    
-                    <div class="search-box1 doc-guru ml-auto">
+        <div id="confirm-box-unduh-yaps">
+            <h1>Anda Berhasil Mengunduh File ini</h1>
+        </div>
+        <div id="confirm-box-delete">
+            <h1>Apakah anda yakin ingin menghapus pengumuman ini?</h1>
+            <a href="#" onclick="deleteYaps()" class="yes">Iya</a>
+            <a href="" class="no">Tidak</a>
+        </div>
+        <div id="confirm-box-delete-yaps">
+            <h1>Pengumuman ini Berhasil Dihapus</h1>
+        </div>
+        <div class="dokumen">
+            <div class="search-sidebar">
+                <div class="search-box d-flex">
+                    <span><i class="fa fa-search"></i></span>
+                    <p>Search Bar</p>
+                </div>
+            </div>
+            <div class="doc-content">
+                <div class="doc-header d-flex">
+                    <span><a href="detailmapel.html"><i class="fa fa-arrow-left"></i></a> </span>
+                    <h1>Daftar Siswa</h1>
+                    <div class="search-box1 ml-auto">
                         <span><i class="fa fa-search"></i><p>Search Bar</p></span>
                     </div>
                 </div>
-                <div class="item-tabel">
+                <div class="tugas-list daftar-siswa">
                     <table>
-                        <tr class="title">
-                            <th class="th1">Nama Siswa</th>
-                            <th>Nomor Induk Siswa</th>
-                            <th>Durasi Pengerjaan</th>
-                            <th class="th2">Status Pengerjaan</th>
+                        <tr>
+                            <th class="header">No.</th>
+                            <th>Nama Siswa</th>
+                            <th class="header1">Nomor Induk Siswa</th>
                         </tr>
-                        <tr class="item">
-                            <td><a href="detailpengerjaan.html"> A. Rusmiati</a></td>
-                            <td>D121</td>
-                            <td>00:20:35</td>
-                            <td class="sudah">Selesai</td>
+                        <tr>
+                            <td>1</td>
+                            <td>A. Rusmiati</td>
+                            <td>D121191079</td>
                         </tr>
-                        <tr class="item">
-                            <td><a href="detailpengerjaan.html">Mirnawati</a></td>
-                            <td>D121</td>
-                            <td>00:30:35</td>
-                            <td class="belum">Belum Selesai</td>
+                        <tr>
+                            <td>2</td>
+                            <td>A. Rusmiati</td>
+                            <td>D121191079</td>
                         </tr>
                     </table>
-                </div> 
-                <div class="entire">
-                    <p>1-1 of 1 </p>
                 </div>
            </div>
-        </div>
-        
-
     </div>
 
     <div class="footer">
@@ -125,10 +132,48 @@
           </ul>
         </div>
     </div>
-
-
     <script src="script.js"></script>
+    <script>
+        var c = 0;
+        function LogConfirm() {
+            if (c == 0) {
+                document.getElementById("confirm-box-logout").style.display = "block"
+                c = 1;
+            }
+            else {
+                document.getElementById("confirm-box-logout").style.display = "none"
+                c = 0;
+            }
+        }
 
+        
+
+        function DeleteConfirm() {
+            if (c == 0) {
+                document.getElementById("confirm-box-delete").style.display = "block"; 
+                c = 1;  
+            }
+            else {
+                document.getElementById("confirm-box-delete").style.display = "none";
+                c = 0;
+            }
+        }
+
+
+        function deleteYaps() {
+            if (c == 0) {
+                document.getElementById("confirm-box-delete-yaps").style.display = "block"; 
+                setTimeout (()=>{
+                    window.location.href='pengumuman_guru.html'
+                },3000);       
+                c = 1;
+            }
+            else {
+                document.getElementById("confirm-box-delete-yaps").style.display = "none";
+                c = 0;
+            }
+        }
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

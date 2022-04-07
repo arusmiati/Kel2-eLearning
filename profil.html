@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;800&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Progress</title>
+    <title>Profil</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -50,7 +50,6 @@
                             <p>Nis/Nip</p>
                         </div>
                         <button class="dropdown-item" type="button">Profil</button>
-                        <button class="dropdown-item" type="button">Agenda</button>
                         <button class="dropdown-item" type="button"onclick="window.location.href='progress.html'">Progress</button>
                         <button class="dropdown-item" type="button"onclick="window.location.href='bantuan.html'">Bantuan</button>
                         <button onclick="LogConfirm()" class="log-out dropdown-item" type="button">Logout</button>
@@ -74,11 +73,6 @@
                     <span>Profil</span>
                 </li>
                 <li class="icon">
-                    <a href="#"><img src="img/kalender.png" alt=""></a>
-                    <br>
-                    <span>Agenda</span>
-                </li>
-                <li class="icon">
                     <a href="progress.html"><img src="img/progress.png" alt=""></a>
                     <br>
                     <span>Progress</span>
@@ -100,43 +94,47 @@
                 </li>
             </ul>
         </div>
-        <div class="profil-sidebar">
-            <button type="button" id="user" class="profil-sidebar-page">
-                <img class="profil-sidebar-icon" src="img/user-icon.png" alt="user icon">
-                User profile
-            </button>
-            <button type="button" id="password" class="profil-sidebar-page">
-                <img class="profil-sidebar-icon" src="img/password-icon.png" alt="password icon">
-                Password
-            </button>
-        </div>
     </div>
 
-    <div class="profil-user">
-        <div class="rectangle">
-            <img src="img\profil.png" alt="Profile User">
+    <div class="profil-header">
+        <div class="profil-sidebar">
+            <div class="button">
+                <button type="button" id="user" class="profil-sidebar-page">
+                    <i class="fa fa-user"></i>User Profil
+                </button>
+                <button type="button" id="password" class="profil-sidebar-page " onclick="location.href='Password.html'">
+                    <i class="fa fa-lock"></i>Password
+                </button>
+            </div>
         </div>
-        <p id="NamaPengguna">Nama Pengguna</p>
-        <p id="NomorInduk">0013290947</p>
-        <div class="container-field-user" action="">
-            <form class="field-user" action="">
-                <label for="username">Nama User</label>
-                <input type="text" placeholder="Masukkan Username" name="username" id="username" required>
-                <br>
-                <label for="namaLengkap">Nama Lengkap</label>
-                <input type="text" placeholder="Masukkan Nama Lengkap" name="namaLengkap" id="namaLegkap" required>
-                <br>
-                <label for="email">Email</label>
-                <input type="email" placeholder="Masukkan E-mail" name="email" id="email" required>
-                <br>
-                <label for="no-hp">Nomor Handphone</label>
-                <input type="text" placeholder="Masukkan Nomor Handphone" name="no-hp" id="no-hp" required>
-                <br>
-                <label for="alamat">Alamat</label>
-                <input type="text" placeholder="Masukkan Alamat" name="alamat" id="alamat" required>
-            </form>
+        <div class="profil-user">
+            <div class="rectangle">
+                <img src="img\profil.png" alt="Profile User">
+            </div>
+            <div class="nama-profil">
+                <p id="NamaPengguna">Nama Pengguna</p>
+                <p id="NomorInduk">0013290947</p>
+            </div>
+            <div class="container-field-user" action="">
+                <form class="field-user" action="">
+                    <label for="username">Nama User</label>
+                    <input type="text" placeholder="Masukkan Username" name="username" id="username" required>
+                    <br>
+                    <label for="namaLengkap">Nama Lengkap</label>
+                    <input type="text" placeholder="Masukkan Nama Lengkap" name="namaLengkap" id="namaLegkap" required>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Masukkan E-mail" name="email" id="email" required>
+                    <br>
+                    <label for="no-hp">Nomor Handphone</label>
+                    <input type="text" placeholder="Masukkan Nomor Handphone" name="no-hp" id="no-hp" required>
+                    <br>
+                    <label for="alamat">Alamat</label>
+                    <input type="text" placeholder="Masukkan Alamat" name="alamat" id="alamat" required>
+                </form>
+            </div>
+            <button type="submit">Edit Profile</button>
         </div>
-        <button type="submit">Edit Profile</button>
     </div>
 
     <div class="footer">
