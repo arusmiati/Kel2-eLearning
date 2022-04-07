@@ -2729,6 +2729,15 @@ iframe {
     height: 600px;
 }
 
+/* TAMBAH THREAD */
+.add-content {
+    height: fit-content;
+}
+
+.title-thread p {
+    margin-right: 70px;
+}
+
 @media screen and (min-width: 100px) and (max-width: 800px) {
     .sidebar ul {
         margin-top: 50px;
@@ -3265,6 +3274,19 @@ iframe {
 
     .opsi-content {
         margin-top: 5px;
+    }
+
+    /* TAMBAH THREAD */
+    .title-thread p {
+        display: none !important;
+    }
+
+    .btn-thread .click .btn-back button {
+        width: 10vh;
+    }
+
+    .btn-thread .click .btn-start button {
+        width: 10vh;
     }
 }
 
