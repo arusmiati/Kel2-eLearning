@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;800&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Profil</title>
+    <title>Edit Profil</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -116,27 +116,29 @@
     <div class="profil-user">
         <div class="profil-responsive">
             <img src="img\profil.png" alt="Profile User">
+            <a href="#">Ganti Foto Profil</a>
             <p id="NamaPengguna">Andi Rusmiati</p>
             <p id="NomorInduk">D121191079</p>
             <div class="container-field-user" action="">
                 <form class="field-user" action="">
                     <label for="username">Nama User</label>
-                    <input type="text" placeholder=" Masukkan Username" name="username" id="username" readonly>
+                    <input type="text" placeholder=" Masukkan Username" name="username" id="username" required>
                     <br>
                     <label for="namaLengkap">Nama Lengkap</label>
-                    <input type="text" placeholder=" Masukkan Nama Lengkap" name="namaLengkap" id="namaLegkap" readonly>
+                    <input type="text" placeholder=" Masukkan Nama Lengkap" name="namaLengkap" id="namaLegkap" required>
                     <br>
                     <label for="email">Email</label>
-                    <input type="email" placeholder=" Masukkan E-mail" name="email" id="email" readonly>
+                    <input type="email" placeholder=" Masukkan E-mail" name="email" id="email" required>
                     <br>
                     <label for="no-hp">Nomor Handphone</label>
-                    <input type="text" placeholder=" Masukkan Nomor Handphone" name="no-hp" id="no-hp" readonly>
+                    <input type="text" placeholder=" Masukkan Nomor Handphone" name="no-hp" id="no-hp" required>
                     <br>
                     <label for="alamat">Alamat</label>
-                    <input type="text" placeholder=" Masukkan Alamat" name="alamat" id="alamat" readonly>
+                    <input type="text" placeholder=" Masukkan Alamat" name="alamat" id="alamat" required>
                 </form>
             </div>
-            <button type="submit">Edit Profile</button>
+            <button id="simpan" type="submit">Simpan</button>
+            <button id="batal" type="submit">Batalkan</button>
         </div>
     </div>
 
