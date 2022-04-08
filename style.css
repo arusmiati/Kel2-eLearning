@@ -2344,10 +2344,6 @@ select option:hover {
     background: #082C73;
 }
 
-.note-editor.note-frame {
-    margin-left: 40px;
-}
-
 div#del-soal button i,
 div#add-soal button i {
     padding-right: 10px;
@@ -2948,7 +2944,7 @@ iframe {
 }
 
 .title-thread p {
-    margin-right: 70px;
+    margin-right: 40px;
 }
 
 /* TAMBAH REPLAY/KOMENTAR */
@@ -3682,10 +3678,6 @@ input {
     }
 
     /* TAMBAH THREAD */
-    .title-thread p {
-        display: none !important;
-    }
-
     .btn-thread .click .btn-back button {
         width: 10vh;
     }
