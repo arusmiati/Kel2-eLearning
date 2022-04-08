@@ -2345,7 +2345,7 @@ select option:hover {
 }
 
 .note-editor.note-frame {
-    width: 95%;
+    margin-left: 40px;
 }
 
 div#del-soal button i,
@@ -3758,6 +3758,11 @@ input {
         text-align: justify !important;
         margin-bottom: 20px;
         color: #333;
+    }
+
+    .note-editor.note-frame {
+        margin-left: 0px;
+        width: 95%;
     }
     
 }
