@@ -2376,6 +2376,11 @@ button.remove {
 
 
 /* EDIT SLIDE */
+
+.title input.waktu1{
+    margin-left: 0px;
+    width: 40%;
+}
 .clicks {
     display: flex;
     flex-direction: row-reverse;

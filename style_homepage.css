@@ -523,6 +523,7 @@ button.edit {
     .announ2 h5 {
         font-size: 14px;
     }
+
 }
 
 @media screen and (min-width: 100px) and (max-width: 750px) {
@@ -659,6 +660,10 @@ button.edit {
 
     .announ2 h5 {
         font-size: 14px;
+    }
+
+    .edit2 {
+        margin-left: 100px;
     }
 }
 
