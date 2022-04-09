@@ -2088,6 +2088,38 @@ progress::after {
     filter: invert(100%);
 }
 
+/*Tautan guru*/
+.tugas-list img.colon {
+    height: 25px;
+    padding-left: 15px;
+}
+
+.tugas-list .dropdown {
+    float: right;
+    border-radius: 10px;
+    border: none;
+    font-weight: 300;
+    outline: none;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+} 
+
+.tugas-list .dropdown button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.tugas-list #drop-history {
+    width: 100px;
+    font-size: 12px;
+}
+
+.tugas-list .dropdown .btn-mapel img.colon {
+    height: 25px;
+    padding-left: 15px;
+}
 
 @media screen and (min-width: 100px) and (max-width: 800px) {
     .sidebar ul {
