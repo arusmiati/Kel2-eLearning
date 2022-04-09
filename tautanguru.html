@@ -69,7 +69,14 @@
       <a href="login.html" class="yes">Iya</a>
       <a href="" class="no">Tidak</a>
     </div>
-
+    <div id="confirm-box-delete">
+      <h1>Apakah anda yakin ingin menghapus tautan ini?</h1>
+      <a href="#" onclick="deleteYaps()" class="yes">Iya</a>
+      <a href="" class="no">Tidak</a>
+    </div>
+    <div id="confirm-box-delete-yaps">
+      <h1>Tautan ini Berhasil Dihapus</h1>
+    </div>
     <div class="dokumen">
       <div class="search-sidebar">
         <div class="search-box d-flex">
@@ -103,16 +110,55 @@
                     target="blank">Cara
                     Menyelesaikan
                     Persamaan Linear Satu Variabel</a>
+                  <div class="tugas-list" style="float: right;">
+                    <div class="dropdown">
+                      <button class="btn-mapel" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img class="colon" src="img/titik3.png" alt="">
+                      </button>
+                      <div id="drop-history" class="dropdown-menu dropdown-menu-right"
+                        aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="edittautan.html">Edit Tautan</a>
+                        <a class="dropdown-item" onclick="DeleteConfirm()" href="#">Delete Tautan</a>
+                      </div>
+                    </div>
+                  </div>
                 </td>
               </tr>
               <tr class="isi">
                 <td class="td3"><span><i class="fa fa-link"></i></span>
                   <a href="" target="blank">Rumus Dasar Persamaan Linear Satu Variabel</a>
+                  <div class="tugas-list" style="float: right;">
+                    <div class="dropdown">
+                      <button class="btn-mapel" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img class="colon" src="img/titik3.png" alt="">
+                      </button>
+                      <div id="drop-history" class="dropdown-menu dropdown-menu-right"
+                        aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="edittautan.html">Edit Tautan</a>
+                        <a class="dropdown-item" onclick="DeleteConfirm()" href="#">Delete Tautan</a>
+                      </div>
+                    </div>
+                  </div>
                 </td>
               </tr>
               <tr class="isi">
                 <td class="td3"><span><i class="fa fa-link"></i></span>
                   <a href="" target="blank">Definisi Persamaan Linear Satu Variabel</a>
+                  <div class="tugas-list" style="float: right;">
+                    <div class="dropdown">
+                      <button class="btn-mapel" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img class="colon" src="img/titik3.png" alt="">
+                      </button>
+                      <div id="drop-history" class="dropdown-menu dropdown-menu-right"
+                        aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="edittautan.html">Edit Tautan</a>
+                        <a class="dropdown-item" onclick="DeleteConfirm()" href="#">Delete Tautan</a>
+                      </div>
+                    </div>
+                  </div>
                 </td>
               </tr>
             </table>
@@ -147,6 +193,31 @@
       }
       else {
         document.getElementById("confirm-box").style.display = "none"
+        c = 0;
+      }
+    }
+
+    function DeleteConfirm() {
+      if (c == 0) {
+        document.getElementById("confirm-box-delete").style.display = "block";
+        c = 1;
+      }
+      else {
+        document.getElementById("confirm-box-delete").style.display = "none";
+        c = 0;
+      }
+    }
+
+    function deleteYaps() {
+      if (c == 0) {
+        document.getElementById("confirm-box-delete-yaps").style.display = "block";
+        setTimeout(() => {
+          window.location.href = 'pengumuman_guru.html'
+        }, 3000);
+        c = 1;
+      }
+      else {
+        document.getElementById("confirm-box-delete-yaps").style.display = "none";
         c = 0;
       }
     }
