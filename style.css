@@ -65,10 +65,6 @@ body {
     border-radius: 10px;
 }
 
-.dropdown-menu button {
-    outline: none;
-}
-
 .dropdown-menu {
     justify-content: center;
 }
@@ -159,215 +155,6 @@ body {
     padding: 70px 0 30px 0;
 }
 
-#simpan {
-  position: absolute;
-  width: 143px;
-  height: 30px;
-  left: 595px;
-  top: 850px;
-  background: #58BAAB;
-  border-radius: 40px;
-}
-
-#batal {
-  position: absolute;
-  width: 143px;
-  height: 30px;
-  left: 840px;
-  top: 850px;
-  background: #FF5A72;
-  border-radius: 40px;
-}
-
-.password-user {
-  width: 100%;
-  height: 900px;
-  color: #434343;
-}
-
-.password-user h2 {
-  position: absolute;
-  width: 387px;
-  height: 54px;
-  left: 405px;
-  top: 161px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 54px;
-}
-
-.container-change-password {
-  position: absolute;
-  width: 784px;
-  height: 311px;
-  left: 405px;
-  top: 240px;
-  background: #F5F5F5;
-  border-radius: 10px;
-}
-
-.container-change-password label {
-  width: 243px;
-  padding: 10px 0;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  color: #434343;
-}
-
-.container-change-password button {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 20px;
-    text-align: center;
-    color: #FFFFFF;
-    border: none;
-}
-
-.container-change-password input {
-  width: 470px;
-  height: 30px;
-  background: #F5F5F5;
-  border: 1px solid #AFAFAF;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-
-.field-password {
-  margin-left: 32px;
-  margin-top: 30px;
-}
-
-#confirm-password {
-  position: absolute;
-  width: 143px;
-  height: 30px;
-  left: 280px;
-  top: 210px;
-  background: #58BAAB;
-  border-radius: 40px;
-}
-
-#batal-password {
-  position: absolute;
-  width: 143px;
-  height: 30px;
-  left: 484px;
-  top: 210px;
-  background: #FF5A72;
-  border-radius: 40px;
-}
-
-#simpan {
-  position: absolute;
-  width: 143px;
-  height: 30px;
-  left: 595px;
-  top: 850px;
-  background: #58BAAB;
-  border-radius: 40px;
-}
-
-#batal {
-  position: absolute;
-  width: 143px;
-  height: 30px;
-  left: 840px;
-  top: 850px;
-  background: #FF5A72;
-  border-radius: 40px;
-}
-
-.password-user {
-  width: 100%;
-  height: 900px;
-  color: #434343;
-}
-
-.password-user h2 {
-  position: absolute;
-  width: 387px;
-  height: 54px;
-  left: 405px;
-  top: 161px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 54px;
-}
-
-.container-change-password {
-  position: absolute;
-  width: 784px;
-  height: 311px;
-  left: 405px;
-  top: 240px;
-  background: #F5F5F5;
-  border-radius: 10px;
-}
-
-.container-change-password label {
-  width: 243px;
-  padding: 10px 0;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  color: #434343;
-}
-
-.container-change-password button {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 20px;
-    text-align: center;
-    color: #FFFFFF;
-    border: none;
-}
-
-.container-change-password input {
-  width: 470px;
-  height: 30px;
-  background: #F5F5F5;
-  border: 1px solid #AFAFAF;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-
-.field-password {
-  margin-left: 32px;
-  margin-top: 30px;
-}
-
-#confirm-password {
-  position: absolute;
-  width: 143px;
-  height: 30px;
-  left: 280px;
-  top: 210px;
-  background: #58BAAB;
-  border-radius: 40px;
-}
-
-#batal-password {
-  position: absolute;
-  width: 143px;
-  height: 30px;
-  left: 484px;
-  top: 210px;
-  background: #FF5A72;
-  border-radius: 40px;
-}
 
 .photo {
     position: relative;
@@ -492,6 +279,7 @@ body {
     position: fixed;
     z-index: 100;
     top: 50px;
+
 }
 
 .sidebar .icon img {
@@ -1229,7 +1017,6 @@ progress::after {
     font-weight: 600;
     padding-left: 30px;
     padding-right: 20px;
-    flex: 1;
 }
 
 .doc-header a {
@@ -1500,7 +1287,6 @@ progress::after {
     width: 50%;
     padding: 5px;
     margin-top: -5px;
-    outline: none;
 }
 
 .content-detail .jlh-siswa {
@@ -1689,7 +1475,6 @@ tr:nth-child(even) {
     width: 100px;
     font-weight: 400;
     cursor: pointer;
-    outline: none;
 }
 
 .btn-start button:hover,
@@ -1738,22 +1523,13 @@ tr:nth-child(even) {
 /* FINISH UJIAN */
 .finish-detail {
     background: #dedede;
+    width: 60%;
     height: max-content;
     margin: 10px auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #e5e5e5;
     text-align: center;
-}
-
-.info .done {
-    background: #58BAAB;
-    border: none;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: center;
-    color: white;
-    font-weight: 400;
 }
 
 .finish-detail .title h1 {
@@ -1844,7 +1620,6 @@ tr:nth-child(even) {
     font-size: 12px;
     margin-left: auto;
 }
-
 
 /* FORUM */
 .main-content-forum {
@@ -2150,20 +1925,7 @@ tr:nth-child(even) {
     font-weight: 600;
 }
 
-select option:hover {
-    background: #082C73;
-    color: white;
-}
-
 /* DETAIL TAMBAH MAPEL */
-.tambah-mapel {
-    margin: 50px auto !important;
-}
-
-.tambah-mapel .waktu {
-    width: 80%;
-}
-
 .pilihKelas,
 .pilihHari,
 .pilihSemester {
@@ -2229,548 +1991,9 @@ button.add {
     opacity: 0;
 }
 
-/* TAMBAH UJIAN */
-
-.title .soal {
-    background-color: #e5e5e5;
-    padding-bottom: 20px;
-    padding-right: 15px;
-    margin-bottom: 20px;
-}
-
-.soall {
-    margin-bottom: 20px;
-}
-
-.title .soal .dropdown {
-    margin: 10px;
-    float: right;
-    padding: 10px;
-    border-radius: 10px;
-    background: #dddd;
-    border: none;
-    font-weight: 300;
-    outline: none;
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-}
-
-.title .soal .dropdown button {
-    background: none;
-    border: none;
-    outline: none;
-}
-
-.title .soal #drop-history {
-    width: 100px;
-    font-size: 12px;
-}
-
-.judul-soal {
-    flex: 1;
-    margin: 10px 20px;
-}
-
-.title .soal .soal-default1 input,
-.title .soal .add-opsi input {
-    width: 10px;
-}
-
-.title .soal .soal-default2 {
-    display: none;
-    margin-left: 25px;
-    width: 95%;
-}
-
-.add-docs .title input.keterangan {
-    width: 85%;
-    background: none;
-    border: none;
-    border-radius: 0px;
-    border-bottom: 2px #082C73 solid;
-    margin-bottom: 20px;
-}
-
-select.pilihSkor,
-select.pilihDurasi {
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 12px;
-    outline: none;
-}
-
-.btnAddDel {
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
-div#del-soal button,
-div#add-soal button {
-    background: #a5a5a5;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    color: white;
-    padding: 5px 10px;
-    font-size: 12px;
-    margin: 0px 10px;
-}
-
-.menu button {
-    width: 30px;
-    background: none;
-    border: none;
-    outline: none;
-    padding: 10px 0px;
-    cursor: pointer;
-}
-
-.menu button i {
-    color: #0056AA;
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    float: right;
-    margin-top: -130px;
-
-}
-
-select option:hover {
-    background: #082C73;
-}
-
-div#del-soal button i,
-div#add-soal button i {
-    padding-right: 10px;
-    padding-left: 5px;
-}
-
-.add-docs .title input.date {
-    width: 200px;
-    margin-left: 0px;
-}
-
-button.i.fa.fa-close {
-    color: #082C73;
-}
-
-label.keterangan {
-    margin-left: 20px;
-}
-
-button.remove {
-    margin-left: 10px;
-    outline: none;
-    border: none;
-    background: none;
-}
-
-
-/* EDIT SLIDE */
-
-.title input.waktu1{
-    margin-left: 0px;
-    width: 40%;
-}
-.clicks {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.clicks .btn-back {
-    padding: 0px;
-    font-size: 12px;
-    margin-left: 10px;
-}
-
-.add-slide i {
-    color: #082C73;
-    font-size: 50px;
-    margin-right: 50px;
-}
-
-.add-slide button {
-    background: none;
-    border: none;
-    outline: none;
-}
-
-.add-slide {
-    margin-left: auto;
-}
-
-/* KELOLA USER */
-.doc-header .head {
-    flex: 1;
-}
-
-.kelola-siswa,
-.kelola-guru,
-.kelola-admin {
-    background: #082C73;
-    border-radius: 10px;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    margin: 0px auto;
-    margin-bottom: 10vh !important;
-}
-
-.kelola-siswa:hover,
-.kelola-guru:hover,
-.kelola-admin:hover {
-    background: #5e5e5e;
-    transform-style: preserve-3d;
-    transform: scale(1.01);
-    transition: all ease 0.2s;
-    cursor: pointer;
-}
-
-.kelola-siswa img,
-.kelola-admin img {
-    margin: 20px auto;
-}
-
-.kelola-guru img {
-    margin: 35px auto;
-}
-
-
-.item-kelola {
-    margin: 10px 30px;
-    display: flex;
-}
-
-.item-kelola button {
-    border: none;
-    outline: none;
-}
-
-.item-kelola img {
-    width: 180px;
-    padding: 0px 20px;
-}
-
-.item-kelola p {
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.title-kelola {
-    text-align: center;
-    margin: 0px 20px;
-}
-
-.title-kelola h1 {
-    margin-bottom: 30px;
-    font-size: 28px;
-    font-weight: 600;
-}
-
-/* TABEL USER */
-.tabel-content {
-    width: 100%;
-    min-height: 100vh;
-}
-
-.tabel-content .search-box1 {
-    padding: 0px 10px 5px 10px;
-    background: #dedede;
-    border-radius: 50px;
-    width: 200px;
-    height: 30px;
-}
-
-.tabel-content .search-box1 i {
-    color: #a7a2a2;
-}
-
-.tabel-content .search-box1 p {
-    color: #a7a2a2;
-    margin-top: -20px;
-    margin-left: 20px;
-}
-
-.tabel-content .doc-header {
-    overflow: hidden;
-}
-
-.tabel-content .doc-header .icon {
-    margin-top: -10px;
-    margin-left: 20px;
-    margin-right: -15px;
-}
-
-.tabel-content .doc-header img {
-    width: 50px;
-}
-
-.tabel-content .del-sel button {
-    background: #dddd;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    float: right;
-    margin-right: 50px;
-    font-size: 12px;
-    margin-top: -30px;
-    color: #333;
-
-}
-
-.item-tabel {
-    width: 90%;
-    margin: 20px auto;
-    overflow: auto;
-}
-
-.item-tabel table {
-    width: 88% !important;
-    margin: 10px auto;
-}
-
-.item-tabel table .title {
-    background: #082C73;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    color: white;
-}
-
-::-webkit-scrollbar {
-    width: 15px;
-    height: 15px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #dbdbdb;
-    border: 4px solid transparent;
-    border-radius: 11px;
-    background-clip: content-box;
-}
-
-::-webkit-scrollbar * {
-    background: transparent;
-}
-
-::-webkit-scrollbar-thumb:vertical {
-    height: 90px;
-}
-
-.item-tabel table .title .th1 {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 0px;
-}
-
-.item-tabel table .title .th2 {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 0px;
-}
-
-.item-tabel table .item {
-    color: black;
-    background: #f1eeee;
-}
-
-.item-tabel table .item .fa {
-    color: #082C73;
-}
-
-/* KELOLA MAPEL */
-.mapel table {
-    margin-left: 80px !important;
-    width: 90% !important;
-}
-
-.mapel .opsi button {
-    background: #c4c4c4;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    color: #333;
-    padding: 0px 10px;
-    font-weight: 400;
-}
-
-.mapel .opsi button:hover {
-    background: #082C73;
-    color: white;
-}
-
-.mapel .opsi .edit {
-    margin: 0px 10px;
-}
-
-.entire {
-    text-align: center;
-}
-
-.entire p {
-    font-size: 15px;
-    font-weight: 500;
-    color: black;
-}
-
-/* TUGAS */
-.tugas-list-item {
-    margin: 10px 50px;
-    background: #f5f5f5;
-    border-radius: 10px;
-}
-
-.title-tugas {
-    background: #dbdbdb;
-    padding: 10px 20px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    font-size: 20px;
-}
-
-.title-tugas p {
-    font-weight: 500;
-}
-
-.item-tugas {
-    padding: 10px 20px;
-    font-size: 14px;
-}
-
-.item-tugas .dl p {
-    font-size: 13px;
-    color: #082C73;
-}
-
-.tugas-list-item .btn-start {
-    text-align: right !important;
-    font-size: 12px;
-    margin-right: 20px;
-}
-
-.tugas-list-item .btn-start button {
-    padding: 5px 10px !important;
-}
-
-.doc-header .kumpul,
-.kumpul button {
-    width: 200px;
-}
-
-/* TUGAS GURU */
-.tugas-list-item .title-tugas p {
-    flex: 1;
-}
-
-.tugas-list img.colon {
-    height: 25px;
-    padding-left: 15px;
-}
-
-.tugas-list .dropdown button {
-    outline: none;
-    background: none;
-    border: none;
-}
-
-.title-tugas #drop-history {
-    width: 100px;
-    font-size: 12px;
-}
-
-.add-docs input[type=datetime-local] {
-    width: 200px;
-    margin-left: 0px;
-}
-
-/* TAMBAH TUGAS */
-.tambah-tugas {
-    margin-top: 20px;
-}
-
-/* PENGERJAAN ULANGAN */
-
-.finish-guru {
-    width: 90%;
-}
-
-.finish-guru .title h1 {
-    text-align: justify;
-}
-
-.finish-guru .profil {
-    margin-left: 30px;
-}
-
-.finish-guru .profil img {
-    width: 60px;
-}
-
-.finish-guru .profil p {
-    font-weight: 600;
-}
-
-table.info {
-    width: 100%;
-    margin-top: 10px;
-}
-
-table.info td {
-    padding: 5px;
-}
-
-table.info tr:nth-child(even) {
-    background-color: #dedede !important;
-}
-
-.preview-jawaban {
-    width: 90%;
-    margin: 20px auto;
-    border: 2px #e5e5e5 solid;
-    border-radius: 10px;
-}
-
-p.header {
-    background: #e5e5e5;
-    padding: 10px;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-p.desk {
-    padding: 10px;
-    font-size: 13px;
-}
-
-.beri-nilai {
-    margin-left: 65px;
-}
-
-.beri-nilai input {
-    background: #e9e9e9;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 12px;
-}
-
-.beri-nilai button {
-    background: #082C73;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    padding: 10px;
-    color: white;
-    font-size: 12px;
-}
-
-.back-guru {
-    font-size: 12px;
-    margin-top: 30px;
+/* TAMBAH THREAD */
+.title_thread {
+    height: 40vh;
 }
 
 /* ALUR */
@@ -2835,310 +2058,37 @@ progress::after {
     background: #082C73;
 }
 
-/* Detail Pertemuan */
-.bar-progres progress {
-    position: relative;
-    width: 280px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-progress::before,
-progress::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 50vh;
-    border-radius: 10px;
-}
-
-.bar-progres progress::before {
-    width: 100%;
-    background: white;
-}
-
-.bar-progres progress::after {
-    width: 20%;
-    background: gray;
-}
-
-.materi p {
-    margin-left: 3vh;
-    color: white;
-}
-
-.list-opsi {
-    width: 250px;
-    background: #0F3B92;
-    padding-bottom: 5px;
-}
-
-.list-opsi h5 {
-    margin-top: 100px;
-    padding: 0px 15px;
-    color: white;
-    font-weight: 500;
-    font-size: 18px;
-}
-
-.list-opsi .btn-mapel {
-    width: 90%;
-    margin: 10px;
-    background: #0F3B92;
-    border: 2px white solid;
-    border-radius: 20px;
-    color: white;
-    padding-top: 5px;
-    display: block;
-    outline: none;
-}
-
-.list-opsi .btn-mapel p {
-    float: left;
-    margin-left: 10px;
-    color: white;
-    margin-bottom: 2px;
-    font-size: 13px;
-}
-
-.list-opsi .btn-mapel i.fa.fa-angle-down {
+/* FORUM GURU */
+.forum-item .dropdown {
     float: right;
-    margin-right: 10px;
-}
-
-.list-opsi .dropdown-menu {
+    border-radius: 10px;
     border: none;
-    color: white;
-    position: relative;
-    display: none;
-    background: #0F3B92;
-    width: 100%;
-}
-
-.list-opsi .dropdown-menu label {
-    color: white;
-    margin-left: 20px;
-    padding: 0px;
-    font-size: 13px;
-}
-
-.list-opsi {
-    display: none !important;
-}
-
-.opsi-content {
-    margin: 12vh 1vh 1vh 1vh;
-    width: 100%;
-}
-
-iframe {
-    width: 100%;
-    height: 600px;
-}
-
-/* TAMBAH THREAD */
-.add-content {
-    height: fit-content;
-}
-
-.title-thread p {
-    margin-right: 40px;
-}
-
-/* TAMBAH REPLAY/KOMENTAR */
-.add-reply .add-docs {
-    height: 65vh;
-    background-color: #F2F2F2;
-    color: black;
-    margin-bottom: 5vh;
-    box-shadow: 0 1vh 1vw 0 rgba(0, 0, 0, 0.308);
-}
-
-/* PROFIL */
-
-.profil-header{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-
-.profil-sidebar {
-    width: 300px;
-    min-height: 100vh;
-    margin-left: 90px;
+    font-weight: 300;
+    outline: none;
     font-size: 12px;
-    text-align: center;
-    position: relative;
-    top: 50px;
-    background: #082c73;
-    box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.15);
-}
-
-.profil-sidebar .button{
-    margin: 70px auto;
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
-    font-size: 15px;
+    margin-top: -8.2vh;
 }
 
-.profil-sidebar .button button{
+.forum-item .dropdown button {
     background: none;
-    outline: none;
-    border: none;
-    padding: 10px;
-    color: white;
-}
-
-.profil-sidebar .button button:hover {
-    background: rgba(0, 0, 0, 0.28);
-    border-radius: 21px;
-}
-
-.profil-sidebar a {
-    margin: 16px 10px;
-    color: #FFFFFF;
-}
-
-.rectangle {
-    float: right;
-    width: 100%;
-    height: 250px;
-    background: linear-gradient(180deg, #3968C6 0%, rgba(89, 153, 240, 0.53) 100%);
-}
-
-.profil-user {
-    height: 900px;
-    width: 100%;
-    background-color: white;
-    text-align: center;
-}
-
-.profil-user img {
-    size: 100px;
-    margin: 150px auto;
-    
-}
-
-.profil-user .nama-profil{
-    line-height: 54px;
-    margin-top: 350px;
-}
-
-.profil-user .nama-profil p{
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 54px;
-    margin-bottom: 0px !important;
-}
-
-.container-field-user {
-    background: #F5F5F5;
-    border-radius: 10px;
-    width: 80%;
-    margin: 10px auto;
-}
-
-form.field-user {
-    padding-bottom: 20px;
-}
-
-.field-user label {
-    width: 211px;
-    clear: left;
-    padding-right: 10px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-    color: #434343;
-    text-align: justify;
-}
-
-.field-user input {
-    width: 491px;
-    height: 30px;
-    border-radius: 5px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 20px;
-    color: #000000;
-    border: 1px solid #B9B9B9;
-    box-sizing: border-box;
-    border-radius: 5px;
-    outline: none;
-}
-
-.field-user label,
-input {
-    padding: 10px;
-}
-
-.profil-sidebar i{
-    padding-right: 15px;
-}
-
-.profil-user button {
-    background: #0F3B92;
-    border-radius: 40px;
-    font-size: 13px;
-    color: #FFFFFF;
     border: none;
     outline: none;
-    padding: 5px 20px;
-    font-weight: 600;
 }
 
-.pass-title{
-    margin-top: 200px;
+.forum-item #drop-history {
+    width: 100px;
+    font-size: 12px;
 }
 
-.pass-title h2{
-    font-weight: 600;
-    text-align: justify !important;
-    margin-left: 100px;
-    margin-bottom: 20px;
-    color: #333;
+.forum-item .dropdown .btn-mapel img.colon {
+    height: 25px;
+    padding-left: 15px;
+    filter: invert(100%);
 }
 
-.pass{
-    padding: 20px 10px;
-}
-.pass .confirm{
-    background: #58BAAB;
-}
 
-.pass .batal{
-    background: #FF5A72;
-}
-.pass label{
-    font-size: 15px;
-}
-
-/* DAFTAR SISWA */
-.daftar-siswa table{
-    box-shadow: 0px 0px 10px #e5e5e5;
-}
-.daftar-siswa table th{
-    background: #e5e5e5;
-}
-
-.daftar-siswa table td{
-    background: #EFEFEF;
-}
-
-.daftar-siswa table .header{
-    border-top-left-radius: 10px;
-}
-
-.daftar-siswa table .header1{
-    border-top-right-radius: 10px;
-}
 @media screen and (min-width: 100px) and (max-width: 800px) {
     .sidebar ul {
         margin-top: 50px;
@@ -3366,7 +2316,6 @@ input {
 
     .doc-content .search-box1 {
         display: block !important;
-
     }
 
     .doc-content .search-box1 span,
@@ -3451,14 +2400,13 @@ input {
         width: 100px;
     }
 
-    .doc-header .kumpul,
-    .kumpul button {
-        width: 100px;
+    .doc-header .doc-guru {
+        width: 100%;
+        margin: 10px auto;
     }
 
-    .doc-header .doc-guru {
-        width: 50%;
-        margin-top: 10px;
+    .finish-detail {
+        width: 80%;
     }
 
     .main-content-forum {
@@ -3565,76 +2513,6 @@ input {
         margin-left: 0;
     }
 
-    .item-kelola {
-        flex-direction: column;
-    }
-
-    .tugas-list {
-        margin: 20px auto;
-    }
-
-    .tambah-tugas p {
-        font-size: 12px;
-        width: 100%;
-    }
-
-    .tambah-tugas .title {
-        flex-direction: column;
-    }
-
-    .tambah-tugas input[type=text] {
-        margin-left: 0px;
-    }
-
-    .tambah-tugas .click {
-        flex-direction: column-reverse;
-        float: none;
-    }
-
-    .tambah-tugas textarea {
-        width: 95%;
-    }
-
-    .tambah-mapel select {
-        width: 40%;
-    }
-
-    .tambah-mapel .waktu input.waktu {
-        width: 110px;
-    }
-
-    .add-file {
-        flex-direction: column;
-    }
-
-    .finish-guru {
-        width: 90%;
-    }
-
-    table.info {
-        width: 80%;
-    }
-
-    table.info td {
-        font-size: 12px;
-    }
-
-    .beri-nilai {
-        margin-left: 20px;
-    }
-
-    .kelola {
-        flex-direction: column;
-    }
-
-    .tabel-content .del-sel button {
-        margin-top: 10px;
-    }
-
-    .head h1 {
-        font: 15px;
-    }
-
     /* Alur */
     .alur {
         margin-left: 10px;
@@ -3657,106 +2535,15 @@ input {
         padding: 0;
     }
 
-    /* detail pertemuan */
-    .list-opsi {
-        display: block !important;
+    /* Forum guru */
+    .forum-item .dropdown {
+        margin-top: -7.1vh;
     }
 
-    .list-opsi {
-        width: 100%;
-        margin-top: -5vh;
+    .forum-item p {
+        font-size: 12px;
     }
 
-    .bar-progres progress {
-        width: 97%;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-
-    .opsi-content {
-        margin-top: 5px;
-    }
-
-    /* TAMBAH THREAD */
-    .btn-thread .click .btn-back button {
-        width: 10vh;
-    }
-
-    .btn-thread .click .btn-start button {
-        width: 10vh;
-    }
-
-    /* TAMBAH REPLAY/KOMENTAR */
-    .add-reply .add-docs {
-        width: 37vh;
-    }
-
-    /* TAUTAN */
-    .ujian-list {
-        margin-top: 2vh;
-    }
-
-    .profil-header{
-        flex-direction: column;
-        margin-left: 70px;
-    }
-
-    .profil-sidebar{
-        width: 100%;
-        min-height: max-content;
-        margin: 0px auto;
-        margin-bottom: 0px !important;
-    }
-
-    .profil-user{
-        width: 100%;
-        height: max-content !important;
-        margin-left: 10px;
-    }
-
-    .profil-user img {
-        width: 150px;
-        margin: 170px auto;
-    }
-
-    .profil-user .nama-profil p {
-        font-size: 25px;
-    }
-
-    .container-field-user {
-        width: 80%;
-    }
-
-    .field-user label{
-        font-size: 15px;
-    }
-
-    .field-user input{
-        width: 200px;
-        border: none;
-        outline: none;
-    }
-    .profil-user button{
-        margin: 20px auto;
-    }
-
-    .pass-title{
-        margin-top: 100px;
-    }
-    
-    .pass-title h2{
-        margin-left: 50px;
-        font-weight: 600;
-        text-align: justify !important;
-        margin-bottom: 20px;
-        color: #333;
-    }
-
-    .note-editor.note-frame {
-        margin-left: 0px;
-        width: 95%;
-    }
-    
 }
 
 @media screen and (min-width: 750px) and (max-width: 990px) {
@@ -3772,7 +2559,7 @@ input {
 
     .form-cont {
         width: 100%;
-        min-height: 400px;
+        max-height: 400px;
         border-top-left-radius: 40px;
         border-bottom-left-radius: 40px;
     }
@@ -3868,7 +2655,6 @@ input {
 
     .doc-content .search-box1 {
         display: block !important;
-        margin-right: 30px;
     }
 
     .pencarian {
@@ -3933,31 +2719,6 @@ input {
         font-size: 13px;
         margin-right: 3vh;
     }
-
-    /* detail pertemuan */
-    .list-opsi {
-        display: block !important;
-    }
-
-    .list-opsi {
-        width: 100%;
-        margin-top: -5vh;
-    }
-
-    .bar-progres progress {
-        width: 97%;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-
-    .opsi-content {
-        margin-top: 5px;
-    }
-
-    .field-user label, .field-user input{
-        width: 50%;
-    }
-    
 
 }
 
