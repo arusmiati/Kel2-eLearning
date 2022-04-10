@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <title>Edit Tautan</title>
+  <title>Sertifikat</title>
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -33,10 +33,10 @@
           <a href="homepage.html" class="btn" aria-hidden="true">Homepage</a>
         </li>
         <li class="mapel nav-item">
-          <a href="kelas.html" class="btn active" aria-hidden="true">Kelasku</a>
+          <a href="matapelajaran.html" class="btn" aria-hidden="true">Mata Pelajaran</a>
         </li>
         <li class="search-mapel nav-item">
-          <a href="tambahmapel.html" class="btn" aria-hidden="true">Tambah Kelas </a>
+          <a href="pencarian.html" class="btn" aria-hidden="true">Pencarian Mata Pelajaran </a>
         </li>
         <li class="leader nav-item">
           <a href="leaderboards.html" class="btn" aria-hidden="true">Leaderboards</a>
@@ -53,14 +53,13 @@
               <h3>Profil Name</h3>
               <p>Nis/Nip</p>
             </div>
-            <button class="dropdown-item" type="button">Profil</button>
+            <button class="dropdown-item" type="button" onclick="window.location.href='profil.html'">Profil</button>
             <button class="dropdown-item" type="button" onclick="window.location.href='progress.html'">Progress</button>
             <button class="dropdown-item" type="button" onclick="window.location.href='bantuan.html'">Bantuan</button>
             <button onclick="LogConfirm()" class="log-out dropdown-item" type="button">Logout</button>
         </div>
         </center>
       </div>
-    </div>
   </nav>
 
   <div class="main-container">
@@ -69,51 +68,95 @@
       <a href="login.html" class="yes">Iya</a>
       <a href="" class="no">Tidak</a>
     </div>
-    <div id="confirm-box-tambah">
-      <h1>Tautan<br> Berhasil Diedit</h1>
+    <div id="confirm-box-unduh">
+      <h1>Apakah anda ingin mengunduh file ini?</h1>
+      <a href="#" onclick="unduhYaps()" class="yes">Iya</a>
+      <a href="" class="no">Tidak</a>
     </div>
-    <div class="dokumen">
-      <div class="search-sidebar">
-        <div class="search-box d-flex">
-          <span><i class="fa fa-search"></i></span>
-          <p>Search Bar</p>
-        </div>
-      </div>
-      <div class="doc-content">
-        <div class="doc-header">
-          <div class="d-flex">
-            <span><a href="tautanguru.html"><i class="fa fa-arrow-left"></i></a> </span>
-            <h1>Edit Tautan</h1>
-          </div>
-
-          <div class="search-box1 doc-guru ml-auto">
-            <span><i class="fa fa-search"></i>
-              <p>Search Bar</p>
-            </span>
-          </div>
-        </div>
-        <div class="add-docs tambah-tugas">
-          <div class="title d-flex">
-            <p>Judul</p>
-            <input type="text" placeholder="Ketikkan judul tautan disini">
-          </div>
-          <div class="title d-flex" id="link-tautan">
-            <p>Link URL</p>
-            <input type="text" placeholder="Salin link URL disini">
-          </div>
-          <div class="click">
-            <div class="btn-back">
-              <button onclick="location.href='tautanguru.html'">Kembali</button>
-            </div>
-            <div class="btn-start">
-              <button onclick="tambahConfirm()">Edit</button>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="confirm-box-unduh-yaps">
+      <h1>Anda Berhasil Mengunduh File ini</h1>
     </div>
 
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="icon">
+          <a href="profil.html"><img src="img/profil.png" alt=""></a>
+          <br>
+          <span>Profil</span>
+        </li>
+        <li class="icon">
+          <a href="progress.html"><img src="img/progress.png" alt=""></a>
+          <br>
+          <span>Progress</span>
+        </li>
+        <li class="icon active">
+          <a href="sertifikat.html"><img src="img/sertifikat.png" alt=""></a>
+          <br>
+          <span>Sertifikat</span>
+        </li>
+        <li class="icon">
+          <a href="bantuan.html"><img src="img/bantuan.png" alt=""></a>
+          <br>
+          <span>Bantuan</span>
+        </li>
+        <li class="icon">
+          <a href="#" onclick="LogConfirm()"><img src="img/logout.png" alt=""></a>
+          <br>
+          <span>Logout</span>
+        </li>
+      </ul>
+    </div>
+    <div class="main-content-bantuan d-flex">
+      <div class="filter-sertifikat">
+        <div class=" filter-pencarian">
+          <h5>Mata Pelajaran</h5>
+          <button class="btn-mapel">
+            <p>Matematika Wajib</p>
+            <i class="fa fa-angle-right" style="float: right; margin-right: 10px;"></i>
+          </button>
+          <button class="btn-mapel">
+            <p>Fisika</p>
+            <i class="fa fa-angle-right" style="float: right; margin-right: 10px;"></i>
+          </button>
+          <button class="btn-mapel">
+            <p>Bahasa Indonesia</p>
+            <i class="fa fa-angle-right" style="float: right; margin-right: 10px;"></i>
+          </button>
+        </div>
+      </div>
+      <div class="sertifikat-content">
+        <div class="doc-header d-flex">
+          <h1>Matematika Wajib</h1>
+          <div class="list-sertifikat">
+            <div class="tugas-list" style="float: right;">
+              <div class="dropdown">
+                <button class="btn-mapel" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <img class="colon" src="img/titik3.png" alt="">
+                </button>
+                <div id="drop-history" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" onclick="" href="#">Matematika Wajib</a>
+                  <a class="dropdown-item" onclick="" href="#">Fisika</a>
+                  <a class="dropdown-item" onclick="" href="#">Bahasa Indonesia</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ujian-detail" style="text-align: center;">
+          <div class="deskripsi" style="text-align: center;">
+            <p>Selamat telah menyelesaikan mata pelajaran ini! <br>Diharapkan kalian mampu menerapkan pengetahuan yang
+              telah diperoleh untuk perkembangan dimasa depan</p>
+          </div>
+          <img src="img/certificate (1).png" alt="Sertifikat">
+          <div class="btn-start">
+            <button onclick="UnduhConfirm()" class="unduh">Unduh</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
 
   <div class="footer">
     <div class="nama-footer">
@@ -130,12 +173,10 @@
     </div>
   </div>
 
-
   <script src="script.js"></script>
   <script>
     var c = 0;
     function LogConfirm() {
-      e4
       if (c == 0) {
         document.getElementById("confirm-box").style.display = "block"
         c = 1;
@@ -146,22 +187,30 @@
       }
     }
 
-    function tambahConfirm() {
+    function UnduhConfirm() {
       if (c == 0) {
-        document.getElementById("confirm-box-tambah").style.display = "block"
-        setTimeout(() => {
-          window.location.href = 'tautanguru.html'
-        }, 3000);
+        document.getElementById("confirm-box-unduh").style.display = "block";
         c = 1;
       }
       else {
-        document.getElementById("confirm-box-tambah").style.display = "none"
+        document.getElementById("confirm-box-unduh").style.display = "none";
         c = 0;
       }
     }
 
+    function unduhYaps() {
+      if (c == 0) {
+        document.getElementById("confirm-box-unduh-yaps").style.display = "block";
+        setTimeout(() => {
+          window.location.href = 'dokumen.html'
+        }, 3000);
+      }
+      else {
+        document.getElementById("confirm-box-unduh-yaps").style.display = "none";
+        c = 0;
+      }
+    }
   </script>
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -173,6 +222,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>

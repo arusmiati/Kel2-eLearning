@@ -2180,7 +2180,31 @@ progress::after {
     font-size: 12px;
 }
 
-/* alur guru */
+/* tambah alur */
+.tambah-alur {
+    margin-left: 22%;
+}
+
+/* Sertifikat */
+.filter-sertifikat .filter-pencarian {
+    padding-top: 1vh;
+    min-height: 100vh;
+    padding-bottom: 0;
+}
+
+.filter-sertifikat {
+    margin: -18vh 0 -40vh -12vh;
+}
+
+.main-content-bantuan .sertifikat-content {
+    margin: -20vh 0 0 0;
+    height: fit-content;
+}
+
+.list-sertifikat {
+    margin-left: 5vh;
+    display: none !important;
+}
 
 @media screen and (min-width: 100px) and (max-width: 800px) {
     .sidebar ul {
@@ -2637,6 +2661,24 @@ progress::after {
         font-size: 12px;
     }
 
+    /* tambah alur */
+    .tambah-alur {
+        margin-left: 10%;
+    }
+
+    /* Sertifikat */
+    .filter-sertifikat {
+        display: none !important;
+    }
+
+    .list-sertifikat {
+        display: block !important;
+    }
+
+    .main-content-bantuan .sertifikat-content {
+        margin: -20vh 0 0 -10vh;
+    }
+
 }
 
 @media screen and (min-width: 750px) and (max-width: 990px) {
@@ -2809,6 +2851,20 @@ progress::after {
     .forumthread p {
         font-size: 13px;
         margin-right: 3vh;
+    }
+
+    /* tambah alur */
+    .tambah-alur {
+        margin-left: 10%;
+    }
+
+    /* Sertifikat */
+    .filter-sertifikat {
+        display: none !important;
+    }
+
+    .list-sertifikat {
+        display: block !important;
     }
 
 }
