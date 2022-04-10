@@ -2641,7 +2641,6 @@ progress::after {
 
 @media screen and (min-width: 750px) and (max-width: 990px) {
     .login-container {
-        height: 75vh;
         top: 50%;
         margin: 10px;
     }
@@ -2652,7 +2651,6 @@ progress::after {
 
     .form-cont {
         width: 100%;
-        max-height: 400px;
         border-top-left-radius: 40px;
         border-bottom-left-radius: 40px;
     }
