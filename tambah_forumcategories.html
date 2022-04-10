@@ -13,13 +13,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <title>Forum</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-lite.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-lite.js"></script>
+  <title>Tambah Forum Categories</title>
   <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="navbar-header">
       <img src="img/logo.png" alt="">
@@ -64,68 +66,59 @@
     </div>
   </nav>
 
-  <!-- MAIN -->
   <div class="main-container">
     <div id="confirm-box">
       <h1>Apakah anda ingin keluar dari E-LEARNING SMANEL?</h1>
       <a href="login.html" class="yes">Iya</a>
       <a href="" class="no">Tidak</a>
     </div>
-    <div id="confirm-box-delete">
-      <h1>Apakah anda yakin ingin menghapus Forum ini?</h1>
-      <a href="#" onclick="deleteYaps()" class="yes">Iya</a>
-      <a href="" class="no">Tidak</a>
+    <div id="confirm-box-tambah">
+      <h1>Forum Categories<br> Berhasil Ditambahkan</h1>
     </div>
-    <div id="confirm-box-delete-yaps">
-      <h1>Forum ini Berhasil Dihapus</h1>
-    </div>
-    <div class="main-content-forum">
-      <div class="forum-header d-flex">
-        <span><a href="detailkelas.html"><i class="fa fa-arrow-left"></i></a> </span>
-        <h1>Forum</h1>
-        <div class="btn-start ml-auto">
-          <button onclick="location.href='tambahforum.html'">Tambah</button>
+    <div class="dokumen">
+      <div class="search-sidebar">
+        <div class="search-box d-flex">
+          <span><i class="fa fa-search"></i></span>
+          <p>Search Bar</p>
         </div>
       </div>
-      <div class="box">
-        <ul class="forum-box">
-          <li class="forum-item">
-            <a href="forumcategories_guru.html">
-              <p>DISKUSI KELOMPOK PRESENTASI</p>
-            </a>
-            <div class="dropdown">
-              <button class="btn-mapel" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <img class="colon" src="img/titik3.png" alt="">
-              </button>
-              <div id="drop-history" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="editforum.html">Edit Forum</a>
-                <a class="dropdown-item" onclick="DeleteConfirm()" href="#">Delete Forum</a>
-              </div>
+      <div class="doc-content">
+        <div class="doc-header d-flex">
+          <span><a href="forumcategories_guru.html"><i class="fa fa-arrow-left"></i></a> </span>
+          <h1>Tambah Forum Categories</h1>
+          <div class="search-box1 ml-auto">
+            <span><i class="fa fa-search"></i>
+              <p>Search Bar</p>
+            </span>
+          </div>
+        </div>
+        <div class="add-docs tambah-tugas">
+          <div class="title d-flex">
+            <p>Judul </p>
+            <input type="text" placeholder="Ketikkan judul forum categories disini" class="judul-thread">
+          </div>
+          <div class="title title-thread d-flex">
+            <p>Deskripsi</p>
+            <div class="add-thread" id="add-thread">
+              <div id="summernote"></div>
             </div>
-          </li>
-
-          <li class="forum-item">
-            <a href="forumcategories_guru.html">
-              <p>SISTEM PERSAMAAN/PERTIDAKSAMAAN</p>
-            </a>
-            <div class="dropdown">
-              <button class="btn-mapel" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <img class="colon" src="img/titik3.png" alt="">
-              </button>
-              <div id="drop-history" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="editforum.html">Edit Forum</a>
-                <a class="dropdown-item" onclick="DeleteConfirm()" href="#">Delete Forum</a>
-              </div>
+          </div>
+          <div class="click">
+            <div class="btn-back">
+              <button onclick="Location.href='forumcategories_guru.html'">Kembali</button>
             </div>
-          </li>
-        </ul>
+            <div class="btn-start">
+              <button onclick="tambahConfirm()">Tambah</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  </div>
 
-  <!-- FOOTER -->
+  </div>
+
   <div class="footer">
     <div class="nama-footer">
       <p class="tfooter">SMA Negeri 5 Luwu</p>
@@ -145,41 +138,38 @@
   <script>
     var c = 0;
     function LogConfirm() {
+      e4
       if (c == 0) {
-        document.getElementById("confirm-box-logout").style.display = "block"
+        document.getElementById("confirm-box").style.display = "block"
         c = 1;
       }
       else {
-        document.getElementById("confirm-box-logout").style.display = "none"
+        document.getElementById("confirm-box").style.display = "none"
         c = 0;
       }
     }
 
-    function DeleteConfirm() {
+    function tambahConfirm() {
       if (c == 0) {
-        document.getElementById("confirm-box-delete").style.display = "block";
-        c = 1;
-      }
-      else {
-        document.getElementById("confirm-box-delete").style.display = "none";
-        c = 0;
-      }
-    }
-
-    function deleteYaps() {
-      if (c == 0) {
-        document.getElementById("confirm-box-delete-yaps").style.display = "block";
+        document.getElementById("confirm-box-tambah").style.display = "block"
         setTimeout(() => {
-          window.location.href = 'forum_guru.html'
+          window.location.href = 'forumcategories_guru.html'
         }, 3000);
         c = 1;
       }
       else {
-        document.getElementById("confirm-box-delete-yaps").style.display = "none";
+        document.getElementById("confirm-box-tambah").style.display = "none"
         c = 0;
       }
     }
+
+    $('#summernote').summernote({
+      placeholder: 'Ketikkan Deskripsi Forum Categories Di Sini',
+      tabsize: 2,
+      height: 220
+    });
   </script>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -191,7 +181,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-
 </body>
 
 </html>

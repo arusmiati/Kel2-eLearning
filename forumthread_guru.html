@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Forum Thread</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="navbar-header">
+      <img src="img/logo.png" alt="">
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="name nav-item">
+          <a href="homepage.html" class="btn" aria-hidden="true">Homepage</a>
+        </li>
+        <li class="mapel nav-item">
+          <a href="kelas.html" class="btn active" aria-hidden="true">Kelasku</a>
+        </li>
+        <li class="search-mapel nav-item">
+          <a href="tambahmapel.html" class="btn" aria-hidden="true">Tambah Kelas </a>
+        </li>
+        <li class="leader nav-item">
+          <a href="leaderboards.html" class="btn" aria-hidden="true">Leaderboards</a>
+        </li>
+      </ul>
+      <div class="profil nav-item dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        <img class="icon-profil" src="img/profil.png" alt="" srcset="">
+        <div class="dropdown-menu dropdown-menu-right">
+          <center>
+            <div class="name">
+              <img class="bg" src="img/bg.png" alt=""><br>
+              <img class="profil-img" src="img/profil.png" alt="">
+              <h3>Profil Name</h3>
+              <p>Nis/Nip</p>
+            </div>
+            <button class="dropdown-item" type="button" onclick="window.location.href='profil.html'">Profil</button>
+            <button class="dropdown-item" type="button" onclick="window.location.href='progress.html'">Progress</button>
+            <button class="dropdown-item" type="button" onclick="window.location.href='bantuan.html'">Bantuan</button>
+            <button onclick="LogConfirm()" class="log-out dropdown-item" type="button">Logout</button>
+        </div>
+        </center>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-container">
+    <div id="confirm-box-logout">
+      <h1>Apakah anda ingin keluar dari E-LEARNING SMANEL?</h1>
+      <a href="login.html" class="yes">Iya</a>
+      <a href="" class="no">Tidak</a>
+    </div>
+    <div id="confirm-box-delete">
+      <h1>Apakah anda yakin ingin menghapus thread ini?</h1>
+      <a href="#" onclick="deleteYaps()" class="yes">Iya</a>
+      <a href="" class="no">Tidak</a>
+    </div>
+    <div id="confirm-box-delete-yaps">
+      <h1>Thread ini Berhasil Dihapus</h1>
+    </div>
+
+    <div class="dokumen">
+      <div class="search-sidebar">
+        <div class="search-box d-flex">
+          <span><i class="fa fa-search"></i></span>
+          <p>Search Bar</p>
+        </div>
+      </div>
+      <div class="doc-content">
+        <div class="doc-header">
+          <div class="d-flex">
+            <span><a href="forumcategories_guru.html"><i class="fa fa-arrow-left"></i></a> </span>
+            <h1>Persamaan Linear Satu Variabel</h1>
+            <div class="btn-start ml-auto">
+              <button onclick="location.href='tambah_forumthread_guru.html'">Tambah</button>
+            </div>
+          </div>
+          <div class="search-box1 doc-guru ml-auto">
+            <span><i class="fa fa-search"></i>
+              <p>Search Bar</p>
+            </span>
+          </div>
+        </div>
+
+        <div class="forumthread-list">
+          <div class="forumthread-content">
+            <div class="main-item">
+              <div class="foto">
+                <img src="img/user.png" alt="Profil">
+                <h5>Nama User</h5>
+              </div>
+              <div class="forumthread-description">
+                <div class="dropdown">
+                  <button class="btn-mapel" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img class="colon" src="img/titik3.png" alt="">
+                  </button>
+                  <div id="drop-history" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="edit_forumthread_guru.html">Edit</a>
+                    <a class="dropdown-item" onclick="DeleteConfirm()" href="#">Delete</a>
+                  </div>
+                </div>
+                <div class="forumthread-title">
+                  <h5><b>Persamaan Linear Satu Variabel</b></h5>
+                  <p style="margin: 0 0 2vh 0;">3 hours ago</p>
+                </div>
+                <div class="forumthread">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially</p>
+                </div>
+                <div class="info">
+                  <p><i class="fa fa-comment"></i> 4 Reply</p>
+                </div>
+                <div class="btn-reply">
+                  <button onclick="location.href='tambahkomentar_guru.html'">Reply</button>
+                </div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="foto">
+                <img src="img/user.png" alt="Profil">
+                <h5>Nama User</h5>
+              </div>
+              <div class="forumthread-description">
+                <div class="dropdown">
+                  <button class="btn-mapel" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img class="colon" src="img/titik3.png" alt="">
+                  </button>
+                  <div id="drop-history" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="edit_forumthread_guru.html">Edit</a>
+                    <a class="dropdown-item" onclick="DeleteConfirm()" href="#">Delete</a>
+                  </div>
+                </div>
+                <div class="forumthread-title">
+                  <h5><b>Persamaan Linear Satu Variabel</b></h5>
+                  <p style="margin: 0 0 2vh 0;">3 hours ago</p>
+                </div>
+                <div class="forumthread">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially</p>
+                </div>
+                <div class="info">
+                  <p><i class="fa fa-comment"></i> 4 Reply</p>
+                </div>
+                <div class="btn-reply">
+                  <button onclick="location.href='tambahkomentar_guru.html'">Reply</button>
+                </div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="foto">
+                <img src="img/user.png" alt="Profil">
+                <h5>Nama User</h5>
+              </div>
+              <div class="forumthread-description">
+                <div class="dropdown">
+                  <button class="btn-mapel" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img class="colon" src="img/titik3.png" alt="">
+                  </button>
+                  <div id="drop-history" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="edit_forumthread_guru.html">Edit</a>
+                    <a class="dropdown-item" onclick="DeleteConfirm()" href="#">Delete</a>
+                  </div>
+                </div>
+                <div class="forumthread-title">
+                  <h5><b>Persamaan Linear Satu Variabel</b></h5>
+                  <p style="margin: 0 0 2vh 0;">3 hours ago</p>
+                </div>
+                <div class="forumthread">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially</p>
+                </div>
+                <div class="info">
+                  <p><i class="fa fa-comment"></i> 4 Reply</p>
+                </div>
+                <div class="btn-reply">
+                  <button onclick="location.href='tambahkomentar_guru.html'">Reply</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="nama-footer">
+      <p class="tfooter">SMA Negeri 5 Luwu</p>
+      <p>Jl.Jambu Kec. Bajo Kab. Luwu 91995</p>
+    </div>
+    <div class="web">
+      <ul>
+        <li><a href="http://sman5luwu.sch.id/index.php"><i class="fa fa-globe"></i><span>sman5luwu.sch.id</span></a>
+        </li>
+        <li><a href="#"><i class="fa fa-envelope"></i><span>smanel5luwu@gmail.com</span></a></li>
+        <li><a href="#"><i class="fa fa-phone"></i><span>085340062586</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    var c = 0;
+    function LogConfirm() {
+      if (c == 0) {
+        document.getElementById("confirm-box").style.display = "block"
+        c = 1;
+      }
+      else {
+        document.getElementById("confirm-box").style.display = "none"
+        c = 0;
+      }
+    }
+
+    function DeleteConfirm() {
+      if (c == 0) {
+        document.getElementById("confirm-box-delete").style.display = "block";
+        c = 1;
+      }
+      else {
+        document.getElementById("confirm-box-delete").style.display = "none";
+        c = 0;
+      }
+    }
+
+    function deleteYaps() {
+      if (c == 0) {
+        document.getElementById("confirm-box-delete-yaps").style.display = "block";
+        setTimeout(() => {
+          window.location.href = 'forumthread_guru.html'
+        }, 3000);
+        c = 1;
+      }
+      else {
+        document.getElementById("confirm-box-delete-yaps").style.display = "none";
+        c = 0;
+      }
+    }
+  </script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

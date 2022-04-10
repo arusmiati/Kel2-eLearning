@@ -1564,7 +1564,7 @@ tr:nth-child(even) {
 .add-docs {
     background: #dedede;
     width: 80%;
-    height: max-content;
+    height: fit-content;
     margin: 10px auto;
     padding: 20px;
     border-radius: 10px;
@@ -2103,7 +2103,7 @@ progress::after {
     font-size: 12px;
     display: flex;
     flex-direction: column;
-} 
+}
 
 .tugas-list .dropdown button {
     background: none;
@@ -2120,6 +2120,67 @@ progress::after {
     height: 25px;
     padding-left: 15px;
 }
+
+/* Forum categories guru */
+.logo-forumcateg img.colon {
+    height: 25px;
+    padding-left: 5px;
+    filter: invert(100%);
+}
+
+.logo-forumcateg .dropdown {
+    float: right;
+    border-radius: 10px;
+    border: none;
+    font-weight: 300;
+    outline: none;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-right: -3vh;
+}
+
+.logo-forumcateg .dropdown button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.logo-forumcateg #drop-history {
+    width: 100px;
+    font-size: 12px;
+}
+
+/* forum thread guru */
+.forumthread-description img.colon {
+    height: 25px;
+    padding-left: 5px;
+}
+
+.forumthread-description .dropdown {
+    float: right;
+    border-radius: 10px;
+    border: none;
+    font-weight: 300;
+    outline: none;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-right: -3vh;
+}
+
+.forumthread-description .dropdown button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.forumthread-description #drop-history {
+    width: 100px;
+    font-size: 12px;
+}
+
+/* alur guru */
 
 @media screen and (min-width: 100px) and (max-width: 800px) {
     .sidebar ul {
