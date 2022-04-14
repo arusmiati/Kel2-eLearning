@@ -30,13 +30,13 @@
                     <a href="homepage_admin.html" class="btn" aria-hidden="true">Homepage</a>
                 </li>
                 <li class="mapel nav-item">
-                    <a href="kelola_user.html" class="btn " aria-hidden="true">Kelola User</a>
+                    <a href="kelola_user.html" class="btn" aria-hidden="true">Kelola User</a>
                 </li>
                 <li class="search-mapel nav-item">
                     <a href="kelola_mapel.html" class="btn" aria-hidden="true">Kelola Mata Pelajaran</a>
                 </li>
                 <li class="leader nav-item">
-                    <a href="kelola_sistem.html" class="btn active" aria-hidden="true">Kelola Sistem</a>
+                    <a href="kelola_sistem.html" class="btn  active" aria-hidden="true">Kelola Sistem</a>
                 </li>
             </ul>
             <div class="profil nav-item dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"aria-expanded="false">
@@ -68,32 +68,41 @@
         <div id="confirm-box-tambah">
             <h1>File Ini<br> Berhasil Ditambahkan</h1>
         </div>
-        <div class="dokumen">
-            <div class="search-sidebar">
-                <div class="search-box d-flex">
-                    <span><i class="fa fa-search"></i></span>
-                    <p>Search Bar</p>
-                </div>
-            </div>
-            <div class="doc-content">
-                <div class="doc-header d-flex">
+        <div class="tabel">
+            <div class="tabel-content">
+                <div class="doc-header kelola d-flex">
+                    <div class="head d-flex">
+                        <div class="icon"><img src="img/student1.png" alt=""></div>
+                        <h1>Activity User</h1>
+                    </div>
+                    
                     <div class="search-box1 ml-auto">
                         <span><i class="fa fa-search"></i><p>Search Bar</p></span>
                     </div>
                 </div>
-                <div class="title-kelola">
-                    <h1>MAINTENANCE PAGE</h1>
-                </div>   
-                <div class="item-kelola">
-                    <button class="kelola-siswa">
-                        <img src="img/student.png" alt="">
-                        <p>Activites</p>
-                    </button>
-                    <button class="kelola-guru" >
-                        <img src="img/teacher.png" alt="">
-                        <p>Maintenance</p>
-                    </button>
+                <div class="del-sel"><button>Delete Selected Row</button></div>
+                  
+                <div class="item-tabel mapel">
+                    <table>
+                        <tr class="title">
+                            <th class="th1"><input type="checkbox" name="" id=""></th>
+                            <th>User</th>
+                            <th>Last Login</th>
+                            <th class="th2">Status</th>
+                        </tr>
+                        <tr class="item">
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>abdillah</td>
+                            <td>0000-00-00 00:00:00</td>
+                            <td class="aktif">Active</td>
+                        </tr>
+                        
+                    </table>
                 </div> 
+
+                <div class="entire">
+                    <p>1-1 of 1 </p>
+                </div>
            </div>
         </div>
 
@@ -116,34 +125,7 @@
 
 
     <script src="script.js"></script>
-    <script>
-        var c = 0;
-        function LogConfirm() {e4
-            if (c == 0) {
-                document.getElementById("confirm-box").style.display = "block"
-                c = 1;
-            }
-            else {
-                document.getElementById("confirm-box").style.display = "none"
-                c = 0;
-            }
-        }
 
-        function tambahConfirm() {
-            if (c == 0) {
-                document.getElementById("confirm-box-tambah").style.display = "block"
-                setTimeout (()=>{
-                    window.location.href='dokumen_guru.html'
-                },3000); 
-                c = 1;
-            }
-            else {
-                document.getElementById("confirm-box-tambah").style.display = "none"
-                c = 0;
-            }
-        }
-        
-    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
