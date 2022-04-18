@@ -2032,6 +2032,11 @@ tr:nth-child(even) {
     height: fit-content;
 }
 
+.tambah-komentar {
+    margin: 20px 30px;
+    text-align: justify;
+}
+
 .main-item, .sub-item {
     margin: 0px auto;
     height: fit-content;
@@ -2100,16 +2105,8 @@ tr:nth-child(even) {
     padding: 3px;
 }
 
-.main-item .btn-reply {
-    margin-top: -5.5vh;
-    padding-bottom: 5vh;
-    margin-left: 31vw;
-}
-
-.sub-item .btn-reply {
-    margin-top: -5.5vh;
-    padding-bottom: 5vh;
-    margin-left: 29vw;
+.btn-reply {
+    margin-left: auto;
 }
 
 /* TAMBAH MAPEL */
@@ -3259,6 +3256,10 @@ input {
     font-size: 12px;
 }
 
+.forumthread-title{
+    text-align: left;
+}
+
 /* LEADER BOARDS */
 .leaderboards-container {
     height: 900px;
@@ -3762,10 +3763,8 @@ input {
         margin-left: 10vw;
         margin-top: 3vh;
     }
-
     .foto,
     .sub-item .foto {
-        margin-left: 0;
         margin-bottom: 2vh;
     }
 
@@ -3814,18 +3813,6 @@ input {
         width: 100px;
         border: none;
         font-size: 10px;
-    }
-
-    .main-item .btn-reply {
-        margin-top: 0;
-        padding-bottom: 3vh;
-        margin-left: 0;
-    }
-
-    .sub-item .btn-reply {
-        margin-top: 0;
-        padding-bottom: 3vh;
-        margin-left: 0;
     }
 
     .item-kelola {
@@ -4197,7 +4184,7 @@ input {
 
     .doc-content .search-box1 {
         display: block !important;
-        margin-right: 30px;
+        margin-top: 30px;
     }
 
     .pencarian {
