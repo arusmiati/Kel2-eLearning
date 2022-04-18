@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;800&display=swap"rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Leaderboards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="navbar-header">
+      <img src="img/logo.png" alt="">
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="name nav-item">
+          <a href="homepage.html" class="btn" aria-hidden="true">Homepage</a>
+        </li>
+        <li class="mapel nav-item">
+          <a href="matapelajaran.html" class="btn" aria-hidden="true">Mata Pelajaran</a>
+        </li>
+        <li class="search-mapel nav-item">
+          <a href="pencarian.html" class="btn" aria-hidden="true">Pencarian Mata Pelajaran </a>
+        </li>
+        <li class="leader nav-item">
+          <a href="leaderboards.html" class="btn active" aria-hidden="true">Leaderboards</a>
+        </li>
+      </ul>
+      <div class="profil nav-item dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        <img class="icon-profil" src="img/profil.png" alt="" srcset="">
+        <div class="dropdown-menu dropdown-menu-right">
+          <center>
+            <div class="name">
+              <img class="bg" src="img/bg.png" alt=""><br>
+              <img class="profil-img" src="img/profil.png" alt="">
+              <h3>Profil Name</h3>
+              <p>Nis/Nip</p>
+            </div>
+            <button class="dropdown-item" type="button">Profil</button>
+            <button class="dropdown-item" type="button">Agenda</button>
+            <button class="dropdown-item" type="button" onclick="window.location.href='progress.html'">Progress</button>
+            <button class="dropdown-item" type="button" onclick="window.location.href='bantuan.html'">Bantuan</button>
+            <button onclick="LogConfirm()" class="log-out dropdown-item" type="button">Logout</button>
+        </div>
+        </center>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BODY -->
+  <div class="leaderboards-container">
+    <div class="leaderboards-title">Leader Boards</div>
+    <div class="search-bar d-flex">
+      <i class="fa fa-search icon"></i>
+      <input type="text" placeholder="Search Name Here" class="input-field"></input>
+    </div>
+
+    <table class="table-header">
+      <tr>
+        <th id="header-rank">Rank</th>
+        <th id="header-name">Nama</th>
+        <th id="header-nis">NIS</th>
+        <th id="header-mapel">Jumlah Mapel yang Dilulusi</th>
+        <th id="header-xp">Total XP</th>
+      </tr>
+    </table>
+
+    <table class="table-cell">
+      <tr>
+        <td class="row-number">1</td>
+        <td class="row-name">Andi Rusmiati</td>
+        <td class="row-nis">D121191079</td>
+        <td class="row-mapel">10</td>
+        <td class="row-xp">100</td>
+      </tr>
+      <tr>
+        <td class="row-number">2</td>
+        <td class="row-name">Mirnawati Darwis</td>
+        <td class="row-nis">D121191075</td>
+        <td class="row-mapel">10</td>
+        <td class="row-xp">98</td>
+      </tr>
+      <tr>
+        <td class="row-number">3</td>
+        <td class="row-name">Muhammad Arfani Asra</td>
+        <td class="row-nis">D121191071</td>
+        <td class="row-mapel">10</td>
+        <td class="row-xp">96</td>
+      </tr>
+      <tr>
+        <td class="row-number">4</td>
+        <td class="row-name">Dea Wahsa Saputri</td>
+        <td class="row-nis">D121191079</td>
+        <td class="row-mapel">10</td>
+        <td class="row-xp">95</td>
+      </tr>
+      <tr>
+        <td class="row-number">5</td>
+        <td class="row-name">Reskita Amelia</td>
+        <td class="row-nis">D121191079</td>
+        <td class="row-mapel">10</td>
+        <td class="row-xp">94</td>
+      </tr>
+      <tr>
+        <td class="row-number">6</td>
+        <td class="row-name">Alfian Arya</td>
+        <td class="row-nis">D121191078</td>
+        <td class="row-mapel">10</td>
+        <td class="row-xp">92</td>
+      </tr>
+      <tr>
+        <td class="row-number">7</td>
+        <td class="row-name">Arif Putera Wijaya</td>
+        <td class="row-nis">D121191065</td>
+        <td class="row-mapel">10</td>
+        <td class="row-xp">91</td>
+      </tr>
+      <tr>
+        <td class="row-number">8</td>
+        <td class="row-name">Satria Wiratama Sangga Buana</td>
+        <td class="row-nis">D121191058</td>
+        <td class="row-mapel">10</td>
+        <td class="row-xp">90</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="nama-footer">
+      <p class="tfooter">SMA Negeri 5 Luwu</p>
+      <p>Jl.Jambu Kec. Bajo Kab. Luwu 91995</p>
+    </div>
+    <div class="web">
+      <ul>
+        <li><a href="http://sman5luwu.sch.id/index.php"><i class="fa fa-globe"></i><span>sman5luwu.sch.id</span></a>
+        </li>
+        <li><a href="#"><i class="fa fa-envelope"></i><span>smanel5luwu@gmail.com</span></a></li>
+        <li><a href="#"><i class="fa fa-phone"></i><span>085340062586</span></a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
