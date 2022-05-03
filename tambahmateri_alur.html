@@ -70,7 +70,7 @@
       <a href="" class="no">Tidak</a>
     </div>
     <div id="confirm-box-tambah">
-      <h1>Alur Pertemuan Ini<br> Berhasil Ditambahkan</h1>
+      <h1>Semua Materi Alur Pertemuan Ini<br> Berhasil Ditambahkan</h1>
     </div>
     <div class="dokumen">
       <div class="doc-content">
@@ -81,13 +81,20 @@
           </div>
         </div>
         <div class="add-docs tambah-alur">
-          <div class="title d-flex">
-            <p>Judul</p>
-            <input type="text" placeholder="Ketikkan judul pertemuan disini">
+          <div class="title d-flex" id="link-tautan">
+            <p>Deskripsi Singkat</p>
+            <input type="text" placeholder="Ketikkan Deskripsi disini (optional)">
+          </div>
+          <div class="add-file d-flex">
+            <p>Tambah Materi</p>
+            <div class="upload-btn-wrapper">
+              <button class="add">Upload Materi</button>
+              <input type="file" name="myfile" />
+            </div>
           </div>
           <div class="click">
             <div class="btn-back">
-              <button onclick="location.href='alur_guru.html'">Kembali</button>
+              <button onclick="location.href='detailpertemuan_guru.html'">Kembali</button>
             </div>
             <div class="btn-start">
               <button onclick="tambahConfirm()">Tambah</button>
@@ -134,7 +141,7 @@
       if (c == 0) {
         document.getElementById("confirm-box-tambah").style.display = "block"
         setTimeout(() => {
-          window.location.href = 'alur_guru.html'
+          window.location.href = 'detailpertemuan_guru.html'
         }, 3000);
         c = 1;
       }

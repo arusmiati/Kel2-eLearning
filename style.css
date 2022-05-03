@@ -160,63 +160,63 @@ body {
 }
 
 #simpan {
-  position: absolute;
-  width: 143px;
-  height: 30px;
-  left: 595px;
-  top: 850px;
-  background: #58BAAB;
-  border-radius: 40px;
+    position: absolute;
+    width: 143px;
+    height: 30px;
+    left: 595px;
+    top: 850px;
+    background: #58BAAB;
+    border-radius: 40px;
 }
 
 #batal {
-  position: absolute;
-  width: 143px;
-  height: 30px;
-  left: 840px;
-  top: 850px;
-  background: #FF5A72;
-  border-radius: 40px;
+    position: absolute;
+    width: 143px;
+    height: 30px;
+    left: 840px;
+    top: 850px;
+    background: #FF5A72;
+    border-radius: 40px;
 }
 
 .password-user {
-  width: 100%;
-  height: 900px;
-  color: #434343;
+    width: 100%;
+    height: 900px;
+    color: #434343;
 }
 
 .password-user h2 {
-  position: absolute;
-  width: 387px;
-  height: 54px;
-  left: 405px;
-  top: 161px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 54px;
+    position: absolute;
+    width: 387px;
+    height: 54px;
+    left: 405px;
+    top: 161px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
 }
 
 .container-change-password {
-  position: absolute;
-  width: 784px;
-  height: 311px;
-  left: 405px;
-  top: 240px;
-  background: #F5F5F5;
-  border-radius: 10px;
+    position: absolute;
+    width: 784px;
+    height: 311px;
+    left: 405px;
+    top: 240px;
+    background: #F5F5F5;
+    border-radius: 10px;
 }
 
 .container-change-password label {
-  width: 243px;
-  padding: 10px 0;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  color: #434343;
+    width: 243px;
+    padding: 10px 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #434343;
 }
 
 .container-change-password button {
@@ -231,97 +231,97 @@ body {
 }
 
 .container-change-password input {
-  width: 470px;
-  height: 30px;
-  background: #F5F5F5;
-  border: 1px solid #AFAFAF;
-  box-sizing: border-box;
-  border-radius: 5px;
+    width: 470px;
+    height: 30px;
+    background: #F5F5F5;
+    border: 1px solid #AFAFAF;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 .field-password {
-  margin-left: 32px;
-  margin-top: 30px;
+    margin-left: 32px;
+    margin-top: 30px;
 }
 
 #confirm-password {
-  position: absolute;
-  width: 143px;
-  height: 30px;
-  left: 280px;
-  top: 210px;
-  background: #58BAAB;
-  border-radius: 40px;
+    position: absolute;
+    width: 143px;
+    height: 30px;
+    left: 280px;
+    top: 210px;
+    background: #58BAAB;
+    border-radius: 40px;
 }
 
 #batal-password {
-  position: absolute;
-  width: 143px;
-  height: 30px;
-  left: 484px;
-  top: 210px;
-  background: #FF5A72;
-  border-radius: 40px;
+    position: absolute;
+    width: 143px;
+    height: 30px;
+    left: 484px;
+    top: 210px;
+    background: #FF5A72;
+    border-radius: 40px;
 }
 
 #simpan {
-  position: absolute;
-  width: 143px;
-  height: 30px;
-  left: 595px;
-  top: 850px;
-  background: #58BAAB;
-  border-radius: 40px;
+    position: absolute;
+    width: 143px;
+    height: 30px;
+    left: 595px;
+    top: 850px;
+    background: #58BAAB;
+    border-radius: 40px;
 }
 
 #batal {
-  position: absolute;
-  width: 143px;
-  height: 30px;
-  left: 840px;
-  top: 850px;
-  background: #FF5A72;
-  border-radius: 40px;
+    position: absolute;
+    width: 143px;
+    height: 30px;
+    left: 840px;
+    top: 850px;
+    background: #FF5A72;
+    border-radius: 40px;
 }
 
 .password-user {
-  width: 100%;
-  height: 900px;
-  color: #434343;
+    width: 100%;
+    height: 900px;
+    color: #434343;
 }
 
 .password-user h2 {
-  position: absolute;
-  width: 387px;
-  height: 54px;
-  left: 405px;
-  top: 161px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 54px;
+    position: absolute;
+    width: 387px;
+    height: 54px;
+    left: 405px;
+    top: 161px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
 }
 
 .container-change-password {
-  position: absolute;
-  width: 784px;
-  height: 311px;
-  left: 405px;
-  top: 240px;
-  background: #F5F5F5;
-  border-radius: 10px;
+    position: absolute;
+    width: 784px;
+    height: 311px;
+    left: 405px;
+    top: 240px;
+    background: #F5F5F5;
+    border-radius: 10px;
 }
 
 .container-change-password label {
-  width: 243px;
-  padding: 10px 0;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  color: #434343;
+    width: 243px;
+    padding: 10px 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #434343;
 }
 
 .container-change-password button {
@@ -336,37 +336,37 @@ body {
 }
 
 .container-change-password input {
-  width: 470px;
-  height: 30px;
-  background: #F5F5F5;
-  border: 1px solid #AFAFAF;
-  box-sizing: border-box;
-  border-radius: 5px;
+    width: 470px;
+    height: 30px;
+    background: #F5F5F5;
+    border: 1px solid #AFAFAF;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 .field-password {
-  margin-left: 32px;
-  margin-top: 30px;
+    margin-left: 32px;
+    margin-top: 30px;
 }
 
 #confirm-password {
-  position: absolute;
-  width: 143px;
-  height: 30px;
-  left: 280px;
-  top: 210px;
-  background: #58BAAB;
-  border-radius: 40px;
+    position: absolute;
+    width: 143px;
+    height: 30px;
+    left: 280px;
+    top: 210px;
+    background: #58BAAB;
+    border-radius: 40px;
 }
 
 #batal-password {
-  position: absolute;
-  width: 143px;
-  height: 30px;
-  left: 484px;
-  top: 210px;
-  background: #FF5A72;
-  border-radius: 40px;
+    position: absolute;
+    width: 143px;
+    height: 30px;
+    left: 484px;
+    top: 210px;
+    background: #FF5A72;
+    border-radius: 40px;
 }
 
 .photo {
@@ -2037,7 +2037,8 @@ tr:nth-child(even) {
     text-align: justify;
 }
 
-.main-item, .sub-item {
+.main-item,
+.sub-item {
     margin: 0px auto;
     height: fit-content;
     background-color: #F2F2F2;
@@ -2927,17 +2928,20 @@ iframe {
     margin-right: 40px;
 }
 
-.thread1 p{
+.thread1 p {
     margin-right: 0px !important;
 }
+
 input.judul-thread {
     width: 76% !important;
     margin-left: 0px !important;
 }
+
 /* TAMBAH REPLAY/KOMENTAR */
-.judul-reply{
+.judul-reply {
     width: 75% !important;
 }
+
 .add-reply .add-docs {
     height: auto;
     background-color: #F2F2F2;
@@ -2946,17 +2950,18 @@ input.judul-thread {
     box-shadow: 0 1vh 1vw 0 rgba(0, 0, 0, 0.308);
 }
 
-.judul1-reply{
+.judul1-reply {
     width: 75% !important;
     margin-left: 10px !important;
 }
 
-.add1-thread{
+.add1-thread {
     width: 100% !important;
 }
+
 /* PROFIL */
 
-.profil-header{
+.profil-header {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -2974,7 +2979,7 @@ input.judul-thread {
     box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.15);
 }
 
-.profil-sidebar .button{
+.profil-sidebar .button {
     margin: 70px auto;
     display: flex;
     flex-direction: column;
@@ -2982,7 +2987,7 @@ input.judul-thread {
     font-size: 15px;
 }
 
-.profil-sidebar .button button{
+.profil-sidebar .button button {
     background: none;
     outline: none;
     border: none;
@@ -3017,15 +3022,15 @@ input.judul-thread {
 .profil-user img {
     size: 100px;
     margin: 150px auto;
-    
+
 }
 
-.profil-user .nama-profil{
+.profil-user .nama-profil {
     line-height: 54px;
     margin-top: 350px;
 }
 
-.profil-user .nama-profil p{
+.profil-user .nama-profil p {
     font-weight: 500;
     font-size: 30px;
     line-height: 54px;
@@ -3077,7 +3082,7 @@ input {
     padding: 10px;
 }
 
-.profil-sidebar i{
+.profil-sidebar i {
     padding-right: 15px;
 }
 
@@ -3092,11 +3097,11 @@ input {
     font-weight: 600;
 }
 
-.pass-title{
+.pass-title {
     margin-top: 200px;
 }
 
-.pass-title h2{
+.pass-title h2 {
     font-weight: 600;
     text-align: justify !important;
     margin-left: 100px;
@@ -3104,43 +3109,47 @@ input {
     color: #333;
 }
 
-.pass{
+.pass {
     padding: 20px 10px;
 }
-.pass .confirm{
+
+.pass .confirm {
     background: #58BAAB;
 }
 
-.pass .batal{
+.pass .batal {
     background: #FF5A72;
 }
-.pass label{
+
+.pass label {
     font-size: 15px;
 }
 
 /* DAFTAR SISWA */
-.daftar-siswa table{
+.daftar-siswa table {
     box-shadow: 0px 0px 10px #e5e5e5;
 }
-.daftar-siswa table th{
+
+.daftar-siswa table th {
     background: #e5e5e5;
 }
 
-.daftar-siswa table td{
+.daftar-siswa table td {
     background: #EFEFEF;
 }
 
-.daftar-siswa table .header{
+.daftar-siswa table .header {
     border-top-left-radius: 10px;
 }
 
-.daftar-siswa table .header1{
+.daftar-siswa table .header1 {
     border-top-right-radius: 10px;
 }
 
-.daftar-siswa td{
+.daftar-siswa td {
     text-align: center !important;
 }
+
 /* tambah alur */
 .tambah-alur {
     margin-left: 22%;
@@ -3166,10 +3175,12 @@ input {
     margin-left: 5vh;
     display: none !important;
 }
+
 /* FORUM GURU */
-.forum-item a p{
+.forum-item a p {
     flex: 1;
 }
+
 .forum-item .dropdown {
     margin-left: auto;
     border-radius: 10px;
@@ -3256,7 +3267,7 @@ input {
     font-size: 12px;
 }
 
-.forumthread-title{
+.forumthread-title {
     text-align: left;
 }
 
@@ -3264,18 +3275,18 @@ input {
 .leaderboards-container {
     height: 900px;
     width: 100%;
-  }
-  
-  .page-headline {
+}
+
+.page-headline {
     position: absolute;
     width: 955px;
     height: 32px;
     left: 163px;
     top: 115px;
     background: #EBEBEB;
-  }
-  
-  .page-headline p {
+}
+
+.page-headline p {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -3284,9 +3295,9 @@ input {
     text-align: justify;
     color: #FFA800;
     margin-left: 10px;
-  }
-  
-  .leaderboards-title {
+}
+
+.leaderboards-title {
     position: absolute;
     float: left;
     width: 500px;
@@ -3298,25 +3309,25 @@ input {
     font-size: 24px;
     line-height: 36px;
     color: #0F3B92;
-  }
-  
-  .search-bar {
+}
+
+.search-bar {
     position: absolute;
     left: 854px;
     top: 165px;
-  }
-  
-  .search-bar i {
+}
+
+.search-bar i {
     position: absolute;
     top: 5px;
     left: 10px;
-  }
-  
-  .icon {
+}
+
+.icon {
     color: #919191;
-  }
-  
-  .input-field {
+}
+
+.input-field {
     height: 30px;
     width: 264px;
     background: #F5F5F5;
@@ -3330,9 +3341,9 @@ input {
     text-align: center;
     color: #909090;
     outline: none;
-  }
-  
-  table.table-header {
+}
+
+table.table-header {
     position: absolute;
     width: 956px;
     height: 82px;
@@ -3342,25 +3353,26 @@ input {
     box-shadow: 0px 4px 20px rgb(0 0 0 / 15%);
     border-radius: 10px;
     overflow: hidden;
-  }
-  
-  .table-header td, th {
+}
+
+.table-header td,
+th {
     text-align: center;
-  }
-  
-  th#header-name {
+}
+
+th#header-name {
     width: 300px;
-  }
-  
-  th#header-nis {
+}
+
+th#header-nis {
     width: 150px;
-  }
-  
-  th#header-xp {
+}
+
+th#header-xp {
     width: 150px;
-  }
-  
-  table.table-cell {
+}
+
+table.table-cell {
     position: absolute;
     width: 956px;
     height: 50px;
@@ -3370,13 +3382,14 @@ input {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     overflow: hidden;
-  }
-  
-  .table-cell tr,td {
+}
+
+.table-cell tr,
+td {
     background: #F5F5F5;
-  }
-  
-  .table-cell td {
+}
+
+.table-cell td {
     text-align: center;
     font-family: 'Poppins';
     font-style: normal;
@@ -3384,24 +3397,45 @@ input {
     font-size: 15px;
     line-height: 30px;
     color: #000000;
-  }
-  
-  .row-number {
-    width: 77px;
-  }
-  
-  .row-name {
-    width: 300px;
-  }
-  
-  .row-nis {
-    width: 150px;
-  }
-  
-  .row-xp {
-    width: 150px;
-  }
+}
 
+.row-number {
+    width: 77px;
+}
+
+.row-name {
+    width: 300px;
+}
+
+.row-nis {
+    width: 150px;
+}
+
+.row-xp {
+    width: 150px;
+}
+
+/* Detail Pertemuan Guru */
+.tambah-materi .btn-start button {
+    background-color: #3477D2;
+    border-radius: 50px;
+    width: 80%;
+    height: 10px;
+}
+
+.tambah-materi .btn-start p {
+    color: white;
+    margin-top: -10px;
+}
+
+.tambah-materi .btn-start button:hover {
+    background: gray;
+}
+
+.btn-selesai .btn-start button {
+    font-size: 14px;
+    height: 40px;
+}
 
 @media screen and (min-width: 100px) and (max-width: 800px) {
     .sidebar ul {
@@ -3763,6 +3797,7 @@ input {
         margin-left: 10vw;
         margin-top: 3vh;
     }
+
     .foto,
     .sub-item .foto {
         margin-bottom: 2vh;
@@ -3947,19 +3982,19 @@ input {
         margin-top: 2vh;
     }
 
-    .profil-header{
+    .profil-header {
         flex-direction: column;
         margin-left: 70px;
     }
 
-    .profil-sidebar{
+    .profil-sidebar {
         width: 100%;
         min-height: max-content;
         margin: 0px auto;
         margin-bottom: 0px !important;
     }
 
-    .profil-user{
+    .profil-user {
         width: 100%;
         height: max-content !important;
         margin-left: 10px;
@@ -3978,24 +4013,25 @@ input {
         width: 80%;
     }
 
-    .field-user label{
+    .field-user label {
         font-size: 15px;
     }
 
-    .field-user input{
+    .field-user input {
         width: 200px;
         border: none;
         outline: none;
     }
-    .profil-user button{
+
+    .profil-user button {
         margin: 20px auto;
     }
 
-    .pass-title{
+    .pass-title {
         margin-top: 100px;
     }
-    
-    .pass-title h2{
+
+    .pass-title h2 {
         margin-left: 50px;
         font-weight: 600;
         text-align: justify !important;
@@ -4009,22 +4045,23 @@ input {
     }
 
     .tambah-alur .title,
-    .tambah-ujian .title{
+    .tambah-ujian .title {
         flex-direction: column;
     }
 
-    .tambah-alur p, .tambah-ujian p{
+    .tambah-alur p,
+    .tambah-ujian p {
         width: 100% !important;
     }
 
     .tambah-alur input,
-    .tambah-ujian input{
+    .tambah-ujian input {
         width: 100%;
         margin-left: 0px !important;
     }
 
     .tambah-alur .click,
-    .tambah-ujian .click{
+    .tambah-ujian .click {
         margin-top: 20px;
         display: flex;
         flex-direction: column-reverse;
@@ -4048,31 +4085,39 @@ input {
     input.judul-thread {
         width: auto !important;
     }
-    
+
     .note-editor.note-frame {
         width: 100%;
     }
 
-    .title-thread{
+    .title-thread {
         flex-direction: column;
     }
 
-    .judul1-reply{
+    .judul1-reply {
         width: auto !important;
         margin-left: 0px !important;
     }
-    .btn-thread .click{
+
+    .btn-thread .click {
         justify-content: center;
         float: none;
     }
 
-    .main-item, .sub-item{
+    .main-item,
+    .sub-item {
         flex-direction: column;
     }
-    
+
     /* Forum guru */
     .forum-item p {
         font-size: 12px;
+    }
+
+    /* Detail Pertemuan Guru */
+    .tambah-materi .btn-start button {
+        width: 15%;
+        height: 10px;
     }
 
 }
@@ -4261,12 +4306,13 @@ input {
         margin-top: 5px;
     }
 
-    .field-user label, .field-user input{
+    .field-user label,
+    .field-user input {
         width: 50%;
     }
 
-     /* tambah alur */
-     .tambah-alur {
+    /* tambah alur */
+    .tambah-alur {
         margin-left: 10%;
     }
 
@@ -4278,7 +4324,12 @@ input {
     .list-sertifikat {
         display: block !important;
     }
-    
+
+    /* Detail Pertemuan Guru */
+    .tambah-materi .btn-start button {
+        width: 15%;
+        height: 10px;
+    }
 
 }
 

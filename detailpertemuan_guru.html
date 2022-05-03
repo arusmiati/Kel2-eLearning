@@ -30,18 +30,18 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="name nav-item">
-            <a href="homepage.html" class="btn" aria-hidden="true">Homepage</a>
+          <a href="homepage.html" class="btn" aria-hidden="true">Homepage</a>
         </li>
         <li class="mapel nav-item">
-            <a href="kelas.html" class="btn active" aria-hidden="true">Kelasku</a>
+          <a href="kelas.html" class="btn active" aria-hidden="true">Kelasku</a>
         </li>
         <li class="search-mapel nav-item">
-            <a href="tambahmapel.html" class="btn" aria-hidden="true">Tambah Kelas </a>
+          <a href="tambahmapel.html" class="btn" aria-hidden="true">Tambah Kelas </a>
         </li>
         <li class="leader nav-item">
-            <a href="leaderboards.html" class="btn" aria-hidden="true">Leaderboards</a>
+          <a href="leaderboards.html" class="btn" aria-hidden="true">Leaderboards</a>
         </li>
-    </ul>
+      </ul>
       <div class="profil nav-item dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false">
         <img class="icon-profil" src="img/profil.png" alt="" srcset="">
@@ -69,6 +69,9 @@
       <a href="login.html" class="yes">Iya</a>
       <a href="" class="no">Tidak</a>
     </div>
+    <div id="confirm-box-tambah">
+      <h1>Materi Alur Pertemuan Ini<br> Berhasil Ditambahkan</h1>
+    </div>
     <div class="list-opsi">
       <div class="doc-header d-flex" style="color: white;">
         <span><a href="alur_guru.html"><i class="fa fa-arrow-left"
@@ -82,6 +85,13 @@
         <hr color="white">
       </div>
       <div class="dropdown ml-auto">
+        <div class="tambah-materi">
+          <div class="btn-start ml-auto">
+            <button onclick="location.href='tambahmateri_alur.html'">
+              <p>+</p>
+            </button>
+          </div>
+        </div>
         <button class="btn-mapel">
           <p>Materi</p>
           <i class="fa fa-angle-down"></i>
@@ -92,6 +102,11 @@
           <label for="opsi"><input type="radio" name="mytext[]" value="opsi2">&nbsp;&nbsp; Materi 2</label><br>
           <label for="opsi"><input type="radio" name="mytext[]" value="opsi3">&nbsp;&nbsp; Materi 3</label><br>
           <label for="opsi"><input type="radio" name="mytext[]" value="opsi4">&nbsp;&nbsp; Materi 4</label><br>
+        </div>
+        <div class="btn-selesai">
+          <div class="btn-start">
+            <button onclick="tambahConfirm()">Selesai</button>
+          </div>
         </div>
       </div>
     </div>
@@ -108,6 +123,13 @@
           <p style="color: white; text-align: center;">20%</p>
           <hr color="white">
         </div>
+        <div class="tambah-materi">
+          <div class="btn-start ml-auto">
+            <button onclick="location.href='tambahmateri_alur.html'">
+              <p>+</p>
+            </button>
+          </div>
+        </div>
         <div class="materi">
           <p><input type="radio" name="mytext[]" value="opsi1" checked>&nbsp;&nbsp; Materi 1</p>
         </div>
@@ -120,18 +142,14 @@
         <div class="materi">
           <p><input type="radio" name="mytext[]" value="opsi4">&nbsp;&nbsp; Materi 4</p>
         </div>
+        <div class="btn-selesai">
+          <div class="btn-start">
+            <button onclick="tambahConfirm()">Selesai</button>
+          </div>
+        </div>
       </div>
       <div class="opsi-content">
-        <div class="opsi1 select" id="opsi1">
-          <iframe src="document/contoh.pdf"></iframe>
-        </div>
-        <div class="opsi2 select" id="opsi2">
-          <iframe src="document/contoh.pdf"></iframe>
-        </div>
-        <div class="opsi3 select" id="opsi3">
-          <iframe src="document/contoh.pdf"></iframe>
-        </div>
-        <div class="opsi4 select" id="opsi4">
+        <div class="opsi select" id="opsi#">
           <iframe src="document/contoh.pdf"></iframe>
         </div>
       </div>
@@ -183,6 +201,20 @@
           dropdownContent.style.display = "block";
         }
       });
+    }
+
+    function tambahConfirm() {
+      if (c == 0) {
+        document.getElementById("confirm-box-tambah").style.display = "block"
+        setTimeout(() => {
+          window.location.href = 'alur_guru.html'
+        }, 3000);
+        c = 1;
+      }
+      else {
+        document.getElementById("confirm-box-tambah").style.display = "none"
+        c = 0;
+      }
     }
   </script>
 
