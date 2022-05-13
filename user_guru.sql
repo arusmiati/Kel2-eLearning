@@ -48,10 +48,10 @@ CREATE TABLE `user_guru` (
 INSERT INTO `user_guru` (`Id`, `Nama`, `Nip`, `Tempat`, `Tanggal`, `Email`, `Alamat`, `Posisi`, `Username`, `Password`, `Profil`) VALUES
 (3, 'Dra. Aisyah. S', '196408241998022002', 'Luwu', '1964-08-24', '', '', 'Wakasek Kesiswaan ', 'aisyahs', '24081964', 'profil.png'),
 (4, 'Drs. Muhammad Azas', '196505072005021001', 'Luwu', '1965-05-07', '', '', 'Guru Mapel', 'muhazas', '07051965', 'profil.png'),
-(5, 'Drs. Amir Tanggu', '196604212005021001', '', '0000-00-00', '', '', 'Guru Mapel', 'drsamirtanggu', '21041966', ''),
-(6, 'Djumariah, S.Pd', '196808241998022004', '', '0000-00-00', '', '', 'Guru Mapel', 'djumariah', '24081968', ''),
-(7, 'Hairiana, ST', '196807272006042013', '', '0000-00-00', '', '', 'Guru Mapel', 'hairiana', '27071968', ''),
-(8, 'Manda, S.Pd', '197102151998032012', '', '0000-00-00', '', '', 'Guru Mapel', 'manda', '15021971', '');
+(5, 'Drs. Amir Tanggu', '196604212005021001', '', '0000-00-00', '', '', 'Guru Mapel', 'drsamirtanggu', '21041966', 'profil.png'),
+(6, 'Djumariah, S.Pd', '196808241998022004', '', '0000-00-00', '', '', 'Guru Mapel', 'djumariah', '24081968', 'profil.png'),
+(7, 'Hairiana, ST', '196807272006042013', '', '0000-00-00', '', '', 'Guru Mapel', 'hairiana', '27071968', 'profil.png'),
+(8, 'Manda, S.Pd', '197102151998032012', '', '0000-00-00', '', '', 'Guru Mapel', 'manda', '15021971', 'profil.png');
 
 --
 -- Indexes for dumped tables

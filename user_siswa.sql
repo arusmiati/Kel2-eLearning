@@ -46,7 +46,14 @@ CREATE TABLE `user_siswa` (
 --
 
 INSERT INTO `user_siswa` (`Id`, `Nama`, `Nis`, `Kelas`, `Tempat`, `Tanggal`, `Email`, `Alamat`, `Username`, `Password`, `Profil`) VALUES
-(1, 'Abdillah', '2021005179', 'X Mipa 6', 'Tolajuk', '2006-04-20', '', 'Kampung Tangga', 'abdillah', '20042006', 'baymax.jpg');
+(1, 'Abdillah', '2021005179', 'X Mipa 6', 'Tolajuk', '2006-04-20', '', 'Kampung Tangga', 'abdillah', '20042006', 'baymax.jpg'),
+(2, 'Aisyah', '2021005180', 'X Mipa 6', 'Tolajuk', '2006-10-08', '', 'Kampung Tangga', 'aisyah', '08102006', 'profil.png'),
+(3, 'Badia', '2021005181', 'X Mipa 6', 'Tolajuk', '2006-11-03', '', 'Kampung Tangga', 'badia', '03112006', 'profil.png'),
+(4, 'Dina', '2021005182', 'X Mipa 6', 'Tolajuk', '2006-05-18', '', 'Kampung Tangga', 'dina', '18052006', 'profil.png'),
+(5, 'Faiqa', '2021005183', 'X Mipa 6', 'Tolajuk', '2006-12-05', '', 'Kampung Tangga', 'faiqa', '0512006', 'profil.png'),
+(6, 'Ihlasul', '2021005184', 'X Mipa 6', 'Tolajuk', '2006-07-23', '', 'Kampung Tangga', 'ihlasul', '23072006', 'profil.png'),
+(7, 'Wilbert', '2021005185', 'X Mipa 6', 'Tolajuk', '2006-03-28', '', 'Kampung Tangga', 'wilbert', '28032006', 'profil.png'),
+(8, 'Yudi', '2021005186', 'X Mipa 6', 'Tolajuk', '2006-10-17', '', 'Kampung Tangga', 'yudi', '17102006', 'profil.png');
 
 --
 -- Indexes for dumped tables
