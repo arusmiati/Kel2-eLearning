@@ -1,0 +1,26 @@
+.main-content {
+    align-self: flex-start;
+    flex: 1;
+    max-width: 52rem;
+}
+
+.main-content, .page {
+    display: inline-block;
+    position: relative;
+    /* width: 100%; */
+}
+div {
+    outline: none;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+@media (min-width: 48.1875rem)
+.primary-container {
+    display: flex;
+    justify-content: center;
+    max-width: 89.125rem;
+    text-align: left;
+    width: 100%;
+}

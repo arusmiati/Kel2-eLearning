@@ -545,6 +545,10 @@ li.active {
     padding: 0 20px;
 }
 
+.detail-bantuan {
+    margin-left: 20vh 25vh;
+    position: relative;
+}
 /* FOOTER */
 
 .footer {
